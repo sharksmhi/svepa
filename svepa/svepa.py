@@ -1,14 +1,44 @@
-from .exceptions import *
+
+from abc import ABC, abstractmethod
+import datetime
+import pathlib
+import pandas as pd
 
 
-event_name_mapping = {}
+class PlatformMetadata(ABC):
+
+    @property
+    @abstractmethod
+    def name_in_svepa(self):
+        """ This is the platform name """
+        pass
+
+    @abstractmethod
+    def get_time(self) -> datetime.datetime:
+        """ Should return the time for the measurement as datetime"""
+        pass
+
+    @abstractmethod
+    def set_event_id(self, event_id: str) -> bool:
+        """ Sets the event_id for the measurement """
+        pass
+
+    @abstractmethod
+    def set_parent_event_id(self, event_id: str) -> bool:
+        """ Sets the parent_event_id for the measurement """
+        pass
+
+
+class PlatformMetadataFile(PlatformMetadata):
+
+    @abstractmethod
+    def set_file(self, file_path: str):
+        """ Sets the file that will be enriched by information from Svepa """
+        pass
 
 
 class Svepa:
     """
-    Raise SvepaConnectionError if not able to connect to Svepa.
-    Raise NoInformationError if not information is available.
-
     """
 
     def __init__(self):
@@ -37,7 +67,7 @@ class Svepa:
         :return: str
         """
         if not self.event_type_is_running(event_type):
-            raise SvepaEventTypeNotRunningError(event_type=event_type)
+            raise # SvepaEventTypeNotRunningError(event_type=event_type)
         import uuid
         return uuid.uuid4()
 
@@ -49,7 +79,7 @@ class Svepa:
         :return: str
         """
         if not self.event_type_is_running(event_type):
-            raise SvepaEventTypeNotRunningError(event_type=event_type)
+            raise # SvepaEventTypeNotRunningError(event_type=event_type)
         import uuid
         return uuid.uuid4()
 
@@ -85,4 +115,3 @@ class Svepa:
         """
         # raise SvepaNoInformationError('station')
         return ''
-
