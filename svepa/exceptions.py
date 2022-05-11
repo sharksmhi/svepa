@@ -10,7 +10,7 @@ class SvepaException(Exception):
 
 class SvepaConnectionError(SvepaException):
     def __init__(self, message=''):
-        super().__init__(messages=message, title='Connection error')
+        super().__init__(message=message, title='Connection error')
 
 
 class SvepaEventTypeNotRunningError(SvepaException):
@@ -21,4 +21,4 @@ class SvepaEventTypeNotRunningError(SvepaException):
 
 class SvepaNoInformationError(SvepaException):
     def __init__(self, message=''):
-        super().__init__(messages=message, title='Missing information')
+        super().__init__(message=message, title='Missing information')
