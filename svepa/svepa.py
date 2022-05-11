@@ -4,8 +4,7 @@ import datetime
 import pathlib
 import logging
 import pypyodbc
-from svepa import exceptions
-
+import exceptions
 
 logger = logging.getLogger(__name__)
 
@@ -48,6 +47,9 @@ class DBCommunication:
         self.cnxn = False
 
     def DBConnect(self, dbadress = 'pg-shark-int', dbname = 'shark-int', user = 'skint', password = 'Bvcdew21', driver = '{PostgreSQL Unicode(x64)}'):
+
+        # connect to svepa on winserv817
+        # DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
 
         if not self.cnxn:
             # TEST
@@ -120,14 +122,14 @@ class Svepa:
         :return: boolean
         """
 
-        if event_type is null:
+        if event_type is None:
             event_type = "CTD"
 
-        active_time = 1 # 1 hour for CTD.. set time for every event? or allow time as input? or don't use time at all?
+        active_time = '1' # 1 hour for CTD.. set time for every event? or allow time as input? or don't use time at all?
         # as an example a ferrybox event can run for the entire cruise, up to two weeks.
         # - return time but make no check or warning in this method
 
-        query = """SELECT EventID, starttime, datediff(hour, cast(StartTime as datetime), GETDATE())
+        query = """SELECT EventID, cast(StartTime as datetime) as "date", datediff(hour, cast(StartTime as datetime), GETDATE()) as "hours"
             FROM dbo.Event
             INNER JOIN dbo.EventType
             on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
@@ -148,10 +150,41 @@ class Svepa:
         # added HasBeenStarted = 1 and just check that StartTime is not null.
 
         # connect
-        # run query
-        # disconnect
+        DB = DBCommunication()
+        DB.DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
 
-        return True
+        cursor = DB.cursor
+        # run query
+        cursor.execute(query)
+
+        import pprint;
+        pp = pprint.PrettyPrinter(indent=4)
+        columns = [column[0] for column in cursor.description]
+        # print('columns:',columns)
+        counter = 0
+        eventid = []
+        eventdate = []
+        eventlength = []
+        for row in cursor.fetchall():
+            counter +=1
+            #print(row,type(row),len(row))
+            #print(row[0],row[1],row[2])
+            eventid.append(row[0])
+            eventdate.append(row[1])
+            eventlength.append(row[2])
+            #pp.pprint(dict(zip(columns, row)))
+
+        if counter == 0:
+            return False
+        elif counter == 1:
+            return True, eventid[0], eventdate[0], eventlength[0]
+        else: # several active events...
+            logger.warning('Several active events of type %, might want to stop older events' % event_type)
+            return True, eventid, eventdate, eventlength
+
+        # disconnect
+        DB.DBDisconnect()
+
 
     def get_running_event_types(self):
         """
