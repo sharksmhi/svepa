@@ -4,7 +4,7 @@ import datetime
 import pathlib
 import logging
 import pypyodbc
-import exceptions
+from svepa import exceptions
 
 logger = logging.getLogger(__name__)
 
