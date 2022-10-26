@@ -10,6 +10,17 @@ INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.yaml')
 PICKLE_INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.pickle')
 
 
+def import_svepa_export_file(path):
+    sef = SvepaExportFile(path)
+    file_info = sef.get_platforms_info()
+    all_info = helpers.load()
+    for plat, plat_info in file_info.items():
+        all_info.setdefault(plat, {})
+        for _id, info in plat_info.items():
+            all_info[plat][_id] = info
+    helpers.save(all_info)
+
+
 def _load_pickle():
     if not PICKLE_INFO_FILE_PATH.exists():
         return

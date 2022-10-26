@@ -69,6 +69,10 @@ class Event:
         return False
 
     @property
+    def event_type(self):
+        return self._info['EventType']
+
+    @property
     def full_name(self):
         return self._info['Name']
 
@@ -125,7 +129,9 @@ class Event:
     def get_info(self) -> dict:
         """Returns a dict with information about the event"""
         info = dict(
+            event_type=self.event_type,
             name=self.name,
+            full_name=self.full_name,
             event_id=self.event_id,
             parent_event_id=self.parent_event_id,
             start_time=self.start_time,
@@ -198,7 +204,8 @@ class SvepaExportFile:
 
     def get_platforms_info(self):
         all_info = {}
-        for plat in FILTERED_EVENTS:
+        # for plat in FILTERED_EVENTS:
+        for plat in self.get_name_list():
             events = self.get_platform_events(plat)
             if not events:
                 continue
