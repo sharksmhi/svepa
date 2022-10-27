@@ -73,6 +73,38 @@ class Event:
         return self._info['EventType']
 
     @property
+    def id(self):
+        return self.full_name.split('.')[-1]
+
+    @property
+    def start_lat(self):
+        value = self._info['declat start'].replace(',', '.')
+        if value == '':
+            return None
+        return float(value)
+
+    @property
+    def start_lon(self):
+        value = self._info['declong start'].replace(',', '.')
+        if value == '':
+            return None
+        return float(value)
+
+    @property
+    def stop_lat(self):
+        value = self._info['declat stop'].replace(',', '.')
+        if value == '':
+            return None
+        return float(value)
+
+    @property
+    def stop_lon(self):
+        value = self._info['declong stop'].replace(',', '.')
+        if value == '':
+            return None
+        return float(value)
+
+    @property
     def full_name(self):
         return self._info['Name']
 
@@ -130,13 +162,18 @@ class Event:
         """Returns a dict with information about the event"""
         info = dict(
             event_type=self.event_type,
+            id=self.id,
             name=self.name,
             full_name=self.full_name,
             event_id=self.event_id,
             parent_event_id=self.parent_event_id,
             start_time=self.start_time,
             stop_time=self.stop_time,
-            ongoning_events=self.get_ongoing_event_names(filter=True)
+            start_lat=self.start_lat,
+            start_lon=self.start_lon,
+            stop_lat=self.stop_lat,
+            stop_lon=self.stop_lon,
+            ongoning_event_names=self.get_ongoing_event_names(filter=True)
         )
         return info
 
