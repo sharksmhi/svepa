@@ -44,12 +44,17 @@ class StoredSvepaInfo:
         return SvepaEvent(stored_svepa_info=self, info=info)
 
     @lru_cache
-    def get_infos(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None):
+    def get_infos(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
+                  year: int = None, month: int = None):
         lst = []
         for key in self._info:
             if platform and key != platform:
                 continue
             for _id, _info in self._info[key].items():
+                if year and not (_info['start_time'].year == year or _info['stop_time'].year == year):
+                    continue
+                if month and not (_info['start_time'].month == month or _info['stop_time'].month == month):
+                    continue
                 if time and not (_info['start_time'] <= time <= _info['stop_time']):
                     continue
                 if lat:
@@ -65,8 +70,9 @@ class StoredSvepaInfo:
                 lst.append(_info)
         return lst
 
-    def get_events(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None):
-        info_lst = self.get_infos(platform=platform, time=time, lat=lat, lon=lon)
+    def get_events(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
+                   year: int = None, month: int = None):
+        info_lst = self.get_infos(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
         return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
 
     def get_children_info(self, event_id: str) -> List[str]:

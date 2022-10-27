@@ -31,9 +31,10 @@ def get_svepa_event(platform: str = None, time: datetime.datetime = None, event_
 
 
 @lru_cache
-def get_svepa_events(platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None):
+def get_svepa_events(platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
+                     year: int = None, month: int = None):
     ssi = StoredSvepaInfo()
-    return ssi.get_events(platform=platform, time=time, lat=lat, lon=lon)
+    return ssi.get_events(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
 
 
 
