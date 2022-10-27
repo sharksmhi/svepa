@@ -48,7 +48,7 @@ class StoredSvepaInfo:
                   year: int = None, month: int = None):
         lst = []
         for key in self._info:
-            if platform and key != platform:
+            if platform and key.upper() != platform.upper():
                 continue
             for _id, _info in self._info[key].items():
                 if year and not (_info['start_time'].year == year or _info['stop_time'].year == year):
