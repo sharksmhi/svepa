@@ -59,8 +59,11 @@ class Event:
     def check_time(self, time: datetime.datetime):
         if not (self.start_time and self.start_time):
             return False
-        if self.start_time <= time <= self.stop_time:
-            return True
+        try:
+            if self.start_time <= time <= self.stop_time:
+                return True
+        except TypeError as e:
+            logger.warning(f'Error when checking {time=}: {e}')
         return False
 
     def check_name(self, name: str):
