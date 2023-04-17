@@ -68,6 +68,9 @@ def _convert_to_date_string(info):
         return
     for key, value in info.items():
         if 'time' in key:
+            if not value:
+                logger.warning(f'{key=} has no value!')
+                continue
             info[key] = value.strftime('%Y%m%d%H%M%S')
         _convert_to_date_string(info[key])
 
@@ -77,6 +80,9 @@ def _convert_to_datetime(info):
         return
     for key, value in info.items():
         if 'time' in key:
+            if not value:
+                logger.warning(f'{key=} has no value!')
+                continue
             info[key] = datetime.datetime.strptime(value, '%Y%m%d%H%M%S')
         _convert_to_datetime(info[key])
 
