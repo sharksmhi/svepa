@@ -4,7 +4,10 @@ import datetime
 import pathlib
 import logging
 import pypyodbc
-from svepa import exceptions
+try:
+    from svepa import exceptions
+except:
+    import exceptions
 
 logger = logging.getLogger(__name__)
 
@@ -45,6 +48,7 @@ class DBCommunication:
     def __init__(self):
         self.cursor = False
         self.cnxn = False
+        #logger.debug('DBCom test')
 
     def DBConnect(self, dbadress = 'pg-shark-int', dbname = 'shark-int', user = 'skint', password = 'Bvcdew21', driver = '{PostgreSQL Unicode(x64)}'):
 
@@ -70,23 +74,36 @@ class DBCommunication:
 
         if not self.cursor:
             self.cursor = self.cnxn.cursor()
-            print('Connected to %s' % dbname)
+            # print('Connected to %s' % dbname)
+            logger.debug('Connected to %s' % dbname)
         else:
-            print('Already connected to %s' % dbname)
-
+            # print('Already connected to %s' % dbname)
+            logger.debug('Already connected to %s' % dbname)
         # ===========================================================================
 
     def DBDisconnect(self):
+        ''' Closes the connection and cursor'''
 
-        '''Closes the cursor only'''
-
+        # cursor first
         if self.cursor:
             self.cursor.close()
             self.cursor = False
-            print('Disconnected from db')
+            logger.debug('Cursor closed')
+            #print('Cursor closed')
         else:
-            print('Not connected.. nothing to close')
+            #print('No cursor to close.. ')
+            logger.debug('No cursor to close.. ')
         import pypyodbc
+
+        if self.cnxn:
+            self.cnxn.close()
+            self.cnxn = False
+            #print('Disconnected from db')
+            logger.debug('Disconnected from db')
+
+        else:
+            #print('Not connected.. nothing to close')
+            logger.debug('Not connected.. nothing to close')
 
 
 class Svepa:
@@ -112,7 +129,7 @@ class Svepa:
     """
 
     def __init__(self):
-        logger.debug('Test')
+        #logger.debug('Test')
         pass
 
     def _event_type_is_running(self, event_type):
@@ -121,6 +138,8 @@ class Svepa:
         :param event_type: Type of event (CTD, MVP etc...)
         :return: boolean
         """
+
+        # TODO: korta ner denna och använd koden i annan funktion
 
         if event_type is None:
             event_type = "CTD"
@@ -151,7 +170,11 @@ class Svepa:
 
         # connect
         DB = DBCommunication()
-        DB.DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
+        #DB.DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
+        DB.DBConnect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
+                     driver='SQL Server')
+
+        # ta bort användare och lösen och lägg i extern fil, json eller yaml
 
         cursor = DB.cursor
         # run query
@@ -174,16 +197,18 @@ class Svepa:
             eventlength.append(row[2])
             #pp.pprint(dict(zip(columns, row)))
 
+        # disconnect
+        DB.DBDisconnect()
+
         if counter == 0:
             return False
         elif counter == 1:
             return True, eventid[0], eventdate[0], eventlength[0]
         else: # several active events...
-            logger.warning('Several active events of type %, might want to stop older events' % event_type)
+            logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (len(eventid),event_type))
             return True, eventid, eventdate, eventlength
 
-        # disconnect
-        DB.DBDisconnect()
+
 
 
     def get_running_event_types(self):
@@ -191,23 +216,148 @@ class Svepa:
         Returns all running event types as a list.
         :return: list
         """
+
+
+
         return ['CTD', 'ADCP', 'FERRYBOX']
 
-    def get_info_for_running_event_type(self, event_type):
+    def get_info_for_running_event_type(self, event_type, db):
         """
         Returns the information of the running event_type, ID, start_time, etc.
         Raise SvepaEventTypeNotRunningError if the event_type is not running.
         :param event_type:
+        :param db:
         :return: dict
         """
-        if not self.event_type_is_running(event_type):
-            raise # SvepaEventTypeNotRunningError(event_type=event_type)
-        import uuid
-        return uuid.uuid4()
+
+        if event_type is None:
+            event_type = "CTD"
+
+        if not self._event_type_is_running(event_type):
+            raise exceptions.SvepaEventTypeNotRunningError(event_type=event_type)
+
+        query = """
+            SELECT cast(EventID as varchar(36)), cast(StartTime as datetime) as "date", datediff(hour, cast(StartTime as datetime), GETDATE()) as "hours", 
+            EventType.Name, Counter.value
+            FROM dbo.Event
+            INNER JOIN dbo.EventType
+            on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+            LEFT OUTER JOIN dbo.TemplateEvent
+            on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
+            Join dbo.Counter
+            on dbo.Event.EventID = dbo.Counter.Owner
+            where 1=1
+            and StartTime is not null
+            and TemplateEvent.Name like '"""+event_type+""".%'
+            and StopTime is null
+            and HasBeenStarted = 1"""
+
+        db.cursor.execute(query)
+
+        import pprint;
+        pp = pprint.PrettyPrinter(indent=4)
+        columns = [column[0] for column in db.cursor.description]
+        # print('columns:',columns)
+        counter = 0
+        data_dict = {'event_id': [], 'event_date': [], 'event_length': [], 'event_type': [], 'counter': []}
+        for row in db.cursor.fetchall():
+            counter += 1
+            #print(row,type(row),len(row))
+            #print(row[0],row[1],row[2])
+            data_dict['event_id'].append(row[0])
+            data_dict['event_date'].append(row[1])
+            data_dict['event_length'].append(row[2])
+            data_dict['event_type'].append(row[3])
+            data_dict['counter'].append(row[4])
+            #pp.pprint(dict(zip(columns, row)))
+
+
+        if counter == 0:
+            return False
+        elif counter == 1:
+            return data_dict
+        else:  # several active events...
+            logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (
+            len(data_dict['event_id']), event_type))
+            return data_dict
+
+        # import uuid
+        # return uuid.uuid4()
+
+    def get_info_for_from_event(self, event_ID):
+        """
+        Returns the information of the running event: ID, start_time, etc.
+        Raise SvepaEventTypeNotRunningError if the event_type is not running.
+        :param event_type:
+        :return: dict
+        """
+
+        if event_ID is None:
+            raise exceptions.SvepaNoInformationError()
+
+        #if not self._event_type_is_running(event_ID):
+        #    raise exceptions.SvepaEventNotRunningError(event_id=event_ID)
+
+        # TODO: change select to extract relevant information, probably also remove StopTime filter and instead return
+        # TODO: information if event is started/stopped (also affects code after query)
+        query = """SELECT cast(EventID as varchar(36)), cast(StartTime as datetime) as "date", datediff(hour, cast(StartTime as datetime), GETDATE()) as "hours"
+               FROM dbo.Event
+               INNER JOIN dbo.EventType
+               on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+               LEFT OUTER JOIN dbo.TemplateEvent
+               on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
+               where 1=1
+               and StartTime is not null
+               and EventID = '""" + event_ID + """'
+               and StopTime is null
+               and HasBeenStarted = 1"""
+
+        # connect
+        DB = DBCommunication()
+        # DB.DBConnect(dbadress='localhost\\SQLEXPRESS', dbname='SVEPA', user='svepareader', password='svepareader',
+        #              driver='ODBC Driver 17 for SQL Server')
+        DB.DBConnect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
+                     driver='SQL Server')
+        # ta bort användare och lösen och lägg i extern fil, json eller yaml
+
+        cursor = DB.cursor
+        # run query
+        cursor.execute(query)
+
+        import pprint;
+        pp = pprint.PrettyPrinter(indent=4)
+        columns = [column[0] for column in cursor.description]
+        # print('columns:',columns)
+        counter = 0
+        eventid = []
+        eventdate = []
+        eventlength = []
+        for row in cursor.fetchall():
+            counter += 1
+            # print(row,type(row),len(row))
+            # print(row[0],row[1],row[2])
+            eventid.append(row[0])
+            eventdate.append(row[1])
+            eventlength.append(row[2])
+            # pp.pprint(dict(zip(columns, row)))
+
+        # disconnect
+        DB.DBDisconnect()
+
+        if counter == 0:
+            return False
+        elif counter == 1:
+            return True, eventid[0], eventdate[0], eventlength[0]
+        else:  # several active events...
+            logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (
+                len(eventid), eventid))
+            return True, eventid, eventdate, eventlength
 
     def get_parent_event_id_for_running_event_type(self, event_type):
+        # TODO: get parent for running event type is probably ok, but also write a function to get get parent event_id for any event_id
         """
         Returns the EventID of the parent to the running event_type.
+        Also return counter (for station) which is used as serial number for CTD
         Raise SvepaEventTypeNotRunningError if the event_type is not running.
         :param event_type:
         :return: str
@@ -216,6 +366,74 @@ class Svepa:
             raise # SvepaEventTypeNotRunningError(event_type=event_type)
         import uuid
         return uuid.uuid4()
+
+    def get_parent_event_id(self, event_id, DB, info_level = 'basic'):
+        """
+       Returns the EventID of the parent and the EventType name of the parent as default (info_level = 'basic').
+       If you set info_level = 'full' start time, stop time and counter for the parent are also returned.
+       Raise SvepaNoInformationError if the EventID is missing in database or if no EventID is supplied.
+       :param eventID:
+       :return: str
+       """
+        if event_id is None:
+            raise exceptions.SvepaNoInformationError()
+
+        query = """SELECT cast(parentEventID as varchar(36)) , EventType.Name, cast(StartTime as datetime), cast(StopTime as datetime), Counter.Value
+               FROM dbo.Event
+               left outer JOIN dbo.EventType
+               on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+               Join dbo.Counter
+               on dbo.Event.EventID = dbo.Counter.Owner
+               where 1=1
+               and EventID = '""" + event_id + """'
+               """
+
+
+        # run query
+        DB.cursor.execute(query)
+
+        for row in  DB.cursor.fetchall():
+            #cursor.close()
+            #cursor = DB_connection.cursor
+            if row is None:
+                print('row is None')
+                raise exceptions.SvepaNoInformationError()
+            elif not row:
+                print('row is empty')
+                raise exceptions.SvepaNoInformationError()
+            else:
+                #print(row,row[0],type(row[0]))
+                parent_event_id = row[0]
+
+                if parent_event_id:
+                    query_type = """SELECT EventType.Name
+                                   FROM EventType 
+                                   JOIN dbo.Event
+                                   on dbo.EventType.EventTypeID = dbo.Event.EventTypeID 
+                                   where 1=1
+                                   and EventID = '""" + parent_event_id + """'
+                                   """
+
+                    DB.cursor.execute(query_type)
+
+                    row_type = DB.cursor.fetchone()
+                    #print('row_type', row_type)
+                    parent_event_type = row_type[0]
+                else:
+                    parent_event_type = None
+
+                parent_event_start = row[2]
+                parent_event_stop = row[3]
+                parent_event_counter = row[4]
+
+        #cursor.close()
+
+        if info_level.upper() == 'FULL':
+            return [parent_event_id, parent_event_type, parent_event_start, parent_event_stop, parent_event_counter]
+        else:
+            return [parent_event_id, parent_event_type]
+
+
 
     def get_position(self):
         """

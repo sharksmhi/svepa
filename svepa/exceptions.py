@@ -18,6 +18,11 @@ class SvepaEventTypeNotRunningError(SvepaException):
         self.event_type = event_type
         super().__init__(message=message, title=f'Event type not running: {event_type}')
 
+class SvepaEventNotRunningError(SvepaException):
+    def __init__(self, message='', event_id=''):
+        self.event_id = event_id
+        super().__init__(message=message, title=f'Event not running: {event_id}')
+
 
 class SvepaNoInformationError(SvepaException):
     def __init__(self, message=''):
