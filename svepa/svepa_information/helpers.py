@@ -1,13 +1,21 @@
-import yaml
-import pickle
-from pathlib import Path
 import datetime
 import logging
+import pickle
+from pathlib import Path
+from functools import lru_cache
+
+import yaml
+
 
 logger = logging.getLogger(__file__)
 
 INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.yaml')
 PICKLE_INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.pickle')
+
+
+@lru_cache
+def load_stored_svepa_info():
+    return load()
 
 
 def _load_pickle():
@@ -60,6 +68,9 @@ def _convert_to_date_string(info):
         return
     for key, value in info.items():
         if 'time' in key:
+            if not value:
+                logger.warning(f'{key=} has no value!')
+                continue
             info[key] = value.strftime('%Y%m%d%H%M%S')
         _convert_to_date_string(info[key])
 
@@ -69,6 +80,9 @@ def _convert_to_datetime(info):
         return
     for key, value in info.items():
         if 'time' in key:
+            if not value:
+                logger.warning(f'{key=} has no value!')
+                continue
             info[key] = datetime.datetime.strptime(value, '%Y%m%d%H%M%S')
         _convert_to_datetime(info[key])
 

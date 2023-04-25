@@ -1,6 +1,10 @@
-from .svepa_export_file import SvepaExportFile
-from . import helpers
+from svepa.svepa_information.svepa_export_file import SvepaExportFile
+from svepa.svepa_information.svepa_info import StoredSvepaInfo
+
+from svepa.svepa_information import helpers
 import datetime
+
+from functools import lru_cache
 
 
 def import_svepa_export_file(path):
@@ -14,42 +18,42 @@ def import_svepa_export_file(path):
     helpers.save(all_info)
 
 
-def load_stored_svepa_info():
-    return helpers.load()
+def get_time_range():
+    """Returns the time range for the entire svepa_info scope in svepa_info.yaml"""
+    info = helpers.load_stored_svepa_info()
+    start = datetime.datetime.now()
+    stop = datetime.datetime(1950, 1, 1)
+    for stat in info.values():
+        for _id in stat.values():
+            start = min(start, _id['start_time'])
+            stop = max(stop, _id['stop_time'])
+    return start, stop
 
 
-def get_svepa_info(platform: str = None, time: datetime.datetime = None, event_id: str = None) -> dict:
+@lru_cache
+def get_svepa_info(platform: str = None, time: datetime.datetime = None, event_id: str = None):
     ssi = StoredSvepaInfo()
     return ssi.get_info(platform=platform, time=time, event_id=event_id)
 
 
-class StoredSvepaInfo:
-    def __init__(self):
-        self._load_info()
+@lru_cache
+def get_svepa_event(platform: str = None, time: datetime.datetime = None, event_id: str = None):
+    ssi = StoredSvepaInfo()
+    return ssi.get_event(platform=platform, time=time, event_id=event_id)
 
-    def _load_info(self):
-        self._info = load_stored_svepa_info()
 
-    def import_file(self, path):
-        import_svepa_export_file(path)
-        self._load_info()
+@lru_cache
+def get_svepa_events(platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
+                     year: int = None, month: int = None):
+    ssi = StoredSvepaInfo()
+    return ssi.get_events(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
 
-    def get_info(self, platform: str = None, time: datetime.datetime = None, event_id: str = None) -> dict:
-        if event_id:
-            result = {}
-            for info in self._info.values():
-                value = info.get(event_id)
-                if value:
-                    result = value
-            return result
-        if not (platform and time):
-            raise Exception('Missing platform and time or event_id when trying to get svepa information')
-        plat = platform.upper()
-        if plat not in self._info:
-            return {}
-        for _id, info in self._info[plat].items():
-            if info['start_time'] <= time <= info['stop_time']:
-                return info
-        return {}
+
+
+
+
+
+
+
 
 
