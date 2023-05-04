@@ -252,15 +252,13 @@ class Svepa:
             raise exceptions.SvepaEventTypeNotRunningError(event_type=event_type)
 
         query = """
-            SELECT cast(EventID as varchar(36)), cast(StartTime as datetime) as "date", datediff(hour, cast(StartTime as datetime), GETDATE()) as "hours", 
-            EventType.Name, Counter.value
+            SELECT cast(EventID as varchar(36)),
+            TemplateEvent.Name
             FROM dbo.Event
             INNER JOIN dbo.EventType
             on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
             LEFT OUTER JOIN dbo.TemplateEvent
             on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
-            Join dbo.Counter
-            on dbo.Event.EventID = dbo.Counter.Owner
             where 1=1
             and StartTime is not null
             and TemplateEvent.Name like '"""+event_type+""".%'
@@ -281,17 +279,14 @@ class Svepa:
             #print(row[0],row[1],row[2])
             data = dict()
             data['event_id'] = row[0]
-            data['event_date'] = row[1]
-            data['event_length'] = row[2]
-            data['event_type'] = row[3]
-            data['counter'] = row[4]
+            data['event_template_type'] = row[1]
             data_list.append(data)
             #pp.pprint(dict(zip(columns, row)))
 
         if len(data_list) == 0:
             return False
         elif len(data_list) == 1:
-            return data_list[0]
+            return data_list[0]['event_id'], data_list[0]['event_template_type']
         else:  # several active events...
             raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
 
@@ -300,8 +295,7 @@ class Svepa:
 
     def get_info_for_event(self, event_id, db):
         """
-        Returns the information of the running event: ID, start_time, etc.
-        Raise SvepaEventTypeNotRunningError if the event_type is not running.
+        Returns the information of the event: ID, start_time, etc.
         :param event_type:
         :return: dict
         """
@@ -312,48 +306,61 @@ class Svepa:
         #if not self.event_type_is_running(event_id):
         #    raise exceptions.SvepaEventNotRunningError(event_id=event_id)
 
-        # TODO: change select to extract relevant information, probably also remove StopTime filter and instead return
-        # TODO: information if event is started/stopped (also affects code after query)
-        query = """SELECT cast(EventID as varchar(36)), cast(StartTime as datetime) as "date", datediff(hour, cast(StartTime as datetime), GETDATE()) as "hours"
-               FROM dbo.Event
-               INNER JOIN dbo.EventType
-               on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
-               LEFT OUTER JOIN dbo.TemplateEvent
-               on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
-               where 1=1
-               and StartTime is not null
-               and EventID = '""" + event_id + """'
-               and StopTime is null
-               and HasBeenStarted = 1"""
+        query = """SELECT cast(EventID as varchar(36)) "eventid", 
+                cast(StartTime as datetime) as "starttime", 
+                cast(StopTime as datetime) as "stoptime", 
+                datediff(minute, cast(StartTime as datetime), cast(StopTime as datetime)) as "minutes",
+                StartLongitude as "lon",
+                StartLatitude as "lat",
+                EventType.Name as "eventtype", 
+                TemplateEvent.Name "templatename",
+                Counter.value as "counter"
+                FROM dbo.Event
+                INNER JOIN dbo.EventType
+                on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+                LEFT OUTER JOIN dbo.TemplateEvent
+                on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
+                Join dbo.Counter
+                on dbo.Event.EventID = dbo.Counter.Owner
+                where 1=1
+                and StartTime is not null
+                and EventID = '""" + event_id + """'
+                --and StopTime is null
+                and HasBeenStarted = 1"""
 
         # run query
         db.cursor.execute(query)
 
-        import pprint;
-        pp = pprint.PrettyPrinter(indent=4)
-        columns = [column[0] for column in db.cursor.description]
+        # import pprint;
+        # pp = pprint.PrettyPrinter(indent=4)
+        # columns = [column[0] for column in db.cursor.description]
+
         # print('columns:',columns)
-        counter = 0
-        eventid = []
-        eventdate = []
-        eventlength = []
+
+        data_list = []
         for row in db.cursor.fetchall():
-            counter += 1
             # print(row,type(row),len(row))
             # print(row[0],row[1],row[2])
-            eventid.append(row[0])
-            eventdate.append(row[1])
-            eventlength.append(row[2])
+            data = dict()
+            data['event_id'] = row[0]
+            data['event_start_time'] = row[1]
+            data['event_stop_time'] = row[2]
+            data['event_length_minutes'] = row[3]
+            data['longitude'] = row[4]
+            data['latitude'] = row[5]
+            data['event_type'] = row[6]
+            data['event_template_type'] = row[7]
+            data['counter'] = row[8]
+            data_list.append(data)
             # pp.pprint(dict(zip(columns, row)))
 
-        if counter == 0:
+        if len(data_list) == 0:
             return False
-        elif counter == 1:
-            return True, eventid[0], eventdate[0], eventlength[0]
+        elif len(data_list) == 1:
+            return data_list[0]
         else:  # several active events...
-            logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (
-                len(eventid), eventid))
-            return True, eventid, eventdate, eventlength
+            raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
+
 
     def get_parent_event_id_for_running_event_type(self, event_type):
         # TODO: get parent for running event type is probably ok, but also write a function to get get parent event_id for any event_id
@@ -369,7 +376,7 @@ class Svepa:
         import uuid
         return uuid.uuid4()
 
-    def get_parent_event_id(self, event_id, DB, info_level = 'basic'):
+    def get_parent_event_id(self, event_id, db, info_level = 'basic'):
         """
        Returns the EventID of the parent and the EventType name of the parent as default (info_level = 'basic').
        If you set info_level = 'full' start time, stop time and counter for the parent are also returned.
@@ -380,27 +387,30 @@ class Svepa:
         if event_id is None:
             raise exceptions.SvepaNoInformationError()
 
-        query = """SELECT cast(parentEventID as varchar(36)) , EventType.Name, cast(StartTime as datetime), cast(StopTime as datetime), Counter.Value
-               FROM dbo.Event
-               left outer JOIN dbo.EventType
-               on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
-               Join dbo.Counter
-               on dbo.Event.EventID = dbo.Counter.Owner
-               where 1=1
-               and EventID = '""" + event_id + """'
-               """
+        query = """SELECT cast(parentEventID as varchar(36)),
+                EventType.Name, cast(StartTime as datetime), 
+                cast(StopTime as datetime), 
+                Counter.Value
+                FROM dbo.Event
+                left outer JOIN dbo.EventType
+                on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+                Join dbo.Counter
+                on dbo.Event.EventID = dbo.Counter.Owner
+                where 1=1
+                and EventID = '""" + event_id + """'
+                """
 
 
         # run query
-        DB.cursor.execute(query)
+        db.cursor.execute(query)
 
-        result = DB.cursor.fetchall()
+        result = db.cursor.fetchall()
         if not result:
             raise Exception
 
 
 
-        for row in  DB.cursor.fetchall():
+        for row in  db.cursor.fetchall():
             #cursor.close()
             #cursor = DB_connection.cursor
             if row is None:
@@ -422,9 +432,9 @@ class Svepa:
                                    and EventID = '""" + parent_event_id + """'
                                    """
 
-                    DB.cursor.execute(query_type)
+                    db.cursor.execute(query_type)
 
-                    row_type = DB.cursor.fetchone()
+                    row_type = db.cursor.fetchone()
                     #print('row_type', row_type)
                     parent_event_type = row_type[0]
                 else:
