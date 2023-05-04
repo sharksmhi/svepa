@@ -10,11 +10,11 @@ logging.basicConfig(level=logging.DEBUG)
 DB = svepa.DBCommunication()
 
 # anslut på testserver winserv817
-#DB.DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
+#DB.connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
 # ta bort användare och lösen och lägg i extern fil, json eller yaml
 
 # Anslut på Svea
-DB.DBConnect(dbadress = 'svepadb.svea.slu.se', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'SQL Server')
+DB.connect(dbadress = 'svepadb.svea.slu.se', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'SQL Server')
 
 
 
@@ -109,4 +109,4 @@ else:
 # event_type Event
 # counter 3
 
-DB.DBDisconnect()
+DB.disconnect()

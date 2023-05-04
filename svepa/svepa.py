@@ -4,6 +4,7 @@ import datetime
 import pathlib
 import logging
 import pypyodbc
+import yaml
 try:
     from svepa import exceptions
 except:
@@ -43,17 +44,31 @@ class PlatformMetadataFile(PlatformMetadata):
         """ Sets the file that will be enriched by information from Svepa """
         pass
 
+
 class DBCommunication:
 
-    def __init__(self):
+    def __init__(self,
+                 dbadress=None,
+                 dbname=None,
+                 user=None,
+                 password=None,
+                 driver=None):
+
+        self.dbadress = dbadress,
+        self.dbname = dbname,
+        self.user = user,
+        self.password = password,
+        self.driver = driver
+
         self.cursor = False
         self.cnxn = False
         #logger.debug('DBCom test')
 
-    def DBConnect(self, dbadress = 'pg-shark-int', dbname = 'shark-int', user = 'skint', password = 'Bvcdew21', driver = '{PostgreSQL Unicode(x64)}'):
+    # def connect(self, dbadress = 'pg-shark-int', dbname = 'shark-int', user = 'skint', password = 'Bvcdew21', driver = '{PostgreSQL Unicode(x64)}'):
+    def connect(self):
 
         # connect to svepa on winserv817
-        # DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
+        # connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
 
         if not self.cnxn:
             # TEST
@@ -62,8 +77,8 @@ class DBCommunication:
             # PROD
             #if db == 'prod':
             try:
-                self.cnxn = pypyodbc.connect(DRIVER=driver, server=dbadress,
-                                           database=dbname, uid=user, pwd=password, autocommit=True)
+                self.cnxn = pypyodbc.connect(DRIVER=self.driver, server=self.dbadress,
+                                           database=self.dbname, uid=self.user, pwd=self.password, autocommit=True)
             except:
                 # Different driver
                 # logger.warning('unable to connect, check input information')
@@ -75,13 +90,13 @@ class DBCommunication:
         if not self.cursor:
             self.cursor = self.cnxn.cursor()
             # print('Connected to %s' % dbname)
-            logger.debug('Connected to %s' % dbname)
+            logger.debug('Connected to %s' % self.dbname)
         else:
             # print('Already connected to %s' % dbname)
-            logger.debug('Already connected to %s' % dbname)
+            logger.debug('Already connected to %s' % self.dbname)
         # ===========================================================================
 
-    def DBDisconnect(self):
+    def disconnect(self):
         ''' Closes the connection and cursor'''
 
         # cursor first
@@ -132,7 +147,7 @@ class Svepa:
         #logger.debug('Test')
         pass
 
-    def _event_type_is_running(self, event_type):
+    def event_type_is_running(self, event_type, db):
         """
         Returns True if an event of the given event_type is running (started but not ended) 
         :param event_type: Type of event (CTD, MVP etc...)
@@ -169,26 +184,27 @@ class Svepa:
         # added HasBeenStarted = 1 and just check that StartTime is not null.
 
         # connect
-        DB = DBCommunication()
-        #DB.DBConnect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
-        DB.DBConnect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
-                     driver='SQL Server')
-
-        # ta bort användare och lösen och lägg i extern fil, json eller yaml
-
-        cursor = DB.cursor
+        # DB = DBCommunication()
+        # #DB.connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
+        # DB.connect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
+        #              driver='SQL Server')
+        #
+        # # ta bort användare och lösen och lägg i extern fil, json eller yaml
+        #
+        # cursor = DB.cursor
+        # cursor = db.cursor
         # run query
-        cursor.execute(query)
+        db.cursor.execute(query)
 
         import pprint;
         pp = pprint.PrettyPrinter(indent=4)
-        columns = [column[0] for column in cursor.description]
+        columns = [column[0] for column in db.cursor.description]
         # print('columns:',columns)
         counter = 0
         eventid = []
         eventdate = []
         eventlength = []
-        for row in cursor.fetchall():
+        for row in db.cursor.fetchall():
             counter +=1
             #print(row,type(row),len(row))
             #print(row[0],row[1],row[2])
@@ -198,7 +214,7 @@ class Svepa:
             #pp.pprint(dict(zip(columns, row)))
 
         # disconnect
-        DB.DBDisconnect()
+        DB.disconnect()
 
         if counter == 0:
             return False
@@ -208,20 +224,19 @@ class Svepa:
             logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (len(eventid),event_type))
             return True, eventid, eventdate, eventlength
 
-
-
-
     def get_running_event_types(self):
         """
         Returns all running event types as a list.
         :return: list
         """
 
-
-
         return ['CTD', 'ADCP', 'FERRYBOX']
 
     def get_info_for_running_event_type(self, event_type, db):
+        event_id = self.get_event_id_for_running_event_type(event_type, db)
+        return self.get_info_for_event(event_id)
+
+    def get_event_id_for_running_event_type(self, event_type, db):
         """
         Returns the information of the running event_type, ID, start_time, etc.
         Raise SvepaEventTypeNotRunningError if the event_type is not running.
@@ -233,7 +248,7 @@ class Svepa:
         if event_type is None:
             event_type = "CTD"
 
-        if not self._event_type_is_running(event_type):
+        if not self.event_type_is_running(event_type):
             raise exceptions.SvepaEventTypeNotRunningError(event_type=event_type)
 
         query = """
@@ -254,37 +269,36 @@ class Svepa:
 
         db.cursor.execute(query)
 
-        import pprint;
-        pp = pprint.PrettyPrinter(indent=4)
-        columns = [column[0] for column in db.cursor.description]
+        # import pprint;
+        # pp = pprint.PrettyPrinter(indent=4)
+        # columns = [column[0] for column in db.cursor.description]
         # print('columns:',columns)
-        counter = 0
-        data_dict = {'event_id': [], 'event_date': [], 'event_length': [], 'event_type': [], 'counter': []}
+        # data_dict = {'event_id': [], 'event_date': [], 'event_length': [], 'event_type': [], 'counter': []}
+        data_list = []
         for row in db.cursor.fetchall():
-            counter += 1
+
             #print(row,type(row),len(row))
             #print(row[0],row[1],row[2])
-            data_dict['event_id'].append(row[0])
-            data_dict['event_date'].append(row[1])
-            data_dict['event_length'].append(row[2])
-            data_dict['event_type'].append(row[3])
-            data_dict['counter'].append(row[4])
+            data = dict()
+            data['event_id'] = row[0]
+            data['event_date'] = row[1]
+            data['event_length'] = row[2]
+            data['event_type'] = row[3]
+            data['counter'] = row[4]
+            data_list.append(data)
             #pp.pprint(dict(zip(columns, row)))
 
-
-        if counter == 0:
+        if len(data_list) == 0:
             return False
-        elif counter == 1:
-            return data_dict
+        elif len(data_list) == 1:
+            return data_list[0]
         else:  # several active events...
-            logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (
-            len(data_dict['event_id']), event_type))
-            return data_dict
+            raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
 
         # import uuid
         # return uuid.uuid4()
 
-    def get_info_for_from_event(self, event_ID):
+    def get_info_for_event(self, event_id, db):
         """
         Returns the information of the running event: ID, start_time, etc.
         Raise SvepaEventTypeNotRunningError if the event_type is not running.
@@ -292,11 +306,11 @@ class Svepa:
         :return: dict
         """
 
-        if event_ID is None:
+        if event_id is None:
             raise exceptions.SvepaNoInformationError()
 
-        #if not self._event_type_is_running(event_ID):
-        #    raise exceptions.SvepaEventNotRunningError(event_id=event_ID)
+        #if not self.event_type_is_running(event_id):
+        #    raise exceptions.SvepaEventNotRunningError(event_id=event_id)
 
         # TODO: change select to extract relevant information, probably also remove StopTime filter and instead return
         # TODO: information if event is started/stopped (also affects code after query)
@@ -308,31 +322,22 @@ class Svepa:
                on dbo.Event.OriginTemplateEventID = dbo.TemplateEvent.TemplateEventID
                where 1=1
                and StartTime is not null
-               and EventID = '""" + event_ID + """'
+               and EventID = '""" + event_id + """'
                and StopTime is null
                and HasBeenStarted = 1"""
 
-        # connect
-        DB = DBCommunication()
-        # DB.DBConnect(dbadress='localhost\\SQLEXPRESS', dbname='SVEPA', user='svepareader', password='svepareader',
-        #              driver='ODBC Driver 17 for SQL Server')
-        DB.DBConnect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
-                     driver='SQL Server')
-        # ta bort användare och lösen och lägg i extern fil, json eller yaml
-
-        cursor = DB.cursor
         # run query
-        cursor.execute(query)
+        db.cursor.execute(query)
 
         import pprint;
         pp = pprint.PrettyPrinter(indent=4)
-        columns = [column[0] for column in cursor.description]
+        columns = [column[0] for column in db.cursor.description]
         # print('columns:',columns)
         counter = 0
         eventid = []
         eventdate = []
         eventlength = []
-        for row in cursor.fetchall():
+        for row in db.cursor.fetchall():
             counter += 1
             # print(row,type(row),len(row))
             # print(row[0],row[1],row[2])
@@ -340,9 +345,6 @@ class Svepa:
             eventdate.append(row[1])
             eventlength.append(row[2])
             # pp.pprint(dict(zip(columns, row)))
-
-        # disconnect
-        DB.DBDisconnect()
 
         if counter == 0:
             return False
@@ -392,6 +394,12 @@ class Svepa:
         # run query
         DB.cursor.execute(query)
 
+        result = DB.cursor.fetchall()
+        if not result:
+            raise Exception
+
+
+
         for row in  DB.cursor.fetchall():
             #cursor.close()
             #cursor = DB_connection.cursor
@@ -428,11 +436,26 @@ class Svepa:
 
         #cursor.close()
 
-        if info_level.upper() == 'FULL':
-            return [parent_event_id, parent_event_type, parent_event_start, parent_event_stop, parent_event_counter]
-        else:
-            return [parent_event_id, parent_event_type]
+        # if info_level.upper() == 'FULL':
+        #     return [parent_event_id, parent_event_type, parent_event_start, parent_event_stop, parent_event_counter]
+        # else:
+        #     return [parent_event_id, parent_event_type]
 
+        if info_level.upper() == 'FULL':
+            return dict(
+                event_id=event_id,
+                parent_event_id=parent_event_id,
+                parent_event_type=parent_event_type,
+                parent_event_start=parent_event_start,
+                parent_event_stop=parent_event_stop,
+                parent_event_counter=parent_event_counter
+            )
+        else:
+            return dict(
+                event_id=event_id,
+                parent_event_id=parent_event_id,
+                parent_event_type=parent_event_type
+            )
 
 
     def get_position(self):
@@ -467,6 +490,23 @@ class Svepa:
         """
         # raise SvepaNoInformationError('station')
         return ''
+
+
+def get_current_station_info(path_to_svepa_credentials=None, **cred):
+    svp = Svepa()
+    all_cred = {}
+    if path_to_svepa_credentials:
+        with open(path_to_svepa_credentials) as fid:
+            all_cred = yaml.safe_load(fid)
+    all_cred.update(cred)
+    db = DBCommunication(**all_cred)
+    data = {}
+    event_info = svp.get_info_for_running_event_type('CTD', db=db)
+    trip_info = svp.get_info_for_running_event_type('Trip', db=db)
+    data['event_id'] = event_info['event_id']
+    data['parent_event_id'] = svp.get_parent_event_id(event_info['event_id'], db)
+
+
 
 
 if __name__ == '__main__':
