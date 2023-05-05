@@ -288,7 +288,8 @@ class Svepa:
         elif len(data_list) == 1:
             return data_list[0]['event_id'], data_list[0]['event_template_type']
         else:  # several active events...
-            raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
+            raise exceptions.SeveralSvepaEventsRunningError(event_type=event_type, event_id=[d['event_id'] for d in
+                                                                                            data_list])
 
         # import uuid
         # return uuid.uuid4()
@@ -406,43 +407,32 @@ class Svepa:
 
         result = db.cursor.fetchall()
         if not result:
-            raise Exception
+            raise exceptions.SvepaEventIDnotFoundError(event_id=event_id)
 
+        row = result[0]
 
+        parent_event_id = row[0]
 
-        for row in  db.cursor.fetchall():
-            #cursor.close()
-            #cursor = DB_connection.cursor
-            if row is None:
-                print('row is None')
-                raise exceptions.SvepaNoInformationError()
-            elif not row:
-                print('row is empty')
-                raise exceptions.SvepaNoInformationError()
-            else:
-                #print(row,row[0],type(row[0]))
-                parent_event_id = row[0]
+        if parent_event_id:
+            query_type = """SELECT EventType.Name
+                           FROM EventType 
+                           JOIN dbo.Event
+                           on dbo.EventType.EventTypeID = dbo.Event.EventTypeID 
+                           where 1=1
+                           and EventID = '""" + parent_event_id + """'
+                           """
 
-                if parent_event_id:
-                    query_type = """SELECT EventType.Name
-                                   FROM EventType 
-                                   JOIN dbo.Event
-                                   on dbo.EventType.EventTypeID = dbo.Event.EventTypeID 
-                                   where 1=1
-                                   and EventID = '""" + parent_event_id + """'
-                                   """
+            db.cursor.execute(query_type)
 
-                    db.cursor.execute(query_type)
+            row_type = db.cursor.fetchone()
+            #print('row_type', row_type)
+            parent_event_type = row_type[0]
+        else:
+            parent_event_type = None
 
-                    row_type = db.cursor.fetchone()
-                    #print('row_type', row_type)
-                    parent_event_type = row_type[0]
-                else:
-                    parent_event_type = None
-
-                parent_event_start = row[2]
-                parent_event_stop = row[3]
-                parent_event_counter = row[4]
+        parent_event_start = row[2]
+        parent_event_stop = row[3]
+        parent_event_counter = row[4]
 
         #cursor.close()
 
@@ -513,10 +503,15 @@ def get_current_station_info(path_to_svepa_credentials=None, **cred):
     data = {}
     event_info = svp.get_info_for_running_event_type('CTD', db=db)
     trip_info = svp.get_info_for_running_event_type('Trip', db=db)
+
     data['event_id'] = event_info['event_id']
+    data['lat'] = event_info['latitude']
+    data['lon'] = event_info['longitude']
+    data['serno'] = event_info['counter']
+
     data['parent_event_id'] = svp.get_parent_event_id(event_info['event_id'], db)
-
-
+    data['cruise'] = trip_info['counter']
+    return data
 
 
 if __name__ == '__main__':

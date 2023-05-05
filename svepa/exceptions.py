@@ -26,9 +26,17 @@ class SvepaEventNotRunningError(SvepaException):
 
 
 class SeveralSvepaEventsRunningError(SvepaException):
+    def __init__(self, message='', event_type='', event_ids=[]):
+        self.event_id = event_id
+        self.event_type = event_type
+        super().__init__(message=message, title=f'Several event_ids are running for event type {event_type}:'
+                                                f' {len(event_ids)}')
+
+
+class SvepaEventIDnotFoundError(SvepaException):
     def __init__(self, message='', event_id=[]):
         self.event_id = event_id
-        super().__init__(message=message, title=f'Event not running: {len(event_id)}')
+        super().__init__(message=message, title=f'Event id not found: {len(event_id)}')
 
 
 class SvepaNoInformationError(SvepaException):
