@@ -5,6 +5,7 @@ import pathlib
 import logging
 import pypyodbc
 import yaml
+import numpy as np
 try:
     from svepa import exceptions
 except:
@@ -347,8 +348,8 @@ class Svepa:
             data['event_start_time'] = row[1]
             data['event_stop_time'] = row[2]
             data['event_length_minutes'] = row[3]
-            data['longitude'] = row[4]
-            data['latitude'] = row[5]
+            data['longitude'] = ('%02i' % float(row[4])) + ('%05.2f' % ((float(row[4])-(np.floor(float(row[4]))))*60))
+            data['latitude'] = ('%02i' % float(row[5])) + ('%05.2f' % ((float(row[5])-(np.floor(float(row[5]))))*60))
             data['event_type'] = row[6]
             data['event_template_type'] = row[7]
             data['counter'] = row[8]
