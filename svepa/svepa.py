@@ -177,24 +177,6 @@ class Svepa:
             and StopTime is null
             and HasBeenStarted = 1"""
 
-
-        # if query returns nothing (null)? then return false else return True.
-        # maybe number of answers and check StartTime?
-        # check
-
-        # added HasBeenStarted = 1 and just check that StartTime is not null.
-
-        # connect
-        # DB = DBCommunication()
-        # #DB.connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
-        # DB.connect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
-        #              driver='SQL Server')
-        #
-        # # ta bort användare och lösen och lägg i extern fil, json eller yaml
-        #
-        # cursor = DB.cursor
-        # cursor = db.cursor
-        # run query
         db.cursor.execute(query)
 
         import pprint;
@@ -207,15 +189,9 @@ class Svepa:
         eventlength = []
         for row in db.cursor.fetchall():
             counter +=1
-            #print(row,type(row),len(row))
-            #print(row[0],row[1],row[2])
             eventid.append(row[0])
             eventdate.append(row[1])
             eventlength.append(row[2])
-            #pp.pprint(dict(zip(columns, row)))
-
-        # disconnect
-        DB.disconnect()
 
         if counter == 0:
             return False
@@ -235,7 +211,7 @@ class Svepa:
 
     def get_info_for_running_event_type(self, event_type, db):
         event_id = self.get_event_id_for_running_event_type(event_type, db)
-        return self.get_info_for_event(event_id)
+        return self.get_info_for_event(event_id, db)
 
     def get_event_id_for_running_event_type(self, event_type, db):
         """
@@ -249,7 +225,7 @@ class Svepa:
         if event_type is None:
             event_type = "CTD"
 
-        if not self.event_type_is_running(event_type):
+        if not self.event_type_is_running(event_type, db):
             raise exceptions.SvepaEventTypeNotRunningError(event_type=event_type)
 
         query = """
@@ -268,21 +244,12 @@ class Svepa:
 
         db.cursor.execute(query)
 
-        # import pprint;
-        # pp = pprint.PrettyPrinter(indent=4)
-        # columns = [column[0] for column in db.cursor.description]
-        # print('columns:',columns)
-        # data_dict = {'event_id': [], 'event_date': [], 'event_length': [], 'event_type': [], 'counter': []}
         data_list = []
         for row in db.cursor.fetchall():
-
-            #print(row,type(row),len(row))
-            #print(row[0],row[1],row[2])
             data = dict()
             data['event_id'] = row[0]
             data['event_template_type'] = row[1]
             data_list.append(data)
-            #pp.pprint(dict(zip(columns, row)))
 
         if len(data_list) == 0:
             return False
@@ -291,9 +258,6 @@ class Svepa:
         else:  # several active events...
             raise exceptions.SeveralSvepaEventsRunningError(event_type=event_type, event_id=[d['event_id'] for d in
                                                                                             data_list])
-
-        # import uuid
-        # return uuid.uuid4()
 
     def get_info_for_event(self, event_id, db):
         """
@@ -333,16 +297,8 @@ class Svepa:
         # run query
         db.cursor.execute(query)
 
-        # import pprint;
-        # pp = pprint.PrettyPrinter(indent=4)
-        # columns = [column[0] for column in db.cursor.description]
-
-        # print('columns:',columns)
-
         data_list = []
         for row in db.cursor.fetchall():
-            # print(row,type(row),len(row))
-            # print(row[0],row[1],row[2])
             data = dict()
             data['event_id'] = row[0]
             data['event_start_time'] = row[1]
@@ -364,7 +320,7 @@ class Svepa:
             raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
 
 
-    def get_parent_event_id_for_running_event_type(self, event_type):
+    def test_get_parent_event_id_for_running_event_type(self, event_type):
         # TODO: get parent for running event type is probably ok, but also write a function to get get parent event_id for any event_id
         """
         Returns the EventID of the parent to the running event_type.
@@ -426,7 +382,6 @@ class Svepa:
             db.cursor.execute(query_type)
 
             row_type = db.cursor.fetchone()
-            #print('row_type', row_type)
             parent_event_type = row_type[0]
         else:
             parent_event_type = None
@@ -434,13 +389,6 @@ class Svepa:
         parent_event_start = row[2]
         parent_event_stop = row[3]
         parent_event_counter = row[4]
-
-        #cursor.close()
-
-        # if info_level.upper() == 'FULL':
-        #     return [parent_event_id, parent_event_type, parent_event_start, parent_event_stop, parent_event_counter]
-        # else:
-        #     return [parent_event_id, parent_event_type]
 
         if info_level.upper() == 'FULL':
             return dict(
@@ -501,9 +449,12 @@ def get_current_station_info(path_to_svepa_credentials=None, **cred):
             all_cred = yaml.safe_load(fid)
     all_cred.update(cred)
     db = DBCommunication(**all_cred)
+    db.connect()
     data = {}
     event_info = svp.get_info_for_running_event_type('CTD', db=db)
     trip_info = svp.get_info_for_running_event_type('Trip', db=db)
+
+    db.disconnect()
 
     data['event_id'] = event_info['event_id']
     data['lat'] = event_info['latitude']
