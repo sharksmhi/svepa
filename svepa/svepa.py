@@ -425,25 +425,33 @@ class Svepa:
                 parent_event_id = row[0]
 
                 if parent_event_id:
-                    query_type = """SELECT EventType.Name
-                                   FROM EventType 
-                                   JOIN dbo.Event
-                                   on dbo.EventType.EventTypeID = dbo.Event.EventTypeID 
-                                   where 1=1
-                                   and EventID = '""" + parent_event_id + """'
-                                   """
+                    query_type = """SELECT EventType.Name,
+                                    cast(StartTime as datetime), 
+                                    cast(StopTime as datetime), 
+                                    Counter.Value
+                                    FROM dbo.Event
+                                    left outer JOIN dbo.EventType
+                                    on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
+                                    Join dbo.Counter
+                                    on dbo.Event.EventID = dbo.Counter.Owner
+                                    where 1=1
+                                    and EventID = '""" + parent_event_id + """'
+                                    """
 
                     db.cursor.execute(query_type)
 
-                    row_type = db.cursor.fetchone()
-                    #print('row_type', row_type)
-                    parent_event_type = row_type[0]
+                    result = db.cursor.fetchall()
+                    if not result:
+                        raise Exception
+
+                    for row_parent in db.cursor.fetchall():
+                        parent_event_type = row_parent[0]
                 else:
                     parent_event_type = None
 
-                parent_event_start = row[2]
-                parent_event_stop = row[3]
-                parent_event_counter = row[4]
+                parent_event_start = row[1]
+                parent_event_stop = row[2]
+                parent_event_counter = row[3]
 
         #cursor.close()
 
