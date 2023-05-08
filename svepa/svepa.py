@@ -249,7 +249,7 @@ class Svepa:
         if event_type is None:
             event_type = "CTD"
 
-        if not self.event_type_is_running(event_type):
+        if not self.event_type_is_running(event_type, db):
             raise exceptions.SvepaEventTypeNotRunningError(event_type=event_type)
 
         query = """
@@ -519,11 +519,16 @@ def get_current_station_info(path_to_svepa_credentials=None, **cred):
             all_cred = yaml.safe_load(fid)
     all_cred.update(cred)
     db = DBCommunication(**all_cred)
+    db.connect()
     data = {}
     event_info = svp.get_info_for_running_event_type('CTD', db=db)
     trip_info = svp.get_info_for_running_event_type('Trip', db=db)
     data['event_id'] = event_info['event_id']
-    data['parent_event_id'] = svp.get_parent_event_id(event_info['event_id'], db)
+    data['lat'] = event_info['latitude']
+    data['lon'] = event_info['longitude']
+    data['parent_event_id'] = svp.get_parent_event_id(event_info['parent_event_id'], db)
+    db.disconnect()
+    return data
 
 
 
