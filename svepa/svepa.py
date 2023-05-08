@@ -449,9 +449,9 @@ class Svepa:
                 else:
                     parent_event_type = None
 
-                parent_event_start = row[1]
-                parent_event_stop = row[2]
-                parent_event_counter = row[3]
+                parent_event_start = row_parent[1]
+                parent_event_stop = row_parent[2]
+                parent_event_counter = row_parent[3]
 
         #cursor.close()
 
