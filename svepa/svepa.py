@@ -63,30 +63,15 @@ class DBCommunication:
 
         self.cursor = False
         self.cnxn = False
-        #logger.debug('DBCom test')
 
-    # def connect(self, dbadress = 'pg-shark-int', dbname = 'shark-int', user = 'skint', password = 'Bvcdew21', driver = '{PostgreSQL Unicode(x64)}'):
     def connect(self):
 
-        # connect to svepa on winserv817
-        # connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
-
         if not self.cnxn:
-            # TEST
-            # cnxn = pyodbc.connect(DRIVER = '{PostgreSQL Unicode}', server = 'postgresiov01',sharktoolbox_database = 'shark-int', uid = 'skint.t', pwd = 'Aesrdt65',  autocommit=True)
-
-            # PROD
-            #if db == 'prod':
             try:
                 self.cnxn = pypyodbc.connect(DRIVER=self.driver, server=self.dbadress,
                                            database=self.dbname, uid=self.user, pwd=self.password, autocommit=True)
             except:
-                # Different driver
-                # logger.warning('unable to connect, check input information')
                 raise exceptions.SvepaConnectionError(message='unable to connect, check input information')
-                #print('unable to connect, check input information')
-                #self.cnxn = pypyodbc.connect(DRIVER='{PostgreSQL Unicode(x64)}', server='pg-shark-int',
-                #                           database='shark-int', uid='skint', pwd='Bvcdew21', autocommit=True)
 
         if not self.cursor:
             self.cursor = self.cnxn.cursor()
@@ -177,30 +162,8 @@ class Svepa:
             and StopTime is null
             and HasBeenStarted = 1"""
 
-
-        # if query returns nothing (null)? then return false else return True.
-        # maybe number of answers and check StartTime?
-        # check
-
-        # added HasBeenStarted = 1 and just check that StartTime is not null.
-
-        # connect
-        # DB = DBCommunication()
-        # #DB.connect(dbadress = 'localhost\\SQLEXPRESS', dbname = 'SVEPA', user = 'svepareader', password = 'svepareader', driver = 'ODBC Driver 17 for SQL Server')
-        # DB.connect(dbadress='svepadb.svea.slu.se', dbname='SVEPA', user='svepareader', password='svepareader',
-        #              driver='SQL Server')
-        #
-        # # ta bort användare och lösen och lägg i extern fil, json eller yaml
-        #
-        # cursor = DB.cursor
-        # cursor = db.cursor
-        # run query
         db.cursor.execute(query)
 
-        import pprint;
-        pp = pprint.PrettyPrinter(indent=4)
-        columns = [column[0] for column in db.cursor.description]
-        # print('columns:',columns)
         counter = 0
         eventid = []
         eventdate = []
@@ -213,9 +176,6 @@ class Svepa:
             eventdate.append(row[1])
             eventlength.append(row[2])
             #pp.pprint(dict(zip(columns, row)))
-
-        # disconnect
-        DB.disconnect()
 
         if counter == 0:
             return False
@@ -267,12 +227,6 @@ class Svepa:
             and HasBeenStarted = 1"""
 
         db.cursor.execute(query)
-
-        # import pprint;
-        # pp = pprint.PrettyPrinter(indent=4)
-        # columns = [column[0] for column in db.cursor.description]
-        # print('columns:',columns)
-        # data_dict = {'event_id': [], 'event_date': [], 'event_length': [], 'event_type': [], 'counter': []}
         data_list = []
         for row in db.cursor.fetchall():
 
@@ -289,10 +243,7 @@ class Svepa:
         elif len(data_list) == 1:
             return data_list[0]['event_id'], data_list[0]['event_template_type']
         else:  # several active events...
-            raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
-
-        # import uuid
-        # return uuid.uuid4()
+            raise exceptions.SeveralSvepaEventsRunningError(event_ids=[d['event_id'] for d in data_list])
 
     def get_info_for_event(self, event_id, db):
         """
@@ -303,9 +254,6 @@ class Svepa:
 
         if event_id is None:
             raise exceptions.SvepaNoInformationError()
-
-        #if not self.event_type_is_running(event_id):
-        #    raise exceptions.SvepaEventNotRunningError(event_id=event_id)
 
         query = """SELECT cast(EventID as varchar(36)) "eventid", 
                 cast(StartTime as datetime) as "starttime", 
@@ -332,16 +280,8 @@ class Svepa:
         # run query
         db.cursor.execute(query)
 
-        # import pprint;
-        # pp = pprint.PrettyPrinter(indent=4)
-        # columns = [column[0] for column in db.cursor.description]
-
-        # print('columns:',columns)
-
         data_list = []
         for row in db.cursor.fetchall():
-            # print(row,type(row),len(row))
-            # print(row[0],row[1],row[2])
             data = dict()
             data['event_id'] = row[0]
             data['event_start_time'] = row[1]
@@ -360,8 +300,7 @@ class Svepa:
         elif len(data_list) == 1:
             return data_list[0]
         else:  # several active events...
-            raise exceptions.SeveralSvepaEventsRunningError(event_id=[d['event_id'] for d in data_list])
-
+            raise exceptions.SeveralSvepaEventsRunningError(event_ids=[d['event_id'] for d in data_list])
 
     def get_parent_event_id_for_running_event_type(self, event_type):
         # TODO: get parent for running event type is probably ok, but also write a function to get get parent event_id for any event_id
@@ -409,11 +348,13 @@ class Svepa:
         if not result:
             raise Exception
 
-
+        parent_event_id = None
+        parent_event_type = None
+        parent_event_start = None
+        parent_event_stop = None
+        parent_event_counter = None
 
         for row in  db.cursor.fetchall():
-            #cursor.close()
-            #cursor = DB_connection.cursor
             if row is None:
                 print('row is None')
                 raise exceptions.SvepaNoInformationError()
@@ -421,7 +362,6 @@ class Svepa:
                 print('row is empty')
                 raise exceptions.SvepaNoInformationError()
             else:
-                #print(row,row[0],type(row[0]))
                 parent_event_id = row[0]
 
                 if parent_event_id:
@@ -450,22 +390,6 @@ class Svepa:
                         parent_event_start = row_parent[1]
                         parent_event_stop = row_parent[2]
                         parent_event_counter = row_parent[3]
-
-                else:
-
-                    parent_event_type = None
-                    parent_event_start = None
-                    parent_event_stop = None
-                    parent_event_counter = None
-
-
-
-        #cursor.close()
-
-        # if info_level.upper() == 'FULL':
-        #     return [parent_event_id, parent_event_type, parent_event_start, parent_event_stop, parent_event_counter]
-        # else:
-        #     return [parent_event_id, parent_event_type]
 
         if info_level.upper() == 'FULL':
             return dict(
