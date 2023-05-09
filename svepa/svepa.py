@@ -460,10 +460,3 @@ def get_current_station_info(path_to_svepa_credentials=None, **cred):
     data['parent_event_id'] = svp.get_parent_event_id(event_info['parent_event_id'], db)
     db.disconnect()
     return data
-
-
-
-
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
-    s = Svepa()
