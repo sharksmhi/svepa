@@ -55,10 +55,16 @@ class DBCommunication:
                  password=None,
                  driver=None):
 
-        self.dbadress = dbadress,
-        self.dbname = dbname,
-        self.user = user,
-        self.password = password,
+        # self.dbadress = dbadress,
+        # self.dbname = dbname,
+        # self.user = user,
+        # self.password = password,
+        # self.driver = driver
+
+        self.dbadress = dbadress
+        self.dbname = dbname
+        self.user = user
+        self.password = password
         self.driver = driver
 
         self.cursor = False
@@ -68,6 +74,11 @@ class DBCommunication:
 
         if not self.cnxn:
             try:
+                # print(f'{self.driver=}')
+                # print(f'{self.dbadress=}')
+                # print(f'{self.dbname=}')
+                # print(f'{self.user=}')
+                # print(f'{self.password=}')
                 self.cnxn = pypyodbc.connect(DRIVER=self.driver, server=self.dbadress,
                                            database=self.dbname, uid=self.user, pwd=self.password, autocommit=True)
             except:
@@ -194,8 +205,8 @@ class Svepa:
         return ['CTD', 'ADCP', 'FERRYBOX']
 
     def get_info_for_running_event_type(self, event_type, db):
-        event_id = self.get_event_id_for_running_event_type(event_type, db)
-        return self.get_info_for_event(event_id)
+        event_id, _ = self.get_event_id_for_running_event_type(event_type, db) # Returns a tuple...
+        return self.get_info_for_event(event_id, db)
 
     def get_event_id_for_running_event_type(self, event_type, db):
         """
@@ -251,6 +262,7 @@ class Svepa:
         :param event_type:
         :return: dict
         """
+        print(f'{event_id=}')
 
         if event_id is None:
             raise exceptions.SvepaNoInformationError()
@@ -263,7 +275,9 @@ class Svepa:
                 StartLatitude as "lat",
                 EventType.Name as "eventtype", 
                 TemplateEvent.Name "templatename",
-                Counter.value as "counter"
+                Counter.value as "counter", 
+                cast(parentEventID as varchar(36)) as "parent_eventid"
+                
                 FROM dbo.Event
                 INNER JOIN dbo.EventType
                 on dbo.Event.EventTypeID = dbo.EventType.EventTypeID
@@ -283,15 +297,25 @@ class Svepa:
         data_list = []
         for row in db.cursor.fetchall():
             data = dict()
+            data['longitude'] = ''
+            data['latitude'] = ''
+
             data['event_id'] = row[0]
             data['event_start_time'] = row[1]
             data['event_stop_time'] = row[2]
             data['event_length_minutes'] = row[3]
-            data['longitude'] = ('%02i' % float(row[4])) + ('%05.2f' % ((float(row[4])-(np.floor(float(row[4]))))*60))
-            data['latitude'] = ('%02i' % float(row[5])) + ('%05.2f' % ((float(row[5])-(np.floor(float(row[5]))))*60))
+            if row[4] is not None:
+                data['longitude'] = ('%02i' % float(row[4])) + ('%05.2f' % ((float(row[4])-(np.floor(float(row[4]))))*60))
+            else:
+                logger.warning('No longitude given from Svepa')
+            if row[5] is not None:
+                data['latitude'] = ('%02i' % float(row[5])) + ('%05.2f' % ((float(row[5])-(np.floor(float(row[5]))))*60))
+            else:
+                logger.warning('No latitude given from Svepa')
             data['event_type'] = row[6]
             data['event_template_type'] = row[7]
             data['counter'] = row[8]
+            data['parent_event_id'] = row[9]  # Added 2023-09-14  //MagW
             data_list.append(data)
             # pp.pprint(dict(zip(columns, row)))
 
@@ -344,9 +368,11 @@ class Svepa:
         # run query
         db.cursor.execute(query)
 
-        result = db.cursor.fetchall()
-        if not result:
-            raise Exception
+        # result = db.cursor.fetchall()
+        # print(f'get_parent_event_id: {event_id=}')
+        # print(f'get_parent_event_id: {result=}')
+        # if not result:
+        #     raise Exception
 
         parent_event_id = None
         parent_event_type = None
@@ -390,6 +416,15 @@ class Svepa:
                         parent_event_start = row_parent[1]
                         parent_event_stop = row_parent[2]
                         parent_event_counter = row_parent[3]
+
+                return dict(
+                    child_event_id=event_id,
+                    event_id=parent_event_id,
+                    event_type=parent_event_type,
+                    event_start=parent_event_start,
+                    event_stop=parent_event_stop,
+                    event_counter=parent_event_counter 
+                )
 
         if info_level.upper() == 'FULL':
             return dict(
@@ -453,10 +488,14 @@ def get_current_station_info(path_to_svepa_credentials=None, **cred):
     db.connect()
     data = {}
     event_info = svp.get_info_for_running_event_type('CTD', db=db)
-    trip_info = svp.get_info_for_running_event_type('Trip', db=db)
-    data['event_id'] = event_info['event_id']
+    # trip_info = svp.get_info_for_running_event_type('Trip', db=db)
+    trip_info = svp.get_info_for_running_event_type('SVEA', db=db)  # Added 2023-09-14  //MagW
+    data.update(event_info)
+    # data['event_id'] = event_info['event_id']
     data['lat'] = event_info['latitude']
     data['lon'] = event_info['longitude']
-    data['parent_event_id'] = svp.get_parent_event_id(event_info['parent_event_id'], db)
+    # data['parent_event_id'] = svp.get_parent_event_id(event_info['parent_event_id'], db)
+    data['parent_event_info'] = svp.get_info_for_event(event_info['parent_event_id'], db)  # // MagW
+    data['trip_info'] = trip_info  # // MagW
     db.disconnect()
     return data
