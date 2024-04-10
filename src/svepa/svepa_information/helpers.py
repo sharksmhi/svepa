@@ -1,7 +1,7 @@
 import datetime
 import logging
 import pickle
-from pathlib import Path
+import pathlib
 from functools import lru_cache
 
 import yaml
@@ -9,18 +9,33 @@ import yaml
 
 logger = logging.getLogger(__file__)
 
-INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.yaml')
-PICKLE_INFO_FILE_PATH = Path(Path(__file__).parent, 'svepa_info.pickle')
+THIS_DIR = pathlib.Path(__file__).parent
+DATA_DIR = THIS_DIR / "DATA_FILES"
+
+# SVEPA_INFO_URL = r'https://raw.githubusercontent.com/sharksmhi/svepa/main/src/svepa/DATA_FILES/svepa_info.yaml'
+SVEPA_INFO_URL = r'https://raw.githubusercontent.com/sharksmhi/svepa/main/svepa/svepa_information/svepa_info.yaml'
 
 
-@lru_cache
+INFO_FILE_PATH = DATA_DIR / 'svepa_info.yaml'
+PICKLE_INFO_FILE_PATH = DATA_DIR / 'svepa_info.pickle'
+
+
+TIME_FORMATS = [
+    '%Y%m%d%H%M',
+    '%Y%m%d%H%M%S',
+    '%Y-%m-%d %H:%M',
+    '%Y-%m-%d %H:%M:%S',
+]
+
+
+# @lru_cache
 def load_stored_svepa_info():
-    return load()
+    return load() or {}
 
 
 def _load_pickle():
     if not PICKLE_INFO_FILE_PATH.exists():
-        return
+        return {}
     with open(PICKLE_INFO_FILE_PATH, 'rb') as fid:
         return pickle.load(fid)
 
@@ -32,18 +47,23 @@ def _load_yaml():
         return yaml.safe_load(fid)
 
 
-def _save_pickle(all_info):
+def save_pickle_from_yaml():
+    all_info = _load_yaml()
+    _save_pickle(all_info)
+
+
+def _save_pickle(all_info: dict):
     with open(PICKLE_INFO_FILE_PATH, 'wb') as fid:
         pickle.dump(all_info, fid)
 
 
-def _save_yaml(all_info):
+def _save_yaml(all_info: dict):
     with open(INFO_FILE_PATH, 'w') as fid:
         yaml.safe_dump(all_info, fid)
 
 
 def load():
-    all_info = None
+    all_info = {}
     try:
         all_info = _load_pickle()
         logger.info('Pickle file loaded')
@@ -85,4 +105,12 @@ def _convert_to_datetime(info):
                 continue
             info[key] = datetime.datetime.strptime(value, '%Y%m%d%H%M%S')
         _convert_to_datetime(info[key])
+
+
+def get_datetime_object(time_str: str) -> datetime.datetime:
+    for fmt in TIME_FORMATS:
+        try:
+            return datetime.datetime.strptime(time_str, fmt)
+        except ValueError:
+            pass
 
