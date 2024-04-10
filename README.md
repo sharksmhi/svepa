@@ -3,7 +3,7 @@
 ## Installera: 
 - Senaste version från från github: 
 ```cmd 
-pip install git+git+https://github.com/sharksmhi/svepa.git@v1.0.0
+pip install git+https://github.com/sharksmhi/svepa.git@v1.0.0
 ```
 - Lokalt wheel: 
 ```cmd 
