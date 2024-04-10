@@ -65,11 +65,7 @@ class StoredSvepaInfo:
             if platform and key.upper() != platform.upper():
                 continue
             for _id, _info in self._info[key].items():
-                if year and not (_info['start_time'].year == year or _info['stop_time'].year == year):
-                    continue
-                if month and not (_info['start_time'].month == month or _info['stop_time'].month == month):
-                    continue
-                if dtime:
+                if any([year, month, dtime]):
                     if not _info['start_time']:
                         msg = f'Misssing start time for event: {_info["event_id"]}'
                         logger.warning(msg)
@@ -80,8 +76,12 @@ class StoredSvepaInfo:
                         logger.warning(msg)
                         print(msg)
                         continue
-                    if not (_info['start_time'] <= dtime <= _info['stop_time']):
-                        continue
+                if year and not (_info['start_time'].year == year or _info['stop_time'].year == year):
+                    continue
+                if month and not (_info['start_time'].month == month or _info['stop_time'].month == month):
+                    continue
+                if dtime and not (_info['start_time'] <= dtime <= _info['stop_time']):
+                    continue
                 if lat:
                     if not (_info['start_lat'] and _info['stop_lat']):
                         continue
