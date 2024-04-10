@@ -3,21 +3,31 @@ from svepa.svepa_information import helpers
 from svepa.svepa_information.svepa_event import SvepaEvent
 from functools import lru_cache
 from typing import List
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class StoredSvepaInfo:
     def __init__(self):
+        self._info = dict()
         self._load_info()
 
     def _load_info(self):
         self._info = helpers.load_stored_svepa_info()
 
-    def import_file(self, path):
-        self._load_info()
+    def reload_data(self):
+        self._info = helpers.load()
 
-    def get_info(self, platform: str = None, time: datetime.datetime = None, event_id: str = None):
+    def get_info(self, platform: str = None, time: datetime.datetime | str = None, event_id: str = None) -> dict:
         if not event_id and not (platform and time):
             raise Exception('Missing platform and time or event_id when trying to get svepa information')
+        dtime = time
+        if time and type(time) == str:
+            dtime = helpers.get_datetime_object(time)
+            if not dtime:
+                time_fmts = ', '.join(helpers.TIME_FORMATS)
+                raise f'Invalid time format "{time}". Must be datetime object or have one of these formats: {time_fmts}'
         info = {}
         found = False
         if event_id:
@@ -26,17 +36,15 @@ class StoredSvepaInfo:
                     break
                 for _id, _info in self._info[key].items():
                     if _id == event_id:
-                        info = _info
-                        found = True
-                        break
-        else:
+                        return _info
+
+        elif platform and dtime:
             plat = platform.upper()
             if plat not in self._info:
                 return {}
             for _id, _info in self._info[plat].items():
-                if _info['start_time'] <= time <= _info['stop_time']:
-                    info = _info
-                    break
+                if _info['start_time'] <= dtime <= _info['stop_time']:
+                    return _info
         return info
 
     def get_event(self, platform: str = None, time: datetime.datetime = None, event_id: str = None):
@@ -44,8 +52,14 @@ class StoredSvepaInfo:
         return SvepaEvent(stored_svepa_info=self, info=info)
 
     @lru_cache
-    def get_infos(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
+    def get_infos(self, platform: str = None, time: datetime.datetime | str = None, lat: float = None, lon: float = None,
                   year: int = None, month: int = None):
+        dtime = time
+        if time and type(time) == str:
+            dtime = helpers.get_datetime_object(time)
+            if not dtime:
+                time_fmts = ', '.join(helpers.TIME_FORMATS)
+                raise f'Invalid time format "{time}". Must be datetime object or have one of these formats: {time_fmts}'
         lst = []
         for key in self._info:
             if platform and key.upper() != platform.upper():
@@ -55,8 +69,19 @@ class StoredSvepaInfo:
                     continue
                 if month and not (_info['start_time'].month == month or _info['stop_time'].month == month):
                     continue
-                if time and not (_info['start_time'] <= time <= _info['stop_time']):
-                    continue
+                if dtime:
+                    if not _info['start_time']:
+                        msg = f'Misssing start time for event: {_info["event_id"]}'
+                        logger.warning(msg)
+                        print(msg)
+                        continue
+                    if not _info['stop_time']:
+                        msg = f'Misssing stop time for event: {_info["event_id"]}'
+                        logger.warning(msg)
+                        print(msg)
+                        continue
+                    if not (_info['start_time'] <= dtime <= _info['stop_time']):
+                        continue
                 if lat:
                     if not (_info['start_lat'] and _info['stop_lat']):
                         continue

@@ -32,13 +32,17 @@ class SvepaEvent:
         return self._info.get(item)
 
     @property
+    def attributes(self) -> list[str]:
+        return sorted(self._info)
+
+    @property
     def parent(self):
         if not self.parent_event_id:
             return
         return self._stored_svepa_info.get_event(event_id=self.parent_event_id)
 
     @property
-    def station_event(self):
+    def station_event(self) -> SvepaEvent:
         event = self
         while True:
             event = event.parent
@@ -48,7 +52,7 @@ class SvepaEvent:
                 return
 
     @property
-    def cruise_event(self):
+    def cruise_event(self) -> SvepaEvent | None:
         event = self
         while True:
             event = event.parent
@@ -58,9 +62,22 @@ class SvepaEvent:
                 return
 
     @property
-    def children(self):
+    def children(self) -> list[SvepaEvent]:
         return self._stored_svepa_info.get_children_events(self.event_id)
 
     @property
-    def ongoing_events(self):
+    def ongoing_events(self) -> [SvepaEvent]:
         return self._stored_svepa_info.get_ongoing_events(self)
+
+    def get_ongoing_event(self, event_name: str, first: bool = True) -> SvepaEvent | list[SvepaEvent] | None:
+        ongoing_events = []
+        en = event_name.upper()
+        for event in self.ongoing_events:
+            if en in event.name.upper():
+                if first:
+                    return event
+                ongoing_events.append(event)
+        if first:
+            return None
+        return ongoing_events
+

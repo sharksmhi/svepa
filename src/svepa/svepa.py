@@ -1,11 +1,12 @@
 
-from abc import ABC, abstractmethod
 import datetime
-import pathlib
 import logging
+from abc import ABC, abstractmethod
+
+import numpy as np
 import pypyodbc
 import yaml
-import numpy as np
+
 try:
     from svepa import exceptions
 except:
@@ -55,12 +56,6 @@ class DBCommunication:
                  password=None,
                  driver=None):
 
-        # self.dbadress = dbadress,
-        # self.dbname = dbname,
-        # self.user = user,
-        # self.password = password,
-        # self.driver = driver
-
         self.dbadress = dbadress
         self.dbname = dbname
         self.user = user
@@ -74,11 +69,6 @@ class DBCommunication:
 
         if not self.cnxn:
             try:
-                # print(f'{self.driver=}')
-                # print(f'{self.dbadress=}')
-                # print(f'{self.dbname=}')
-                # print(f'{self.user=}')
-                # print(f'{self.password=}')
                 self.cnxn = pypyodbc.connect(DRIVER=self.driver, server=self.dbadress,
                                            database=self.dbname, uid=self.user, pwd=self.password, autocommit=True)
             except:
@@ -86,10 +76,10 @@ class DBCommunication:
 
         if not self.cursor:
             self.cursor = self.cnxn.cursor()
-            # print('Connected to %s' % dbname)
+            # logger.debug('Connected to %s' % dbname)
             logger.debug('Connected to %s' % self.dbname)
         else:
-            # print('Already connected to %s' % dbname)
+            # logger.debug('Already connected to %s' % dbname)
             logger.debug('Already connected to %s' % self.dbname)
         # ===========================================================================
 
@@ -105,7 +95,6 @@ class DBCommunication:
         else:
             #print('No cursor to close.. ')
             logger.debug('No cursor to close.. ')
-        import pypyodbc
 
         if self.cnxn:
             self.cnxn.close()
@@ -195,14 +184,6 @@ class Svepa:
         else: # several active events...
             logger.warning('!!! %i active events of type %s !!! -- It is highly advised to stop the older events!' % (len(eventid),event_type))
             return True, eventid, eventdate, eventlength
-
-    def get_running_event_types(self):
-        """
-        Returns all running event types as a list.
-        :return: list
-        """
-
-        return ['CTD', 'ADCP', 'FERRYBOX']
 
     def get_info_for_running_event_type(self, event_type, db):
         event_id, _ = self.get_event_id_for_running_event_type(event_type, db) # Returns a tuple...
@@ -369,8 +350,8 @@ class Svepa:
         db.cursor.execute(query)
 
         # result = db.cursor.fetchall()
-        # print(f'get_parent_event_id: {event_id=}')
-        # print(f'get_parent_event_id: {result=}')
+        # logger.debug(f'get_parent_event_id: {event_id=}')
+        # logger.debug(f'get_parent_event_id: {result=}')
         # if not result:
         #     raise Exception
 
@@ -441,40 +422,6 @@ class Svepa:
                 parent_event_id=parent_event_id,
                 parent_event_type=parent_event_type
             )
-
-
-    def get_position(self):
-        """
-        Returns the current position.
-        :return: lat, lon
-        """
-        # raise SvepaNoInformationError('position')
-        return 5432.23, 1112.44
-
-    def get_cruise(self):
-        """
-        Returns the current cruise number. Format???
-        :return: str
-        """
-        # raise SvepaNoInformationError('cruise')
-        return '02'
-
-    def get_serno(self):
-        """
-        Any input parameters???
-        Returns the active serno
-        :return:
-        """
-        # raise SvepaNoInformationError('series')
-        return '0099'
-
-    def get_station(self):
-        """
-        Returns the current station name.
-        :return:
-        """
-        # raise SvepaNoInformationError('station')
-        return ''
 
 
 def get_current_station_info(path_to_svepa_credentials=None, **cred):
