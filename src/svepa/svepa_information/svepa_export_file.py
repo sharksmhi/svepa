@@ -176,7 +176,7 @@ class Event:
             start_lon=self.start_lon,
             stop_lat=self.stop_lat,
             stop_lon=self.stop_lon,
-            ongoning_event_names=self.get_ongoing_event_names(filter=True)
+            ongoing_event_names=self.get_ongoing_event_names(filter=True)
         )
         return info
 
