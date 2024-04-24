@@ -7,6 +7,13 @@ if TYPE_CHECKING:
     from svepa.svepa_information.svepa_info import StoredSvepaInfo
 
 
+class SvepaChildrenEvents(list):
+
+    def __getattr__(self, item):
+        for event in self:
+            if item.upper() in event.name:
+                return event
+
 class SvepaEvent:
     def __init__(self, stored_svepa_info: StoredSvepaInfo = None, info: dict = None):
         self._stored_svepa_info = stored_svepa_info
@@ -26,7 +33,7 @@ class SvepaEvent:
             if key == 'ongoing_event_names':
                 continue
             lst.append(f'  {key.ljust(ljust)}{self._info[key]}')
-        ongoing_events = ', '.join([event.name for event in self.ongoing_events])
+        ongoing_events = ', '.join(sorted([event.name for event in self.ongoing_events]))
         lst.append(f'  {"ongoing_event".ljust(ljust)}{ongoing_events}')
         lst.append('')
         return '\n'.join(lst)
@@ -74,7 +81,8 @@ class SvepaEvent:
                 return
 
     @property
-    def children(self) -> list[SvepaEvent]:
+    def children(self) -> SvepaChildrenEvents[SvepaEvent]:
+    # def children(self) -> list[SvepaEvent]:
         return self._stored_svepa_info.get_children_events(self.event_id)
 
     @property

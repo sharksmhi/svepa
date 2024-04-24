@@ -1,8 +1,8 @@
 import datetime
 from svepa.svepa_information import helpers
-from svepa.svepa_information.svepa_event import SvepaEvent
+from svepa.svepa_information.svepa_event import SvepaEvent, SvepaChildrenEvents
 from functools import lru_cache
-from typing import List
+# from typing import List
 import logging
 
 logger = logging.getLogger(__name__)
@@ -100,7 +100,7 @@ class StoredSvepaInfo:
         info_lst = self.get_infos(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
         return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
 
-    def get_children_info(self, event_id: str) -> List[str]:
+    def get_children_info(self, event_id: str) -> list[str]:
         lst = []
         for key in self._info:
             for _id, _info in self._info[key].items():
@@ -108,13 +108,18 @@ class StoredSvepaInfo:
                     lst.append(_info)
         return lst
 
-    def get_children_events(self, event_id: str) -> List[SvepaEvent]:
+    def get_children_events(self, event_id: str) -> SvepaChildrenEvents[SvepaEvent]:
         info_lst = self.get_children_info(event_id=event_id)
-        return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
+        lst = SvepaChildrenEvents()
+        for info in info_lst:
+            lst.append(SvepaEvent(stored_svepa_info=self, info=info))
+        return lst
+        # return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
 
     @lru_cache
-    def get_ongoing_events(self, event: SvepaEvent) -> List[SvepaEvent]:
-        event_lst = []
+    def get_ongoing_events(self, event: SvepaEvent) -> SvepaChildrenEvents[SvepaEvent]:
+        # event_lst = []
+        event_lst = SvepaChildrenEvents()
         for key in self._info:
             for _id, _info in self._info[key].items():
                 ev = None
