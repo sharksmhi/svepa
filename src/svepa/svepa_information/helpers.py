@@ -60,7 +60,7 @@ def _save_yaml(all_info: dict):
         yaml.safe_dump(all_info, fid)
 
 
-def load():
+def load() -> dict:
     all_info = {}
     try:
         all_info = _load_pickle()

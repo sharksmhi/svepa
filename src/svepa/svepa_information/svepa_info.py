@@ -67,12 +67,12 @@ class StoredSvepaInfo:
             for _id, _info in self._info[key].items():
                 if any([year, month, dtime]):
                     if not _info['start_time']:
-                        msg = f'Misssing start time for event: {_info["event_id"]}'
+                        msg = f'Missing start time for event: {_info["event_id"]}'
                         logger.warning(msg)
                         print(msg)
                         continue
                     if not _info['stop_time']:
-                        msg = f'Misssing stop time for event: {_info["event_id"]}'
+                        msg = f'Missing stop time for event: {_info["event_id"]}'
                         logger.warning(msg)
                         print(msg)
                         continue

@@ -34,15 +34,34 @@ def update_local_svepa_data() -> None:
         raise
 
 
-def import_svepa_export_file(path: pathlib.Path | str) -> None:
+def _add_file_info(all_info: dict, path: pathlib.Path | str) -> None:
     sef = SvepaExportFile(path)
     file_info = sef.get_platforms_info()
-    all_info = helpers.load()
     for plat, plat_info in file_info.items():
         all_info.setdefault(plat, {})
         for _id, info in plat_info.items():
-            all_info[plat][_id] = info
+            all_info[plat][_id] = _get_filtered_info(info)
+            # all_info[plat][_id] = info
+
+
+def _get_filtered_info(info: dict) -> dict:
+    return {key: value for key, value in info.items() if value is not None}
+
+
+def import_svepa_export_file(path: pathlib.Path | str) -> None:
+    print(f'Importing file: {path}')
+    all_info = helpers.load()
+    _add_file_info(all_info=all_info, path=path)
     helpers.save(all_info)
+
+    # sef = SvepaExportFile(path)
+    # file_info = sef.get_platforms_info()
+    # all_info = helpers.load()
+    # for plat, plat_info in file_info.items():
+    #     all_info.setdefault(plat, {})
+    #     for _id, info in plat_info.items():
+    #         all_info[plat][_id] = info
+    # helpers.save(all_info)
 
 
 def import_svepa_export_files_in_directory(directory: pathlib.Path | str) -> None:
@@ -54,13 +73,33 @@ def import_svepa_export_files_in_directory(directory: pathlib.Path | str) -> Non
             continue
         if 'export' not in name:
             continue
-        sef = SvepaExportFile(path)
-        file_info = sef.get_platforms_info()
-        for plat, plat_info in file_info.items():
-            all_info.setdefault(plat, {})
-            for _id, info in plat_info.items():
-                all_info[plat][_id] = info
+        print(f'Importing file: {path}')
+        _add_file_info(all_info=all_info, path=path)
+
+        # sef = SvepaExportFile(path)
+        # file_info = sef.get_platforms_info()
+        # for plat, plat_info in file_info.items():
+        #     all_info.setdefault(plat, {})
+        #     for _id, info in plat_info.items():
+        #         all_info[plat][_id] = info
     helpers.save(all_info)
+
+
+    # all_info = helpers.load()
+    # directory = pathlib.Path(directory)
+    # for path in directory.iterdir():
+    #     name = path.name.lower()
+    #     if 'svepa' not in name:
+    #         continue
+    #     if 'export' not in name:
+    #         continue
+    #     sef = SvepaExportFile(path)
+    #     file_info = sef.get_platforms_info()
+    #     for plat, plat_info in file_info.items():
+    #         all_info.setdefault(plat, {})
+    #         for _id, info in plat_info.items():
+    #             all_info[plat][_id] = info
+    # helpers.save(all_info)
 
 
 def get_time_range() -> tuple | None:

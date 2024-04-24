@@ -135,6 +135,57 @@ class Event:
         return self._info['StopTime']
 
     @property
+    def air_pres(self):
+        par = 'A_AverageAirPressure1'
+        if par not in self._info:
+            par = 'A_AverageAirPressure_QNH_1'
+        if par not in self._info:
+            return None
+        value = self._info[par].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value), 1)
+
+    @property
+    def air_temp(self):
+        value = self._info['A_AverageAirTemperature2'].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value), 1)
+
+    @property
+    def wind_dir(self):
+        value = self._info['A_AverageTrueWindDirSel'].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value))
+
+    @property
+    def wind_speed(self):
+        value = self._info['A_AverageWindSpeed'].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value), 1)
+
+    @property
+    def min_depth(self):
+        if not self._info.get('A_MinDepth'):
+            return None
+        value = self._info['A_MinDepth'].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value), 1)
+
+    @property
+    def max_depth(self):
+        if not self._info.get('A_MaxDepth'):
+            return None
+        value = self._info['A_MaxDepth'].replace(',', '.')
+        if not value:
+            return None
+        return round(float(value), 1)
+
+    @property
     def parent(self):
         return self._parent
 
@@ -176,7 +227,14 @@ class Event:
             start_lon=self.start_lon,
             stop_lat=self.stop_lat,
             stop_lon=self.stop_lon,
-            ongoing_event_names=self.get_ongoing_event_names(filter=True)
+            ongoing_event_names=self.get_ongoing_event_names(filter=True),
+
+            air_pres=self.air_pres,
+            air_temp=self.air_temp,
+            wind_dir =self.wind_dir,
+            wind_speed=self.wind_speed,
+            min_depth=self.min_depth,
+            max_depth=self.max_depth,
         )
         return info
 
@@ -242,7 +300,7 @@ class SvepaExportFile:
     def _add_general_info(self, info: dict) -> None:
         info['cruise'] = self.cruise
 
-    def get_platforms_info(self):
+    def get_platforms_info(self) -> dict:
         all_info = {}
         # for plat in FILTERED_EVENTS:
         for plat in self.get_name_list():
