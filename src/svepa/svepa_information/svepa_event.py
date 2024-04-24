@@ -17,13 +17,17 @@ class SvepaEvent:
 
     def __str__(self):
         lst = [
-            '='*110,
+            '=' * 110,
             self.__repr__(),
-            '-'*110,
+            '-' * 110,
         ]
         ljust = 30
         for key in sorted(self._info):
+            if key == 'ongoing_event_names':
+                continue
             lst.append(f'  {key.ljust(ljust)}{self._info[key]}')
+        ongoing_events = ', '.join([event.name for event in self.ongoing_events])
+        lst.append(f'  {"ongoing_event".ljust(ljust)}{ongoing_events}')
         lst.append('')
         return '\n'.join(lst)
 
@@ -93,4 +97,6 @@ class SvepaEvent:
         if first:
             return None
         return ongoing_events
+
+
 

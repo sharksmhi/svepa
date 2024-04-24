@@ -104,7 +104,7 @@ class StoredSvepaInfo:
         lst = []
         for key in self._info:
             for _id, _info in self._info[key].items():
-                if _info['parent_event_id'] == event_id:
+                if _info.get('parent_event_id') == event_id:
                     lst.append(_info)
         return lst
 

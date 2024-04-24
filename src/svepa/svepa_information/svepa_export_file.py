@@ -6,7 +6,7 @@ import logging
 
 logger = logging.getLogger(__file__)
 
-FILTERED_EVENTS = ['HOSE', 'PHYTOPLANKTON', 'SECCHI', 'ZOOPLANKTON', 'BOTTLE', 'FERRYBOX', 'MVP', 'CTD']
+FILTERED_EVENTS = ['HOSE', 'PHYTOPLANKTON', 'SECCHI', 'ZOOPLANKTON', 'BOTTLE', 'FERRYBOX', 'MVP', 'CTD', 'ADCP', 'WEATHER']
 
 
 class Event:
@@ -206,11 +206,15 @@ class Event:
             if event.check_time(self.start_time) or event.check_time(self.stop_time):
                 ongoing_events.append(event)
         if kwargs.get('filter'):
-            ongoing_events = [event for event in ongoing_events if event.name in FILTERED_EVENTS]
+            new_ongoing_events = set()
+            for event in ongoing_events:
+                for name in FILTERED_EVENTS:
+                    if name in event.name:
+                        new_ongoing_events.add(event)
+                        continue
+            ongoing_events = list(new_ongoing_events)
+            # ongoing_events = [event for event in ongoing_events if event.name in FILTERED_EVENTS]
         return ongoing_events
-
-    def get_ongoing_event_names(self, **kwargs):
-        return [event.name for event in self.get_ongoing_events(**kwargs)]
 
     def get_info(self) -> dict:
         """Returns a dict with information about the event"""
@@ -227,7 +231,6 @@ class Event:
             start_lon=self.start_lon,
             stop_lat=self.stop_lat,
             stop_lon=self.stop_lon,
-            ongoing_event_names=self.get_ongoing_event_names(filter=True),
 
             air_pres=self.air_pres,
             air_temp=self.air_temp,
