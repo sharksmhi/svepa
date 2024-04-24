@@ -2932,6 +2932,21 @@ ADCP:
     start_lon: 16.32282265
     start_time: '20230309070129'
     stop_time: ''
+  9edf717f-efaa-4b96-94a6-972ba1d65448:
+    event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    event_type: Event
+    full_name: ADCP.004
+    id: '004'
+    name: ADCP
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.5995991
+    start_lon: 16.3377933166667
+    start_time: '20240409142109'
+    stop_lat: 58.2753234833333
+    stop_lon: 11.4475780166667
+    stop_time: '20240414174256'
   a802185b-f230-45ed-be60-64e4e2040580:
     event_id: a802185b-f230-45ed-be60-64e4e2040580
     event_type: Event
@@ -3321,6 +3336,21 @@ ADCP_ADJUSTMENT:
     stop_lat: 58.1460211666667
     stop_lon: 11.3186208833333
     stop_time: '20220718115000'
+  0e41e33e-8fd6-4fb5-9c76-643419c8e74f:
+    event_id: 0e41e33e-8fd6-4fb5-9c76-643419c8e74f
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 57.4308677166667
+    start_lon: 19.0246417333333
+    start_time: '20240411111724'
+    stop_lat: 57.4296719833333
+    stop_lon: 19.02046095
+    stop_time: '20240411111817'
   1019a856-5569-4229-822c-7e1b13feccd3:
     event_id: 1019a856-5569-4229-822c-7e1b13feccd3
     event_type: SubEvent
@@ -3345,6 +3375,21 @@ ADCP_ADJUSTMENT:
     stop_lat: 56.4825496833333
     stop_lon: 16.3134236666667
     stop_time: '20231116211000'
+  12e30137-dd5d-4b9c-9974-9679ef3aea55:
+    event_id: 12e30137-dd5d-4b9c-9974-9679ef3aea55
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 55.4223473333333
+    start_lon: 12.6924416166667
+    start_time: '20240413113500'
+    stop_lat: 55.4302949333333
+    stop_lon: 12.6947806333333
+    stop_time: '20240413114000'
   140a25e8-efbc-420e-b555-f22e85706421:
     event_id: 140a25e8-efbc-420e-b555-f22e85706421
     event_type: SubEvent
@@ -3786,6 +3831,21 @@ ADCP_ADJUSTMENT:
     stop_lat: 55.3337331666667
     stop_lon: 12.6664148666667
     stop_time: '20220425190000'
+  4178325c-1454-4f58-9575-d17f0bbafa6c:
+    event_id: 4178325c-1454-4f58-9575-d17f0bbafa6c
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 55.7375550666667
+    start_lon: 12.8546399833333
+    start_time: '20240413140000'
+    stop_lat: 55.7500951333333
+    stop_lon: 12.8409395666667
+    stop_time: '20240413140500'
   428473cf-5f71-44e0-9917-0b9dcdc57810:
     event_id: 428473cf-5f71-44e0-9917-0b9dcdc57810
     event_type: SubEvent
@@ -3811,6 +3871,21 @@ ADCP_ADJUSTMENT:
     parent_event_id: eb16cf87-8c72-4dd7-a626-f28ddebd13e2
     start_time: '20230417063350'
     stop_time: '20230417063352'
+  47430496-d99c-42be-a0e1-520b73396946:
+    event_id: 47430496-d99c-42be-a0e1-520b73396946
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 56.5995991
+    start_lon: 16.3377933166667
+    start_time: '20240409142109'
+    stop_lat: 56.5994039166667
+    stop_lon: 16.33764635
+    stop_time: '20240409142122'
   49356e24-40d2-4628-9d58-4b00946b8dcc:
     event_id: 49356e24-40d2-4628-9d58-4b00946b8dcc
     event_type: SubEvent
@@ -4008,6 +4083,21 @@ ADCP_ADJUSTMENT:
     stop_lat: 58.3052164166667
     stop_lon: 11.1271511666667
     stop_time: '20220618133000'
+  640ce83b-d28e-480c-8a8e-23ead89a6709:
+    event_id: 640ce83b-d28e-480c-8a8e-23ead89a6709
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 57.4212803666667
+    start_lon: 18.9952765666667
+    start_time: '20240411132627'
+    stop_lat: 57.4213069
+    stop_lon: 18.9953034833333
+    stop_time: '20240411132740'
   655e5f17-a3d9-48c2-a617-264dffdda4dd:
     event_id: 655e5f17-a3d9-48c2-a617-264dffdda4dd
     event_type: SubEvent
@@ -4051,6 +4141,26 @@ ADCP_ADJUSTMENT:
     stop_lat: 55.6224025166667
     stop_lon: 12.8998136
     stop_time: '20240116034500'
+  65f236fc-21ad-4cb4-b5c0-adaa63ae6263:
+    event_id: 65f236fc-21ad-4cb4-b5c0-adaa63ae6263
+    event_type: SubEvent
+    full_name: ADCP_Adjustment
+    id: ADCP_Adjustment
+    name: ADCP_ADJUSTMENT
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
+    start_lat: 58.25983365
+    start_lon: 11.4356174833333
+    start_time: '20240414153500'
+    stop_lat: 58.2598330166667
+    stop_lon: 11.4356207
+    stop_time: '20240414154000'
   67039987-0e23-481b-8e12-e7848a7f6e84:
     event_id: 67039987-0e23-481b-8e12-e7848a7f6e84
     event_type: SubEvent
@@ -5994,6 +6104,28 @@ ANHOLTE:
     stop_lat: 56.6687345666667
     stop_lon: 12.1116774333333
     stop_time: '20220828171255'
+  0fdd7b91-4f7c-406c-91fb-2ac536789c43:
+    event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    event_type: Station
+    full_name: AnholtE.0270
+    id: '0270'
+    max_depth: 61.5
+    min_depth: 29.7
+    name: ANHOLTE
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - HOSE
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.6688520666667
+    start_lon: 12.1119329833333
+    start_time: '20240413205500'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
   1f3a5b0b-3ba4-4a3a-bdf8-c36ffa56835a:
     event_id: 1f3a5b0b-3ba4-4a3a-bdf8-c36ffa56835a
     event_type: Station
@@ -7717,6 +7849,25 @@ BOTTLE:
     stop_lat: 55.6490375666667
     stop_lon: 12.9510520333333
     stop_time: '20230115223320'
+  037f2af5-6a70-4910-867b-bc97589b5176:
+    event_id: 037f2af5-6a70-4910-867b-bc97589b5176
+    event_type: Event
+    full_name: Bottle.0127
+    id: '0127'
+    name: BOTTLE
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - HOSE
+    - CTD
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688591166667
+    start_lon: 12.1119420666667
+    start_time: '20240413205504'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
   0381a344-5b24-4092-b6b4-b5ac3e41c033:
     event_id: 0381a344-5b24-4092-b6b4-b5ac3e41c033
     event_type: Event
@@ -8498,6 +8649,23 @@ BOTTLE:
     stop_lat: 55.8004212166667
     stop_lon: 15.3357502666667
     stop_time: '20230211133121'
+  12a1e661-b22a-41f0-9092-cba81ca28d54:
+    event_id: 12a1e661-b22a-41f0-9092-cba81ca28d54
+    event_type: Event
+    full_name: Bottle.0125
+    id: '0125'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - SECCHI
+    parent_event_id: cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf
+    start_lat: 55.0160067166667
+    start_lon: 13.3005180333333
+    start_time: '20240413075043'
+    stop_lat: 55.0160262833333
+    stop_lon: 13.3005044833333
+    stop_time: '20240413082011'
   13380cfa-feb1-4ced-9559-e07bcbc3bb5d:
     event_id: 13380cfa-feb1-4ced-9559-e07bcbc3bb5d
     event_type: Event
@@ -8881,6 +9049,25 @@ BOTTLE:
     stop_lat: 58.2849113666667
     stop_lon: 10.5045824666667
     stop_time: '20240313040538'
+  1b07d7eb-31fa-466a-82f5-b0de67539cff:
+    event_id: 1b07d7eb-31fa-466a-82f5-b0de67539cff
+    event_type: Event
+    full_name: Bottle.0113
+    id: '0113'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - HOSE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.1167347833333
+    start_lon: 16.5350809
+    start_time: '20240409175945'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
   1c84c13b-353a-4228-9261-63405bfebbc7:
     event_id: 1c84c13b-353a-4228-9261-63405bfebbc7
     event_type: Event
@@ -10125,6 +10312,23 @@ BOTTLE:
     stop_lat: 55.7716801
     stop_lon: 12.7945356166667
     stop_time: '20230111191531'
+  356f78ef-1bf6-4659-b99c-17a0d4eb3072:
+    event_id: 356f78ef-1bf6-4659-b99c-17a0d4eb3072
+    event_type: Event
+    full_name: Bottle.0114
+    id: '0114'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - HOSE
+    parent_event_id: eed16c02-b0c4-4988-9f3f-3c90ea7206aa
+    start_lat: 57.1172152833333
+    start_lon: 17.6691785166667
+    start_time: '20240410015621'
+    stop_lat: 57.1172218
+    stop_lon: 17.669196
+    stop_time: '20240410025623'
   35893909-5e41-42d4-ad76-735478c2432e:
     event_id: 35893909-5e41-42d4-ad76-735478c2432e
     event_type: Event
@@ -10636,6 +10840,25 @@ BOTTLE:
     stop_lat: 58.8171328833333
     stop_lon: 18.4818122166667
     stop_time: '20231004121919'
+  406a9670-2b60-460b-a22e-a5fb036130fc:
+    event_id: 406a9670-2b60-460b-a22e-a5fb036130fc
+    event_type: Event
+    full_name: Bottle.0128
+    id: 0128
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.9396383666667
+    start_lon: 12.2132553
+    start_time: '20240413235509'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   40954f23-6a8f-4906-9422-ee3c84e7adaf:
     event_id: 40954f23-6a8f-4906-9422-ee3c84e7adaf
     event_type: Event
@@ -11734,6 +11957,25 @@ BOTTLE:
     stop_lat: 58.2842723666667
     stop_lon: 10.5048287666667
     stop_time: '20231025020414'
+  53bf448f-bc12-447f-b8bb-25fa25613e06:
+    event_id: 53bf448f-bc12-447f-b8bb-25fa25613e06
+    event_type: Event
+    full_name: Bottle.0120
+    id: '0120'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.3872325
+    start_lon: 19.4367397166667
+    start_time: '20240411163223'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   53ed4021-f555-4e01-bf6d-27d8b9ad687a:
     event_id: 53ed4021-f555-4e01-bf6d-27d8b9ad687a
     event_type: Event
@@ -11898,6 +12140,25 @@ BOTTLE:
     stop_lat: 56.1157408
     stop_lon: 16.5329583166667
     stop_time: '20221205150116'
+  5726ca08-8c2b-4401-8a61-bd1a765753b9:
+    event_id: 5726ca08-8c2b-4401-8a61-bd1a765753b9
+    event_type: Event
+    full_name: Bottle.0124
+    id: '0124'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - HOSE
+    - PHYTOPLANKTON
+    - CTD
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.9714522166667
+    start_lon: 14.0991933
+    start_time: '20240413033624'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   57533afd-9527-4a56-8f67-72df64be44c0:
     event_id: 57533afd-9527-4a56-8f67-72df64be44c0
     event_type: Event
@@ -13183,6 +13444,23 @@ BOTTLE:
     stop_lat: 56.9399885166667
     stop_lon: 12.2111713333333
     stop_time: '20240111114628'
+  730c6aff-d479-467f-b980-cde2c3f947c8:
+    event_id: 730c6aff-d479-467f-b980-cde2c3f947c8
+    event_type: Event
+    full_name: Bottle.0126
+    id: '0126'
+    name: BOTTLE
+    ongoing_event_names:
+    - CTD
+    - SECCHI
+    - FERRYBOX
+    parent_event_id: 4d100a85-359f-4bde-a89e-2edbc8db16ba
+    start_lat: 55.86666035
+    start_lon: 12.7482829666667
+    start_time: '20240413150527'
+    stop_lat: 55.8666356833333
+    stop_lon: 12.7483414166667
+    stop_time: '20240413153457'
   73925a03-807e-4905-bf19-fa769cbaa57f:
     event_id: 73925a03-807e-4905-bf19-fa769cbaa57f
     event_type: Event
@@ -13197,6 +13475,24 @@ BOTTLE:
     stop_lat: 58.0246060166667
     stop_lon: 9.68218996666666
     stop_time: '20220827045020'
+  73de2a55-5b63-495a-9cad-1fc38b4b04df:
+    event_id: 73de2a55-5b63-495a-9cad-1fc38b4b04df
+    event_type: Event
+    full_name: Bottle.0129
+    id: 0129
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - SECCHI
+    - CTD
+    - HOSE
+    parent_event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    start_lat: 57.1926263333333
+    start_lon: 11.6580954666667
+    start_time: '20240414061125'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
   74d329db-4932-4b95-a8c6-c865bf6d1206:
     event_id: 74d329db-4932-4b95-a8c6-c865bf6d1206
     event_type: Event
@@ -13757,6 +14053,23 @@ BOTTLE:
     stop_lat: 58.2597099333333
     stop_lon: 11.4359550333333
     stop_time: '20220110110403'
+  7d5f6d64-66c2-4c10-aabe-05ad305dc9d8:
+    event_id: 7d5f6d64-66c2-4c10-aabe-05ad305dc9d8
+    event_type: Event
+    full_name: Bottle.0115
+    id: '0115'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - SECCHI
+    parent_event_id: 286185fa-1a79-41ca-b621-84dfa90bf69a
+    start_lat: 58.0168984
+    start_lon: 17.9847981
+    start_time: '20240410080121'
+    stop_lat: 58.01688005
+    stop_lon: 17.9847852666667
+    stop_time: '20240410090723'
   7d7655cf-cb69-4eec-b25f-c6866168d5be:
     event_id: 7d7655cf-cb69-4eec-b25f-c6866168d5be
     event_type: Event
@@ -13836,6 +14149,26 @@ BOTTLE:
     stop_lat: 57.99826785
     stop_lon: 19.8782056333333
     stop_time: '20240309232329'
+  7fa09bb3-d0a5-497b-b4f0-d89769b80052:
+    event_id: 7fa09bb3-d0a5-497b-b4f0-d89769b80052
+    event_type: Event
+    full_name: Bottle.0116
+    id: '0116'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - SECCHI
+    - ZOOPLANKTON
+    - CTD
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946433
+    start_lon: 18.2356336
+    start_time: '20240410123055'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   7faa0558-58cd-4261-aae2-ae9569ccf3c3:
     event_id: 7faa0558-58cd-4261-aae2-ae9569ccf3c3
     event_type: Event
@@ -14639,6 +14972,23 @@ BOTTLE:
     stop_lat: 56.6686511
     stop_lon: 12.11123825
     stop_time: '20231215042250'
+  8f638a9a-6f84-4c75-8e08-59c5db90fa86:
+    event_id: 8f638a9a-6f84-4c75-8e08-59c5db90fa86
+    event_type: Event
+    full_name: Bottle.0117
+    id: '0117'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - HOSE
+    parent_event_id: 4bc30000-cacf-48c6-92cc-9b5905dc2612
+    start_lat: 58.8817177666667
+    start_lon: 20.3285212833333
+    start_time: '20240410223321'
+    stop_lat: 58.8817566333333
+    stop_lon: 20.3285841
+    stop_time: '20240410233839'
   8ff1a6e7-697d-415a-9876-42877c727396:
     event_id: 8ff1a6e7-697d-415a-9876-42877c727396
     event_type: Event
@@ -16285,6 +16635,23 @@ BOTTLE:
     stop_lat: 55.2499767166667
     stop_lon: 15.9839111666667
     stop_time: '20220918180102'
+  afb54b93-a61e-461f-9252-12bc2fb18bbb:
+    event_id: afb54b93-a61e-461f-9252-12bc2fb18bbb
+    event_type: Event
+    full_name: Bottle.0118
+    id: 0118
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - SECCHI
+    parent_event_id: b98277d1-f785-4a19-97e8-9bf9965dcfde
+    start_lat: 57.9979864666667
+    start_lon: 19.87888715
+    start_time: '20240411061023'
+    stop_lat: 57.9979758333333
+    stop_lon: 19.87884315
+    stop_time: '20240411070740'
   afe5b555-5df6-4e47-ad91-350bd61ee358:
     event_id: afe5b555-5df6-4e47-ad91-350bd61ee358
     event_type: Event
@@ -16413,6 +16780,22 @@ BOTTLE:
     stop_lat: 55.86647905
     stop_lon: 12.7485617833333
     stop_time: '20220113133950'
+  b2e486b7-7f6f-42af-89ba-c00a2c0b29ce:
+    event_id: b2e486b7-7f6f-42af-89ba-c00a2c0b29ce
+    event_type: Event
+    full_name: Bottle.0119
+    id: 0119
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    parent_event_id: 962d1ca3-3751-43be-becc-bcabfa5f2b24
+    start_lat: 57.4211407166667
+    start_lon: 18.9950819166667
+    start_time: '20240411133429'
+    stop_lat: 57.4211653
+    stop_lon: 18.9950979666667
+    stop_time: '20240411140741'
   b36449a4-71bd-44e9-8616-3d2dc69096fc:
     event_id: b36449a4-71bd-44e9-8616-3d2dc69096fc
     event_type: Event
@@ -16664,6 +17047,25 @@ BOTTLE:
     stop_lat: 58.261578
     stop_lon: 11.43644555
     stop_time: '20230915165318'
+  b9a23697-c3e0-414f-b63a-e87119b4b751:
+    event_id: b9a23697-c3e0-414f-b63a-e87119b4b751
+    event_type: Event
+    full_name: Bottle.0130
+    id: '0130'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - HOSE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.2601545166667
+    start_lon: 11.4356861
+    start_time: '20240414152027'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   b9c17fdc-5a91-42c2-b475-d3c6b2f15eec:
     event_id: b9c17fdc-5a91-42c2-b475-d3c6b2f15eec
     event_type: Event
@@ -17069,6 +17471,26 @@ BOTTLE:
     stop_lat: 57.1922238
     stop_lon: 11.6589897333333
     stop_time: '20220813083521'
+  bec544c7-1b21-42a6-a4c2-3f425bed43cf:
+    event_id: bec544c7-1b21-42a6-a4c2-3f425bed43cf
+    event_type: Event
+    full_name: Bottle.0121
+    id: '0121'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.2495677
+    start_lon: 15.9842998666667
+    start_time: '20240412145449'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   bef60d2b-1fb1-49ec-a8b3-09961f386457:
     event_id: bef60d2b-1fb1-49ec-a8b3-09961f386457
     event_type: Event
@@ -17929,6 +18351,22 @@ BOTTLE:
     stop_lat: 58.0168281666667
     stop_lon: 17.9846089833333
     stop_time: '20220920183629'
+  ce7b13ed-2b5b-4819-bfc0-ff080bd1db98:
+    event_id: ce7b13ed-2b5b-4819-bfc0-ff080bd1db98
+    event_type: Event
+    full_name: Bottle.0122
+    id: '0122'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    parent_event_id: 37b0b634-e839-4904-b4b4-e1b23c49ad2a
+    start_lat: 55.3834756666667
+    start_lon: 15.3352727666667
+    start_time: '20240412185051'
+    stop_lat: 55.3830381833333
+    stop_lon: 15.3344440166667
+    stop_time: '20240412193234'
   cf5a939f-4370-4924-9cdf-5a6592d7b6c0:
     event_id: cf5a939f-4370-4924-9cdf-5a6592d7b6c0
     event_type: Event
@@ -17949,6 +18387,22 @@ BOTTLE:
     stop_lat: 58.2597564833333
     stop_lon: 11.4355267333333
     stop_time: '20230716164821'
+  cff2bf92-b141-4884-a143-4686896b20f4:
+    event_id: cff2bf92-b141-4884-a143-4686896b20f4
+    event_type: Event
+    full_name: Bottle.0123
+    id: '0123'
+    name: BOTTLE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    parent_event_id: 20f99d8d-596c-42e4-a0b8-880e8a50a250
+    start_lat: 55.6174109166667
+    start_lon: 14.8679674833333
+    start_time: '20240412214921'
+    stop_lat: 55.6173983333333
+    stop_lon: 14.8679569333333
+    stop_time: '20240412224155'
   d06bc1f7-4ced-4dc3-a84c-2c928f9b9d96:
     event_id: d06bc1f7-4ced-4dc3-a84c-2c928f9b9d96
     event_type: Event
@@ -20756,6 +21210,26 @@ BY1:
     stop_lat: 55.0158791
     stop_lon: 13.2994494666667
     stop_time: '20230313100618'
+  cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf:
+    event_id: cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf
+    event_type: Station
+    full_name: BY1.0268
+    id: 0268
+    max_depth: 45.2
+    min_depth: 44.7
+    name: BY1
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - SECCHI
+    - BOTTLE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.01602555
+    start_lon: 13.3005212333333
+    start_time: '20240413075038'
+    stop_lat: 55.0160262833333
+    stop_lon: 13.3005044833333
+    stop_time: '20240413082011'
   d215f25d-8bd4-46a8-8912-0365bfb722c2:
     event_id: d215f25d-8bd4-46a8-8912-0365bfb722c2
     event_type: Station
@@ -21407,6 +21881,28 @@ BY11:
     stop_lon: 19.8425497333333
     stop_time: '20240211192004'
 BY13:
+  798c59f6-b950-4074-979b-6a92e7059cbb:
+    event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    event_type: Station
+    full_name: BY13.0263
+    id: '0263'
+    max_depth: 129.9
+    min_depth: 120.0
+    name: BY13
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.3872400833333
+    start_lon: 19.4367782166667
+    start_time: '20240411163219'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   957c3823-37de-43bc-97e6-5a89abdf41b3:
     event_id: 957c3823-37de-43bc-97e6-5a89abdf41b3
     event_type: Station
@@ -22560,6 +23056,28 @@ BY2:
     stop_lon: 14.10113505
     stop_time: '20220113000158'
 BY2 ARKONA:
+  db1bc0c2-5c4f-4e3e-b51b-dce9118734c7:
+    event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    event_type: Station
+    full_name: BY2 Arkona.0267
+    id: '0267'
+    max_depth: 46.0
+    min_depth: 45.3
+    name: BY2 ARKONA
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 54.9714549833333
+    start_lon: 14.09919735
+    start_time: '20240413033621'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   deb32bfb-68f0-4b23-8177-64e8e756a03b:
     event_id: deb32bfb-68f0-4b23-8177-64e8e756a03b
     event_type: Station
@@ -22904,6 +23422,26 @@ BY20:
     stop_lat: 57.99892235
     stop_lon: 19.8783147
     stop_time: '20230512211034'
+  b98277d1-f785-4a19-97e8-9bf9965dcfde:
+    event_id: b98277d1-f785-4a19-97e8-9bf9965dcfde
+    event_type: Station
+    full_name: BY20.0261
+    id: '0261'
+    max_depth: 195.0
+    min_depth: 194.7
+    name: BY20
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - SECCHI
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.9979726166667
+    start_lon: 19.87884145
+    start_time: '20240411061018'
+    stop_lat: 57.9979758333333
+    stop_lon: 19.87884315
+    stop_time: '20240411070740'
   c2c26098-5de5-4d00-b338-6ab202a2d4ea:
     event_id: c2c26098-5de5-4d00-b338-6ab202a2d4ea
     event_type: Station
@@ -23196,6 +23734,26 @@ BY29:
     stop_lat: 58.8829648
     stop_lon: 20.3248628833333
     stop_time: '20230814051026'
+  4bc30000-cacf-48c6-92cc-9b5905dc2612:
+    event_id: 4bc30000-cacf-48c6-92cc-9b5905dc2612
+    event_type: Station
+    full_name: BY29.0260
+    id: '0260'
+    max_depth: 183.8
+    min_depth: 0.0
+    name: BY29
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    - HOSE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 58.88171725
+    start_lon: 20.3285152666667
+    start_time: '20240410223317'
+    stop_lat: 58.8817566333333
+    stop_lon: 20.3285841
+    stop_time: '20240410233839'
   676f758c-d337-46eb-b10a-351f55bfa687:
     event_id: 676f758c-d337-46eb-b10a-351f55bfa687
     event_type: Station
@@ -23795,6 +24353,30 @@ BY31:
     stop_lat: 58.5944841
     stop_lon: 18.2351032666667
     stop_time: '20230712140835'
+BY31 LANDSORTSDJUPET:
+  1685252b-41a5-4e71-8c8a-676f66b42888:
+    event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    event_type: Station
+    full_name: BY31 Landsortsdjupet.0258
+    id: 0258
+    max_depth: 443.6
+    min_depth: 443.3
+    name: BY31 LANDSORTSDJUPET
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - SECCHI
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 58.594645
+    start_lon: 18.2356368833333
+    start_time: '20240410123048'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
 BY32:
   088b2179-6e5d-484f-8611-c2934b503c3c:
     event_id: 088b2179-6e5d-484f-8611-c2934b503c3c
@@ -24247,6 +24829,27 @@ BY32:
     stop_lat: 58.01688895
     stop_lon: 17.9851305
     stop_time: '20221206050630'
+"BY32 NORRK\xD6PING":
+  286185fa-1a79-41ca-b621-84dfa90bf69a:
+    event_id: 286185fa-1a79-41ca-b621-84dfa90bf69a
+    event_type: Station
+    full_name: "BY32 Norrk\xF6ping.0257"
+    id: '0257'
+    max_depth: 201.1
+    min_depth: 200.6
+    name: "BY32 NORRK\xD6PING"
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - SECCHI
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 58.0169000166667
+    start_lon: 17.9847959
+    start_time: '20240410080113'
+    stop_lat: 58.01688005
+    stop_lon: 17.9847852666667
+    stop_time: '20240410090723'
 "BY32 NORRK\xD6PINGSDJUPET":
   756bf480-bca3-4578-b447-59605644c52e:
     event_id: 756bf480-bca3-4578-b447-59605644c52e
@@ -24786,6 +25389,27 @@ BY38:
     stop_lat: 57.1171142166667
     stop_lon: 17.66863865
     stop_time: '20220519183555'
+"BY38 KARLS\xD6DJ":
+  eed16c02-b0c4-4988-9f3f-3c90ea7206aa:
+    event_id: eed16c02-b0c4-4988-9f3f-3c90ea7206aa
+    event_type: Station
+    full_name: "BY38 Karls\xF6dj.0256"
+    id: '0256'
+    max_depth: 108.6
+    min_depth: 108.5
+    name: "BY38 KARLS\xD6DJ"
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - HOSE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.1172149
+    start_lon: 17.6691788666667
+    start_time: '20240410015614'
+    stop_lat: 57.1172218
+    stop_lon: 17.669196
+    stop_time: '20240410025623'
 BY39:
   0a73ed56-a8b5-4e55-b798-c97e56909eac:
     event_id: 0a73ed56-a8b5-4e55-b798-c97e56909eac
@@ -25267,6 +25891,28 @@ BY39:
     stop_lat: 56.1163067833333
     stop_lon: 16.5357332666667
     stop_time: '20230918085414'
+  c790777b-7a16-4b76-9474-d674f05c9a00:
+    event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    event_type: Station
+    full_name: "BY39 \xD6lands S\xF6dra.0255"
+    id: '0255'
+    max_depth: 49.2
+    min_depth: 48.5
+    name: "BY39 \xD6LANDS S\xD6DRA"
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - HOSE
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.11673945
+    start_lon: 16.5350787333333
+    start_time: '20240409175937'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
 BY4:
   03e1cd79-a5fe-4e9a-87b4-1c1871501ede:
     event_id: 03e1cd79-a5fe-4e9a-87b4-1c1871501ede
@@ -25365,6 +26011,25 @@ BY4:
     stop_lat: 55.3828623333333
     stop_lon: 15.3339535
     stop_time: '20240311094955'
+  37b0b634-e839-4904-b4b4-e1b23c49ad2a:
+    event_id: 37b0b634-e839-4904-b4b4-e1b23c49ad2a
+    event_type: Station
+    full_name: BY4.0265
+    id: '0265'
+    max_depth: 99.0
+    min_depth: 90.1
+    name: BY4
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.3835121833333
+    start_lon: 15.3353459
+    start_time: '20240412185042'
+    stop_lat: 55.3830381833333
+    stop_lon: 15.3344440166667
+    stop_time: '20240412193234'
   434ddde7-6079-43e8-b1a2-06e107d132f8:
     event_id: 434ddde7-6079-43e8-b1a2-06e107d132f8
     event_type: Station
@@ -26259,6 +26924,30 @@ BY5:
     stop_lat: 55.2508861
     stop_lon: 15.9831487666667
     stop_time: '20230312185356'
+BY5 BORNHOLMSDJ:
+  04dcece5-b713-4cee-8e38-c50f705b9cd4:
+    event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    event_type: Station
+    full_name: BY5 Bornholmsdj.0264
+    id: '0264'
+    max_depth: 98.5
+    min_depth: 88.4
+    name: BY5 BORNHOLMSDJ
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.2495675833333
+    start_lon: 15.9843011166667
+    start_time: '20240412145445'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
 BY5 BORNHOLMSDJUPET:
   0901787a-ef6b-4e0d-ae0e-a622634df5d0:
     event_id: 0901787a-ef6b-4e0d-ae0e-a622634df5d0
@@ -26445,6 +27134,22 @@ CTD:
     stop_lat: 54.8330184833333
     stop_lon: 19.2745057166667
     stop_time: '20240210231409'
+  009a0b16-8ffc-4237-9b14-bbefcc35d7d2:
+    event_id: 009a0b16-8ffc-4237-9b14-bbefcc35d7d2
+    event_type: Event
+    full_name: CTD.00220
+    id: '00220'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    parent_event_id: 962d1ca3-3751-43be-becc-bcabfa5f2b24
+    start_lat: 57.4211491166667
+    start_lon: 18.9950806333333
+    start_time: '20240411133426'
+    stop_lat: 57.4211653
+    stop_lon: 18.9950979666667
+    stop_time: '20240411140741'
   014c7f80-b993-4e47-b279-d93b0b10a583:
     event_id: 014c7f80-b993-4e47-b279-d93b0b10a583
     event_type: Event
@@ -27063,6 +27768,25 @@ CTD:
     stop_lat: 57.2847770833333
     stop_lon: 11.5803945166667
     stop_time: '20220831122147'
+  0cba36bb-f3d5-4503-9462-9708e475898d:
+    event_id: 0cba36bb-f3d5-4503-9462-9708e475898d
+    event_type: Event
+    full_name: CTD.00228
+    id: 00228
+    name: CTD
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688572
+    start_lon: 12.1119378
+    start_time: '20240413205507'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
   0d0753c8-867f-44ef-a7d6-2cf64ac8d281:
     event_id: 0d0753c8-867f-44ef-a7d6-2cf64ac8d281
     event_type: Event
@@ -27922,6 +28646,23 @@ CTD:
     stop_lat: 55.5884401333333
     stop_lon: 12.8451284666667
     stop_time: '20220813232051'
+  1971919a-3882-4a58-9fc5-2d1ebf99ae21:
+    event_id: 1971919a-3882-4a58-9fc5-2d1ebf99ae21
+    event_type: Event
+    full_name: CTD.00226
+    id: '00226'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - SECCHI
+    - BOTTLE
+    parent_event_id: cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf
+    start_lat: 55.0160243
+    start_lon: 13.3005234333333
+    start_time: '20240413075045'
+    stop_lat: 55.0160262833333
+    stop_lon: 13.3005044833333
+    stop_time: '20240413082011'
   19d0b1cd-272b-44d5-9323-685e12323fa4:
     event_id: 19d0b1cd-272b-44d5-9323-685e12323fa4
     event_type: Event
@@ -28116,6 +28857,21 @@ CTD:
     stop_lat: 56.5633694333333
     stop_lon: 12.3038211166667
     stop_time: '20220111175253'
+  1bc313b7-5e18-41f7-a0ea-547279da694c:
+    event_id: 1bc313b7-5e18-41f7-a0ea-547279da694c
+    event_type: Event
+    full_name: CTD.00218
+    id: 00218
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 8c12bada-e31d-4e05-a55c-e2c35434453e
+    start_lat: 58.9354061833333
+    start_lon: 19.1645652333333
+    start_time: '20240410180301'
+    stop_lat: 58.9362679666667
+    stop_lon: 19.1684089333333
+    stop_time: '20240410185301'
   1be39fd2-249a-4010-ba9d-161e96c29c5d:
     event_id: 1be39fd2-249a-4010-ba9d-161e96c29c5d
     event_type: Event
@@ -28643,6 +29399,25 @@ CTD:
     stop_lat: 63.5253967666667
     stop_lon: 21.0842140333333
     stop_time: '20221208125728'
+  235c0e0b-f005-45e4-a100-d33322cac33e:
+    event_id: 235c0e0b-f005-45e4-a100-d33322cac33e
+    event_type: Event
+    full_name: CTD.00221
+    id: '00221'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    - ZOOPLANKTON
+    - PHYTOPLANKTON
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.38722945
+    start_lon: 19.4367264333333
+    start_time: '20240411163224'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   24248792-9158-4e57-9c29-31bd1b188f97:
     event_id: 24248792-9158-4e57-9c29-31bd1b188f97
     event_type: Event
@@ -28858,6 +29633,25 @@ CTD:
     stop_lat: 58.2844494333333
     stop_lon: 10.5042864666667
     stop_time: '20230810204902'
+  266af7eb-c820-475f-bdc4-579d20b81ee7:
+    event_id: 266af7eb-c820-475f-bdc4-579d20b81ee7
+    event_type: Event
+    full_name: CTD.00231
+    id: '00231'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.26013545
+    start_lon: 11.4356626666667
+    start_time: '20240414152029'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   27ad93b6-09c5-4483-bec1-16b270c96d2e:
     event_id: 27ad93b6-09c5-4483-bec1-16b270c96d2e
     event_type: Event
@@ -29506,6 +30300,25 @@ CTD:
     stop_lat: 55.25039115
     stop_lon: 15.9839186166667
     stop_time: '20220521123052'
+  327efeba-0e08-4365-bb8f-c7e66e4ff0ae:
+    event_id: 327efeba-0e08-4365-bb8f-c7e66e4ff0ae
+    event_type: Event
+    full_name: CTD.00213
+    id: '00213'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - HOSE
+    - BOTTLE
+    - ZOOPLANKTON
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.1167143166667
+    start_lon: 16.53504595
+    start_time: '20240409175946'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
   3295bc8d-6104-4ae5-bc1e-a2e07db8d28f:
     event_id: 3295bc8d-6104-4ae5-bc1e-a2e07db8d28f
     event_type: Event
@@ -32582,6 +33395,23 @@ CTD:
     stop_lat: 57.1926589666667
     stop_lon: 11.6572724
     stop_time: '20240208005040'
+  6a6a99a4-7b48-4456-a8f9-17d0a591e5fd:
+    event_id: 6a6a99a4-7b48-4456-a8f9-17d0a591e5fd
+    event_type: Event
+    full_name: CTD.00219
+    id: 00219
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    parent_event_id: b98277d1-f785-4a19-97e8-9bf9965dcfde
+    start_lat: 57.9979754166667
+    start_lon: 19.8788429833333
+    start_time: '20240411061026'
+    stop_lat: 57.9979758333333
+    stop_lon: 19.87884315
+    stop_time: '20240411070740'
   6b0013c4-4d9a-4219-b8ab-4a675995217a:
     event_id: 6b0013c4-4d9a-4219-b8ab-4a675995217a
     event_type: Event
@@ -35061,6 +35891,23 @@ CTD:
     stop_lat: 57.1163951
     stop_lon: 17.6686515666667
     stop_time: '20230416071600'
+  905ed6b7-d299-4000-8bb5-d4b65271134d:
+    event_id: 905ed6b7-d299-4000-8bb5-d4b65271134d
+    event_type: Event
+    full_name: CTD.00227
+    id: '00227'
+    name: CTD
+    ongoing_event_names:
+    - BOTTLE
+    - SECCHI
+    - FERRYBOX
+    parent_event_id: 4d100a85-359f-4bde-a89e-2edbc8db16ba
+    start_lat: 55.8666614166667
+    start_lon: 12.7482829
+    start_time: '20240413150530'
+    stop_lat: 55.8666356833333
+    stop_lon: 12.7483414166667
+    stop_time: '20240413153457'
   90d087fc-2cd0-4c70-8d99-d34d704398d5:
     event_id: 90d087fc-2cd0-4c70-8d99-d34d704398d5
     event_type: Event
@@ -35251,6 +36098,24 @@ CTD:
     stop_lat: 55.5552749166667
     stop_lon: 18.4015021
     stop_time: '20220616001314'
+  950e5834-f94a-4d33-849a-53ef7db85629:
+    event_id: 950e5834-f94a-4d33-849a-53ef7db85629
+    event_type: Event
+    full_name: CTD.00230
+    id: '00230'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    - HOSE
+    parent_event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    start_lat: 57.19262765
+    start_lon: 11.6580973833333
+    start_time: '20240414061127'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
   953c5837-d0b3-4a0a-b6b7-106ca478c854:
     event_id: 953c5837-d0b3-4a0a-b6b7-106ca478c854
     event_type: Event
@@ -35534,6 +36399,23 @@ CTD:
     stop_lat: 58.2598182333333
     stop_lon: 11.43537035
     stop_time: '20230810112620'
+  9a8cc473-b67c-4b87-a5e2-520d44bb82b9:
+    event_id: 9a8cc473-b67c-4b87-a5e2-520d44bb82b9
+    event_type: Event
+    full_name: CTD.00215
+    id: '00215'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    parent_event_id: 286185fa-1a79-41ca-b621-84dfa90bf69a
+    start_lat: 58.0168991166667
+    start_lon: 17.9847934
+    start_time: '20240410080123'
+    stop_lat: 58.01688005
+    stop_lon: 17.9847852666667
+    stop_time: '20240410090723'
   9ae59555-be10-4489-b071-522629f3a6c0:
     event_id: 9ae59555-be10-4489-b071-522629f3a6c0
     event_type: Event
@@ -36235,6 +37117,22 @@ CTD:
     stop_lat: 54.9711129166667
     stop_lon: 14.0989828333333
     stop_time: '20230313065335'
+  a7368b50-65df-4909-85b3-2f6d395938f5:
+    event_id: a7368b50-65df-4909-85b3-2f6d395938f5
+    event_type: Event
+    full_name: CTD.00223
+    id: '00223'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    parent_event_id: 37b0b634-e839-4904-b4b4-e1b23c49ad2a
+    start_lat: 55.3834701166667
+    start_lon: 15.3352610166667
+    start_time: '20240412185053'
+    stop_lat: 55.3830381833333
+    stop_lon: 15.3344440166667
+    stop_time: '20240412193234'
   a7e2ebf6-60e2-4dff-8b5c-9d8b53fb17c1:
     event_id: a7e2ebf6-60e2-4dff-8b5c-9d8b53fb17c1
     event_type: Event
@@ -38209,6 +39107,25 @@ CTD:
     stop_lat: 56.63774285
     stop_lon: 19.5894226166667
     stop_time: '20220319131527'
+  c6248939-9035-4bf5-af86-dff4eaa49b94:
+    event_id: c6248939-9035-4bf5-af86-dff4eaa49b94
+    event_type: Event
+    full_name: CTD.00225
+    id: '00225'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.9714499
+    start_lon: 14.0991913833333
+    start_time: '20240413033626'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   c6274cef-ad9d-40ea-8675-5bfc0777dfd9:
     event_id: c6274cef-ad9d-40ea-8675-5bfc0777dfd9
     event_type: Event
@@ -38567,6 +39484,23 @@ CTD:
     stop_lat: 57.3123562333333
     stop_lon: 20.0759376166667
     stop_time: '20220520134631'
+  ca38f995-70ff-42c0-ab34-59609249cb86:
+    event_id: ca38f995-70ff-42c0-ab34-59609249cb86
+    event_type: Event
+    full_name: CTD.00214
+    id: '00214'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    parent_event_id: eed16c02-b0c4-4988-9f3f-3c90ea7206aa
+    start_lat: 57.1172153166667
+    start_lon: 17.6691792666667
+    start_time: '20240410015624'
+    stop_lat: 57.1172218
+    stop_lon: 17.669196
+    stop_time: '20240410025623'
   ca4fd16a-c162-475c-a830-e79e31400993:
     event_id: ca4fd16a-c162-475c-a830-e79e31400993
     event_type: Event
@@ -38699,6 +39633,25 @@ CTD:
     stop_lat: 57.5495897666667
     stop_lon: 11.5190949333333
     stop_time: '20230110183443'
+  cae2a398-33d2-4c42-ae64-83e1c9ff063f:
+    event_id: cae2a398-33d2-4c42-ae64-83e1c9ff063f
+    event_type: Event
+    full_name: CTD.00229
+    id: 00229
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - BOTTLE
+    - PHYTOPLANKTON
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.93963545
+    start_lon: 12.2132589666667
+    start_time: '20240413235512'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   cafba73d-2a5b-4fc2-89d7-669e5303b694:
     event_id: cafba73d-2a5b-4fc2-89d7-669e5303b694
     event_type: Event
@@ -38868,6 +39821,26 @@ CTD:
     stop_lat: 55.61803715
     stop_lon: 14.8694103166667
     stop_time: '20220112172902'
+  ce5dae6e-81bb-4947-8850-540d833f2c59:
+    event_id: ce5dae6e-81bb-4947-8850-540d833f2c59
+    event_type: Event
+    full_name: CTD.00222
+    id: '00222'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.2495684666667
+    start_lon: 15.9842994166667
+    start_time: '20240412145451'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   cf4d0e3f-cea6-47a0-8b8c-c4c5f03f9e75:
     event_id: cf4d0e3f-cea6-47a0-8b8c-c4c5f03f9e75
     event_type: Event
@@ -39263,6 +40236,22 @@ CTD:
     stop_lat: 55.8667551
     stop_lon: 12.7480392833333
     stop_time: '20230413172316'
+  d48a20d8-8fc7-46dd-9cd5-ac184b5b9783:
+    event_id: d48a20d8-8fc7-46dd-9cd5-ac184b5b9783
+    event_type: Event
+    full_name: CTD.00224
+    id: '00224'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    parent_event_id: 20f99d8d-596c-42e4-a0b8-880e8a50a250
+    start_lat: 55.6174114833333
+    start_lon: 14.8679674333333
+    start_time: '20240412214923'
+    stop_lat: 55.6173983333333
+    stop_lon: 14.8679569333333
+    stop_time: '20240412224155'
   d4ba34dc-f85a-4d2e-958b-79e2c3689a30:
     event_id: d4ba34dc-f85a-4d2e-958b-79e2c3689a30
     event_type: Event
@@ -39450,6 +40439,26 @@ CTD:
     stop_lat: 58.3411424166667
     stop_lon: 11.0249906666667
     stop_time: '20230508142736'
+  d66b3d55-b55d-47a6-862a-cce19170bc70:
+    event_id: d66b3d55-b55d-47a6-862a-cce19170bc70
+    event_type: Event
+    full_name: CTD.00216
+    id: '00216'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - SECCHI
+    - ZOOPLANKTON
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946247333333
+    start_lon: 18.2356330333333
+    start_time: '20240410123057'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   d672e785-3cfe-4608-9dc8-be427b935939:
     event_id: d672e785-3cfe-4608-9dc8-be427b935939
     event_type: Event
@@ -40776,6 +41785,23 @@ CTD:
     stop_lat: 55.86843705
     stop_lon: 12.7477913166667
     stop_time: '20220522085627'
+  ea42e273-5ae9-46d4-9a55-1714a48ad106:
+    event_id: ea42e273-5ae9-46d4-9a55-1714a48ad106
+    event_type: Event
+    full_name: CTD.00217
+    id: '00217'
+    name: CTD
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    parent_event_id: 4bc30000-cacf-48c6-92cc-9b5905dc2612
+    start_lat: 58.8817317166667
+    start_lon: 20.3285475666667
+    start_time: '20240410223322'
+    stop_lat: 58.8817566333333
+    stop_lon: 20.3285841
+    stop_time: '20240410233839'
   ea460f3a-39f3-4cd1-84e6-965309bbefa9:
     event_id: ea460f3a-39f3-4cd1-84e6-965309bbefa9
     event_type: Event
@@ -42761,6 +43787,20 @@ FERRYBOX:
     stop_lat: 56.6633627333333
     stop_lon: 16.3714277833333
     stop_time: '20230921091812'
+  678b7fda-6e00-4922-8f8d-352b4bf2c5f2:
+    event_id: 678b7fda-6e00-4922-8f8d-352b4bf2c5f2
+    event_type: Event
+    full_name: Ferrybox.004
+    id: '004'
+    name: FERRYBOX
+    ongoing_event_names: []
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.6612335
+    start_lon: 16.372791
+    start_time: '20240409134626'
+    stop_lat: 58.2753249166667
+    stop_lon: 11.4475830666667
+    stop_time: '20240414174333'
   678e4a5a-3496-4d9a-ba79-7133884d3ae7:
     event_id: 678e4a5a-3496-4d9a-ba79-7133884d3ae7
     event_type: Event
@@ -42976,6 +44016,27 @@ FLADEN:
     stop_lat: 57.1925520333333
     stop_lon: 11.65758215
     stop_time: '20220111075928'
+  5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8:
+    event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    event_type: Station
+    full_name: Fladen.0272
+    id: '0272'
+    max_depth: 83.4
+    min_depth: 0.0
+    name: FLADEN
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    - CTD
+    - HOSE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.1926153166667
+    start_lon: 11.6580877166667
+    start_time: '20240414061050'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
   5d49bc06-16a0-4e45-87a3-8f168715d9a0:
     event_id: 5d49bc06-16a0-4e45-87a3-8f168715d9a0
     event_type: Station
@@ -43976,6 +45037,25 @@ GF9:
     stop_lat: 55.6161489166667
     stop_lon: 14.86704195
     stop_time: '20230510225608'
+  20f99d8d-596c-42e4-a0b8-880e8a50a250:
+    event_id: 20f99d8d-596c-42e4-a0b8-880e8a50a250
+    event_type: Station
+    full_name: "Han\xF6bukten.0266"
+    id: '0266'
+    max_depth: 82.4
+    min_depth: 77.5
+    name: "HAN\xD6BUKTEN"
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.6174085833333
+    start_lon: 14.867969
+    start_time: '20240412214917'
+    stop_lat: 55.6173983333333
+    stop_lon: 14.8679569333333
+    stop_time: '20240412224155'
   2173765f-5096-4d05-b961-50bbc18fd577:
     event_id: 2173765f-5096-4d05-b961-50bbc18fd577
     event_type: Station
@@ -44589,6 +45669,26 @@ HOSE:
     stop_lat: 56.7502279
     stop_lon: 12.11972995
     stop_time: '20240312130938'
+  059641fa-78a8-459e-a3b0-0d9f89424a71:
+    event_id: 059641fa-78a8-459e-a3b0-0d9f89424a71
+    event_type: Event
+    full_name: Hose.0044
+    id: '0044'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - SECCHI
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.59462475
+    start_lon: 18.2356324833333
+    start_time: '20240410123058'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   06cf70f3-c50a-40bd-8f66-64ef3649948d:
     event_id: 06cf70f3-c50a-40bd-8f66-64ef3649948d
     event_type: Event
@@ -44833,6 +45933,25 @@ HOSE:
     stop_lat: 58.2597653666667
     stop_lon: 11.4356543166667
     stop_time: '20230508120710'
+  0ca5ba11-4908-4e57-9e0d-a50f43f8c195:
+    event_id: 0ca5ba11-4908-4e57-9e0d-a50f43f8c195
+    event_type: Event
+    full_name: Hose.0052
+    id: '0052'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - BOTTLE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.2601501333333
+    start_lon: 11.4356886
+    start_time: '20240414152031'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   0d035038-7b38-46b7-b352-c454524f571c:
     event_id: 0d035038-7b38-46b7-b352-c454524f571c
     event_type: Event
@@ -44890,6 +46009,25 @@ HOSE:
     stop_lat: 58.2843448666667
     stop_lon: 10.5044271
     stop_time: '20230314192412'
+  0ece8159-5a3a-4c92-9183-95da7a7d585d:
+    event_id: 0ece8159-5a3a-4c92-9183-95da7a7d585d
+    event_type: Event
+    full_name: Hose.0049
+    id: 0049
+    name: HOSE
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688506166667
+    start_lon: 12.1119261666667
+    start_time: '20240413205509'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
   0f1476ab-dbbd-474b-b2d3-1f1f0d1ab34e:
     event_id: 0f1476ab-dbbd-474b-b2d3-1f1f0d1ab34e
     event_type: Event
@@ -46799,6 +47937,25 @@ HOSE:
     stop_lat: 55.2500260333333
     stop_lon: 15.98327455
     stop_time: '20220814185333'
+  611a9e79-ac15-4c9a-af68-3a2d208926f8:
+    event_id: 611a9e79-ac15-4c9a-af68-3a2d208926f8
+    event_type: Event
+    full_name: Hose.0046
+    id: '0046'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - ZOOPLANKTON
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.387243
+    start_lon: 19.4367260166667
+    start_time: '20240411163225'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   615b86dd-b0fb-48fd-ac63-e5ae162457bf:
     event_id: 615b86dd-b0fb-48fd-ac63-e5ae162457bf
     event_type: Event
@@ -47000,6 +48157,26 @@ HOSE:
     stop_lat: 58.5936520166667
     stop_lon: 18.2363778166667
     stop_time: '20231115225736'
+  68039447-f7a2-47a3-9458-1027b32f4f28:
+    event_id: 68039447-f7a2-47a3-9458-1027b32f4f28
+    event_type: Event
+    full_name: Hose.0047
+    id: '0047'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.24956855
+    start_lon: 15.98429785
+    start_time: '20240412145452'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   6866a22d-9e33-48d5-811f-3ba70462ba89:
     event_id: 6866a22d-9e33-48d5-811f-3ba70462ba89
     event_type: Event
@@ -47154,6 +48331,24 @@ HOSE:
     stop_lat: 56.3708985833333
     stop_lon: 16.2015297333333
     stop_time: '20221114192509'
+  6ba5ce0e-f92e-4478-b4f4-a691cd0b6eed:
+    event_id: 6ba5ce0e-f92e-4478-b4f4-a691cd0b6eed
+    event_type: Event
+    full_name: Hose.0051
+    id: '0051'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    - CTD
+    parent_event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    start_lat: 57.1926364
+    start_lon: 11.6581315
+    start_time: '20240414061129'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
   6c61a58a-5bb2-48f0-8021-8c30c0ec6a8f:
     event_id: 6c61a58a-5bb2-48f0-8021-8c30c0ec6a8f
     event_type: Event
@@ -47407,6 +48602,25 @@ HOSE:
     stop_lat: 56.6687562166667
     stop_lon: 12.11177675
     stop_time: '20240208070304'
+  74d0ce06-9a8b-487d-8a32-760eafd2e814:
+    event_id: 74d0ce06-9a8b-487d-8a32-760eafd2e814
+    event_type: Event
+    full_name: Hose.0048
+    id: 0048
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.9714468666667
+    start_lon: 14.09918755
+    start_time: '20240413033627'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   76641693-0646-4a47-856a-de126a4060ea:
     event_id: 76641693-0646-4a47-856a-de126a4060ea
     event_type: Event
@@ -48889,6 +50103,25 @@ HOSE:
     stop_lat: 58.28459925
     stop_lon: 10.5050127833333
     stop_time: '20220523093530'
+  c5a8393c-162c-44c4-ac12-370febe4b9a2:
+    event_id: c5a8393c-162c-44c4-ac12-370febe4b9a2
+    event_type: Event
+    full_name: Hose.0042
+    id: '0042'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.11673385
+    start_lon: 16.53508085
+    start_time: '20240409175947'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
   c5f0518a-3d60-4f41-8054-f25bf18d7a43:
     event_id: c5f0518a-3d60-4f41-8054-f25bf18d7a43
     event_type: Event
@@ -48908,6 +50141,23 @@ HOSE:
     stop_lat: 58.6137679
     stop_lon: 18.2898404833333
     stop_time: '20230310062402'
+  c8ad2e54-a282-47bf-9167-fec0166fa846:
+    event_id: c8ad2e54-a282-47bf-9167-fec0166fa846
+    event_type: Event
+    full_name: Hose.0045
+    id: '0045'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: 4bc30000-cacf-48c6-92cc-9b5905dc2612
+    start_lat: 58.8817251666667
+    start_lon: 20.3285331166667
+    start_time: '20240410223324'
+    stop_lat: 58.8817566333333
+    stop_lon: 20.3285841
+    stop_time: '20240410233839'
   ca78d65b-9e40-4da8-a5f9-2cc6ed5ea364:
     event_id: ca78d65b-9e40-4da8-a5f9-2cc6ed5ea364
     event_type: Event
@@ -49185,6 +50435,25 @@ HOSE:
     stop_lat: 58.2849113666667
     stop_lon: 10.5045824666667
     stop_time: '20240313040538'
+  d5f17b6c-89e0-4936-8848-1716db7e21eb:
+    event_id: d5f17b6c-89e0-4936-8848-1716db7e21eb
+    event_type: Event
+    full_name: Hose.0050
+    id: '0050'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.93963315
+    start_lon: 12.2132476
+    start_time: '20240413235514'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   d76265dd-e724-4205-957b-1b6b340447c9:
     event_id: d76265dd-e724-4205-957b-1b6b340447c9
     event_type: Event
@@ -50000,6 +51269,23 @@ HOSE:
     stop_lat: 57.1163951
     stop_lon: 17.6686515666667
     stop_time: '20230416071600'
+  ff9614ce-049b-442f-8e1c-7978864d3209:
+    event_id: ff9614ce-049b-442f-8e1c-7978864d3209
+    event_type: Event
+    full_name: Hose.0043
+    id: '0043'
+    name: HOSE
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    parent_event_id: eed16c02-b0c4-4988-9f3f-3c90ea7206aa
+    start_lat: 57.1172156333333
+    start_lon: 17.66917965
+    start_time: '20240410015628'
+    stop_lat: 57.1172218
+    stop_lon: 17.669196
+    stop_time: '20240410025623'
 "HUVUDSK\xC4R":
   14e0b040-ade2-4428-9724-b26917a5e3a7:
     event_id: 14e0b040-ade2-4428-9724-b26917a5e3a7
@@ -50072,6 +51358,24 @@ HOSE:
     stop_lat: 58.9270739666667
     stop_lon: 19.1632195333333
     stop_time: '20220920113247'
+  8c12bada-e31d-4e05-a55c-e2c35434453e:
+    event_id: 8c12bada-e31d-4e05-a55c-e2c35434453e
+    event_type: Station
+    full_name: "Huvudsk\xE4r.0259"
+    id: 0259
+    max_depth: 96.5
+    min_depth: 91.6
+    name: "HUVUDSK\xC4R"
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 58.9354061833333
+    start_lon: 19.1645652333333
+    start_time: '20240410180301'
+    stop_lat: 58.9362679666667
+    stop_lon: 19.1684089333333
+    stop_time: '20240410185301'
   96364ba4-aef6-429f-a9f9-f32af6d80769:
     event_id: 96364ba4-aef6-429f-a9f9-f32af6d80769
     event_type: Station
@@ -53312,6 +54616,22 @@ MVP:
     stop_lon: 14.15968785
     stop_time: '20221022123921'
 "MVP STOLPE R\xC4NNA":
+  76b60082-1ac6-4ed0-989a-57a86a9f63f5:
+    event_id: 76b60082-1ac6-4ed0-989a-57a86a9f63f5
+    event_type: Event
+    full_name: "MVP Stolpe R\xE4nna.007"
+    id: '007'
+    max_depth: 71.3
+    name: "MVP STOLPE R\xC4NNA"
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.40004625
+    start_lon: 16.54023435
+    start_time: '20240412100220'
+    stop_lat: 55.13241065
+    stop_lon: 16.67421305
+    stop_time: '20240412121204'
   cf262b37-23e3-454e-843d-12eee08c8eaf:
     event_id: cf262b37-23e3-454e-843d-12eee08c8eaf
     event_type: Event
@@ -53327,6 +54647,23 @@ MVP:
     stop_lat: 55.1057606333333
     stop_lon: 16.5507641
     stop_time: '20220521084540'
+"MVP \xD6STERGARNSHOLM - BY13":
+  5430192a-bde0-4401-acf5-4336199315cd:
+    event_id: 5430192a-bde0-4401-acf5-4336199315cd
+    event_type: Event
+    full_name: "MVP \xD6stergarnsholm - BY13.008"
+    id: 008
+    max_depth: 126.5
+    name: "MVP \xD6STERGARNSHOLM - BY13"
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.4048495333333
+    start_lon: 19.09426505
+    start_time: '20240411144621'
+    stop_lat: 57.38521595
+    stop_lon: 19.4116464
+    stop_time: '20240411160539'
 MVPSTATION:
   d998c8d4-7c73-4306-83c4-d59a9b7915bc:
     event_id: d998c8d4-7c73-4306-83c4-d59a9b7915bc
@@ -53699,6 +55036,28 @@ N14 FALKENBERG:
     stop_lat: 56.9399857833333
     stop_lon: 12.2119923833333
     stop_time: '20220813115557'
+  47aad402-3d7d-4fd2-85bb-74d65876d277:
+    event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    event_type: Station
+    full_name: N14 Falkenberg.0271
+    id: '0271'
+    max_depth: 31.3
+    min_depth: 30.6
+    name: N14 FALKENBERG
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.9396329333333
+    start_lon: 12.2132476666667
+    start_time: '20240413235505'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   6053f0c4-d9a6-49df-9e8a-c46e552c3219:
     event_id: 6053f0c4-d9a6-49df-9e8a-c46e552c3219
     event_type: Station
@@ -55324,6 +56683,25 @@ PHYTOPLANKTON:
     stop_lat: 55.00363705
     stop_lon: 13.9599917666667
     stop_time: '20220320200129'
+  2b9d7c61-8a58-4905-9ced-fcd85d762f40:
+    event_id: 2b9d7c61-8a58-4905-9ced-fcd85d762f40
+    event_type: Event
+    full_name: Phytoplankton.0036
+    id: '0036'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - HOSE
+    - CTD
+    - BOTTLE
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688507166667
+    start_lon: 12.1119244333333
+    start_time: '20240413205510'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
   2cfebf14-0cef-4135-9103-8df196981f7b:
     event_id: 2cfebf14-0cef-4135-9103-8df196981f7b
     event_type: Event
@@ -56206,6 +57584,25 @@ PHYTOPLANKTON:
     stop_lat: 56.9398873333333
     stop_lon: 12.2117932833333
     stop_time: '20230116131137'
+  574d01d5-b827-4cf9-94b4-eb7dcc8b0559:
+    event_id: 574d01d5-b827-4cf9-94b4-eb7dcc8b0559
+    event_type: Event
+    full_name: Phytoplankton.0037
+    id: '0037'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.9396332
+    start_lon: 12.2132474166667
+    start_time: '20240413235516'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   5bb4e50d-2f9d-416c-8e70-08d95978de46:
     event_id: 5bb4e50d-2f9d-416c-8e70-08d95978de46
     event_type: Event
@@ -56507,6 +57904,26 @@ PHYTOPLANKTON:
     stop_lat: 58.5936678833333
     stop_lon: 18.2363564833333
     stop_time: '20221113200256'
+  742fe069-3915-4c48-a7d1-146f90538799:
+    event_id: 742fe069-3915-4c48-a7d1-146f90538799
+    event_type: Event
+    full_name: Phytoplankton.0034
+    id: '0034'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.2495521
+    start_lon: 15.98428755
+    start_time: '20240412145454'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   74ee795c-803a-4ee7-bdd8-51da63e8cfa3:
     event_id: 74ee795c-803a-4ee7-bdd8-51da63e8cfa3
     event_type: Event
@@ -57094,6 +58511,25 @@ PHYTOPLANKTON:
     stop_lat: 56.6687345666667
     stop_lon: 12.1116774333333
     stop_time: '20220828171255'
+  90315047-90c4-41a3-a0cb-15d666b33f26:
+    event_id: 90315047-90c4-41a3-a0cb-15d666b33f26
+    event_type: Event
+    full_name: Phytoplankton.0038
+    id: 0038
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.26013155
+    start_lon: 11.43566465
+    start_time: '20240414152032'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   903d9f20-fea8-46b9-88ce-1513598e0f1c:
     event_id: 903d9f20-fea8-46b9-88ce-1513598e0f1c
     event_type: Event
@@ -58111,6 +59547,25 @@ PHYTOPLANKTON:
     stop_lat: 56.9395278833333
     stop_lon: 12.2105074833333
     stop_time: '20230715204629'
+  cb877af2-78cc-4450-b8e4-fc1ba7f09f0d:
+    event_id: cb877af2-78cc-4450-b8e4-fc1ba7f09f0d
+    event_type: Event
+    full_name: Phytoplankton.0033
+    id: '0033'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.387243
+    start_lon: 19.4367260166667
+    start_time: '20240411163226'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   cdc96a99-d6a7-4ab7-8b24-485efb89bf5d:
     event_id: cdc96a99-d6a7-4ab7-8b24-485efb89bf5d
     event_type: Event
@@ -58168,6 +59623,25 @@ PHYTOPLANKTON:
     stop_lat: 57.3098548666667
     stop_lon: 20.0783833166667
     stop_time: '20230415130854'
+  d118b938-a690-4f40-9557-8dd33ae6834c:
+    event_id: d118b938-a690-4f40-9557-8dd33ae6834c
+    event_type: Event
+    full_name: Phytoplankton.0035
+    id: '0035'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    - CTD
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.97144715
+    start_lon: 14.0991863833333
+    start_time: '20240413033629'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   d2032971-b38e-4d09-9e7a-f38fd0a4121a:
     event_id: d2032971-b38e-4d09-9e7a-f38fd0a4121a
     event_type: Event
@@ -58357,6 +59831,25 @@ PHYTOPLANKTON:
     stop_lat: 54.97122565
     stop_lon: 14.0988572666667
     stop_time: '20230414044652'
+  dd2b3adb-3bd1-4322-a0fb-038590d592f8:
+    event_id: dd2b3adb-3bd1-4322-a0fb-038590d592f8
+    event_type: Event
+    full_name: Phytoplankton.0031
+    id: '0031'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.11671545
+    start_lon: 16.5350464
+    start_time: '20240409175949'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
   ddf93ba1-12b2-4609-becb-e61607704c0d:
     event_id: ddf93ba1-12b2-4609-becb-e61607704c0d
     event_type: Event
@@ -58868,6 +60361,26 @@ PHYTOPLANKTON:
     parent_event_id: c1d69abd-8a10-431b-a166-09e97cd2350b
     start_time: '20230211024212'
     stop_time: '20230211040215'
+  fe5f627f-424f-43e9-98d8-704899e62ae1:
+    event_id: fe5f627f-424f-43e9-98d8-704899e62ae1
+    event_type: Event
+    full_name: Phytoplankton.0032
+    id: '0032'
+    name: PHYTOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - SECCHI
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946425
+    start_lon: 18.2356314333333
+    start_time: '20240410123100'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   fe81c35a-ce9e-47c2-b463-973277288d5a:
     event_id: fe81c35a-ce9e-47c2-b463-973277288d5a
     event_type: Event
@@ -59918,6 +61431,24 @@ SECCHI:
     parent_event_id: 66e7f4fc-de15-4f04-aa28-e0c44e58d708
     start_time: '20230210141218'
     stop_time: '20230210145954'
+  1c6e3ff8-6e88-4864-9478-4ad164629cee:
+    event_id: 1c6e3ff8-6e88-4864-9478-4ad164629cee
+    event_type: Event
+    full_name: Secchi.0023
+    id: '0023'
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - HOSE
+    parent_event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    start_lat: 57.1926314833333
+    start_lon: 11.65810305
+    start_time: '20240414061131'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
   1d72f95a-39f1-4d8a-81c5-cb8d4d894028:
     event_id: 1d72f95a-39f1-4d8a-81c5-cb8d4d894028
     event_type: Event
@@ -60491,6 +62022,23 @@ SECCHI:
     stop_lat: 56.9392773833333
     stop_lon: 12.2115292666667
     stop_time: '20220111123959'
+  3e00c39d-2d24-464e-bc91-2a79f0b0ccc1:
+    event_id: 3e00c39d-2d24-464e-bc91-2a79f0b0ccc1
+    event_type: Event
+    full_name: Secchi.0019
+    id: 0019
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    parent_event_id: b98277d1-f785-4a19-97e8-9bf9965dcfde
+    start_lat: 57.9979749833333
+    start_lon: 19.8788426333333
+    start_time: '20240411061028'
+    stop_lat: 57.9979758333333
+    stop_lon: 19.87884315
+    stop_time: '20240411070740'
   3e70d4c3-8922-46fc-8b24-1ee7530b42f1:
     event_id: 3e70d4c3-8922-46fc-8b24-1ee7530b42f1
     event_type: Event
@@ -60922,6 +62470,23 @@ SECCHI:
     stop_lat: 55.3912035166667
     stop_lon: 15.3257113666667
     stop_time: '20220112143123'
+  584e9160-09bb-4202-922e-c9eb3e5409cb:
+    event_id: 584e9160-09bb-4202-922e-c9eb3e5409cb
+    event_type: Event
+    full_name: Secchi.0017
+    id: '0017'
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    parent_event_id: 286185fa-1a79-41ca-b621-84dfa90bf69a
+    start_lat: 58.0169003333333
+    start_lon: 17.9847898833333
+    start_time: '20240410080125'
+    stop_lat: 58.01688005
+    stop_lon: 17.9847852666667
+    stop_time: '20240410090723'
   5a180f58-f4fb-468d-a210-7e6588f53d4e:
     event_id: 5a180f58-f4fb-468d-a210-7e6588f53d4e
     event_type: Event
@@ -61732,6 +63297,23 @@ SECCHI:
     stop_lat: 57.3123562333333
     stop_lon: 20.0759376166667
     stop_time: '20220520134631'
+  8130f0a8-e16d-4bb6-96ae-379d610dcbec:
+    event_id: 8130f0a8-e16d-4bb6-96ae-379d610dcbec
+    event_type: Event
+    full_name: Secchi.0021
+    id: '0021'
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf
+    start_lat: 55.0160071833333
+    start_lon: 13.3005168166667
+    start_time: '20240413075048'
+    stop_lat: 55.0160262833333
+    stop_lon: 13.3005044833333
+    stop_time: '20240413082011'
   830f9dc1-cc64-4760-9217-94ef5f9d2198:
     event_id: 830f9dc1-cc64-4760-9217-94ef5f9d2198
     event_type: Event
@@ -62291,6 +63873,26 @@ SECCHI:
     stop_lat: 56.6345289
     stop_lon: 19.5858171
     stop_time: '20221112140906'
+  9d7be43e-5e33-489a-949f-afaea9f6d58c:
+    event_id: 9d7be43e-5e33-489a-949f-afaea9f6d58c
+    event_type: Event
+    full_name: Secchi.0018
+    id: 0018
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946424
+    start_lon: 18.2356321333333
+    start_time: '20240410123102'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   9d8a72c1-88fe-4360-b4c4-7abd65940c1f:
     event_id: 9d8a72c1-88fe-4360-b4c4-7abd65940c1f
     event_type: Event
@@ -62764,6 +64366,26 @@ SECCHI:
     stop_lat: 57.11730145
     stop_lon: 17.6688467
     stop_time: '20230614132517'
+  bb179426-55ea-4336-b216-949c12002d17:
+    event_id: bb179426-55ea-4336-b216-949c12002d17
+    event_type: Event
+    full_name: Secchi.0020
+    id: '0020'
+    name: SECCHI
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.2495690333333
+    start_lon: 15.9842984166667
+    start_time: '20240412145455'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   bb2d57b4-672c-4b3b-9b7e-f539a9dac40c:
     event_id: bb2d57b4-672c-4b3b-9b7e-f539a9dac40c
     event_type: Event
@@ -63389,6 +65011,23 @@ SECCHI:
     stop_lat: 55.3991347666667
     stop_lon: 15.3440776166667
     stop_time: '20230112122102'
+  e80534a8-40da-4227-ae20-e059caf04750:
+    event_id: e80534a8-40da-4227-ae20-e059caf04750
+    event_type: Event
+    full_name: Secchi.0022
+    id: '0022'
+    name: SECCHI
+    ongoing_event_names:
+    - BOTTLE
+    - CTD
+    - FERRYBOX
+    parent_event_id: 4d100a85-359f-4bde-a89e-2edbc8db16ba
+    start_lat: 55.8666403333333
+    start_lon: 12.7482843333333
+    start_time: '20240413150532'
+    stop_lat: 55.8666356833333
+    stop_lon: 12.7483414166667
+    stop_time: '20240413153457'
   eb0e77b5-b81a-4067-90ec-7c8dd45f047a:
     event_id: eb0e77b5-b81a-4067-90ec-7c8dd45f047a
     event_type: Event
@@ -63876,6 +65515,28 @@ SLAGGO:
     stop_lat: 0.0
     stop_lon: 0.0
     stop_time: '20220712093617'
+  2164dc13-4328-4999-b2e9-0e9dc30d80e3:
+    event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    event_type: Station
+    full_name: "Sl\xE4gg\xF6.0273"
+    id: '0273'
+    max_depth: 78.5
+    min_depth: 67.8
+    name: "SL\xC4GG\xD6"
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 58.2601485166667
+    start_lon: 11.4356599666667
+    start_time: '20240414152020'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   265a4d57-4798-4b7b-8ed6-66a6dc8c000f:
     event_id: 265a4d57-4798-4b7b-8ed6-66a6dc8c000f
     event_type: Station
@@ -66284,6 +67945,20 @@ SVEA:
     ongoing_event_names: []
     start_time: '20220519040000'
     stop_time: '20220525060425'
+  64b6b360-9657-41d6-bd9a-ef0f692f5579:
+    event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    event_type: Trip
+    full_name: SVEA.2024.009
+    id: 009
+    name: SVEA
+    ongoing_event_names:
+    - FERRYBOX
+    start_lat: 56.6612335
+    start_lon: 16.372791
+    start_time: '20240409134626'
+    stop_lat: 58.2742673666667
+    stop_lon: 11.4442906
+    stop_time: '20240414164515'
   65edacfe-be8e-4bc8-8f6d-6b4954ed41f5:
     event_id: 65edacfe-be8e-4bc8-8f6d-6b4954ed41f5
     event_type: Trip
@@ -70561,6 +72236,21 @@ TRIP POSITION (CRUISE-EVENT):
     stop_lat: 58.27531265
     stop_lon: 11.4475627833333
     stop_time: '20230618144421'
+  eea3f70d-2046-4700-95f7-a8c286779cf2:
+    event_id: eea3f70d-2046-4700-95f7-a8c286779cf2
+    event_type: Event
+    full_name: Trip Position (Cruise-event)
+    id: Trip Position (Cruise-event)
+    name: TRIP POSITION (CRUISE-EVENT)
+    ongoing_event_names:
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 56.6592324666667
+    start_lon: 16.3799361
+    start_time: '20240409135023'
+    stop_lat: 58.2753255833333
+    stop_lon: 11.4475838666667
+    stop_time: '20240414174337'
   efd6438d-5574-454d-8ce9-e1fe31fc628a:
     event_id: efd6438d-5574-454d-8ce9-e1fe31fc628a
     event_type: Event
@@ -70933,6 +72623,26 @@ W LANDSKRONA:
     stop_lat: 55.8655666
     stop_lon: 12.7478681666667
     stop_time: '20221110153418'
+  4d100a85-359f-4bde-a89e-2edbc8db16ba:
+    event_id: 4d100a85-359f-4bde-a89e-2edbc8db16ba
+    event_type: Station
+    full_name: W Landskrona.0269
+    id: 0269
+    max_depth: 50.3
+    min_depth: 50.2
+    name: W LANDSKRONA
+    ongoing_event_names:
+    - BOTTLE
+    - CTD
+    - SECCHI
+    - FERRYBOX
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 55.8666372666667
+    start_lon: 12.7482836833333
+    start_time: '20240413150522'
+    stop_lat: 55.8666356833333
+    stop_lon: 12.7483414166667
+    stop_time: '20240413153457'
   54b44976-bcff-4c9f-87c5-c4074d6eb72b:
     event_id: 54b44976-bcff-4c9f-87c5-c4074d6eb72b
     event_type: Station
@@ -79155,6 +80865,28 @@ WEATHER_QNH:
     stop_time: '20240210145114'
     wind_dir: 64
     wind_speed: 9.5
+  08fb9df3-9668-4155-9a54-f8682a9e7017:
+    air_pres: 1022.0
+    air_temp: 7.8
+    event_id: 08fb9df3-9668-4155-9a54-f8682a9e7017
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - SECCHI
+    - BOTTLE
+    parent_event_id: cdaa39e2-afd9-4fe8-9f9a-fac96dbc7bcf
+    start_lat: 55.0160255166667
+    start_lon: 13.3005201333333
+    start_time: '20240413075050'
+    stop_lat: 55.0160262833333
+    stop_lon: 13.3005044833333
+    stop_time: '20240413082011'
+    wind_dir: 236
+    wind_speed: 6.8
   0978d144-88a6-4e5c-85a8-6ff5180efc2e:
     air_pres: 1016.8
     air_temp: 19.1
@@ -79328,6 +81060,27 @@ WEATHER_QNH:
     stop_time: '20230618133209'
     wind_dir: 36
     wind_speed: 6.9
+  0ce455f2-3944-489f-90ab-f3aaa00a08d0:
+    air_pres: 1020.4
+    air_temp: 6.1
+    event_id: 0ce455f2-3944-489f-90ab-f3aaa00a08d0
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: 962d1ca3-3751-43be-becc-bcabfa5f2b24
+    start_lat: 57.4243220666667
+    start_lon: 18.9991140166667
+    start_time: '20240411112950'
+    stop_lat: 57.4211653
+    stop_lon: 18.9950979666667
+    stop_time: '20240411140741'
+    wind_dir: 222
+    wind_speed: 13.5
   0eaa09b1-4107-4d09-90a1-cd224e382959:
     air_pres: 987.4
     air_temp: 5.1
@@ -80384,6 +82137,28 @@ WEATHER_QNH:
     stop_time: '20230115223320'
     wind_dir: 240
     wind_speed: 13.8
+  26762eef-4e26-4e64-b880-ab3ff69764ae:
+    air_pres: 1023.8
+    air_temp: 4.3
+    event_id: 26762eef-4e26-4e64-b880-ab3ff69764ae
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - SECCHI
+    parent_event_id: b98277d1-f785-4a19-97e8-9bf9965dcfde
+    start_lat: 57.9979762333333
+    start_lon: 19.87884305
+    start_time: '20240411061031'
+    stop_lat: 57.9979758333333
+    stop_lon: 19.87884315
+    stop_time: '20240411070740'
+    wind_dir: 216
+    wind_speed: 10.3
   26f6c758-a850-4abe-923b-85f42c771a7c:
     air_pres: 1015.5
     air_temp: 15.2
@@ -80595,6 +82370,28 @@ WEATHER_QNH:
     stop_time: '20230415180053'
     wind_dir: 39
     wind_speed: 8.5
+  2b3782f2-506b-45ff-94b6-d36e0cb7f39a:
+    air_pres: 1018.8
+    air_temp: 5.2
+    event_id: 2b3782f2-506b-45ff-94b6-d36e0cb7f39a
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    - HOSE
+    parent_event_id: 4bc30000-cacf-48c6-92cc-9b5905dc2612
+    start_lat: 58.8817347833333
+    start_lon: 20.3285422833333
+    start_time: '20240410223326'
+    stop_lat: 58.8817566333333
+    stop_lon: 20.3285841
+    stop_time: '20240410233839'
+    wind_dir: 255
+    wind_speed: 13.7
   2b4ad0f4-b0a6-405d-88aa-60230694d76c:
     air_pres: 1003.1
     air_temp: 16.2
@@ -80791,6 +82588,31 @@ WEATHER_QNH:
     stop_time: '20230213183449'
     wind_dir: 296
     wind_speed: 8.8
+  2f511456-a106-4970-ab1a-c8b18db030da:
+    air_pres: 1012.0
+    air_temp: 5.5
+    event_id: 2f511456-a106-4970-ab1a-c8b18db030da
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - SECCHI
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946413833333
+    start_lon: 18.2356312666667
+    start_time: '20240410123109'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
+    wind_dir: 199
+    wind_speed: 10.4
   2f681de1-db60-463b-a0e9-dc7787ac8088:
     air_pres: 1029.9
     air_temp: 12.0
@@ -81048,6 +82870,28 @@ WEATHER_QNH:
     stop_time: '20240312090000'
     wind_dir: 93
     wind_speed: 4.5
+  3393c2d7-2987-47cc-8098-5b0fdf8993af:
+    air_pres: 1017.8
+    air_temp: 13.3
+    event_id: 3393c2d7-2987-47cc-8098-5b0fdf8993af
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - BOTTLE
+    - CTD
+    - SECCHI
+    - FERRYBOX
+    parent_event_id: 4d100a85-359f-4bde-a89e-2edbc8db16ba
+    start_lat: 55.8666609166667
+    start_lon: 12.7482828666667
+    start_time: '20240413150528'
+    stop_lat: 55.8666356833333
+    stop_lon: 12.7483414166667
+    stop_time: '20240413153457'
+    wind_dir: 256
+    wind_speed: 4.8
   34009aa2-8440-4b72-91d7-d6a233ae2bbd:
     event_id: 34009aa2-8440-4b72-91d7-d6a233ae2bbd
     event_type: Event
@@ -81340,6 +83184,30 @@ WEATHER_QNH:
     stop_time: '20240115214324'
     wind_dir: 5
     wind_speed: 8.5
+  3d3cf504-e464-4e17-ad2f-3ac297dd7202:
+    air_pres: 1008.4
+    air_temp: 5.8
+    event_id: 3d3cf504-e464-4e17-ad2f-3ac297dd7202
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - HOSE
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.1167217666667
+    start_lon: 16.5350456166667
+    start_time: '20240409175942'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
+    wind_dir: 104
+    wind_speed: 8.2
   3df4a286-c0b3-402a-92a2-30e01d33cafb:
     air_pres: 1008.9
     air_temp: 3.4
@@ -81553,6 +83421,28 @@ WEATHER_QNH:
     stop_time: '20230917020649'
     wind_dir: 107
     wind_speed: 3.1
+  44f6aba8-0bc4-43df-8d91-07b992e1b3f0:
+    air_pres: 1011.0
+    air_temp: 5.1
+    event_id: 44f6aba8-0bc4-43df-8d91-07b992e1b3f0
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - HOSE
+    parent_event_id: eed16c02-b0c4-4988-9f3f-3c90ea7206aa
+    start_lat: 57.1172140166667
+    start_lon: 17.6692024833333
+    start_time: '20240410015631'
+    stop_lat: 57.1172218
+    stop_lon: 17.669196
+    stop_time: '20240410025623'
+    wind_dir: 213
+    wind_speed: 8.1
   4528f51e-d1ef-4b33-83fd-35b8dd7ed536:
     air_temp: 1.6
     event_id: 4528f51e-d1ef-4b33-83fd-35b8dd7ed536
@@ -82949,6 +84839,27 @@ WEATHER_QNH:
     stop_time: '20231115153406'
     wind_dir: 261
     wind_speed: 7.2
+  6778f0af-3412-44df-be2d-5d5b2b2dd85a:
+    air_pres: 1022.4
+    air_temp: 7.6
+    event_id: 6778f0af-3412-44df-be2d-5d5b2b2dd85a
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: 37b0b634-e839-4904-b4b4-e1b23c49ad2a
+    start_lat: 55.3834642166667
+    start_lon: 15.3352492666667
+    start_time: '20240412185055'
+    stop_lat: 55.3830381833333
+    stop_lon: 15.3344440166667
+    stop_time: '20240412193234'
+    wind_dir: 253
+    wind_speed: 11.2
   67ddc040-323d-4b8a-bcab-54be900e7b31:
     air_pres: 1005.6
     air_temp: 6.3
@@ -84618,6 +86529,28 @@ WEATHER_QNH:
     parent_event_id: b581d72e-38e6-4a1d-bc68-555d40180abc
     start_time: '20230209154711'
     stop_time: '20230209164339'
+  908ddbff-47eb-4619-8448-bad8c0ea6ede:
+    air_pres: 1012.7
+    air_temp: 5.5
+    event_id: 908ddbff-47eb-4619-8448-bad8c0ea6ede
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    - SECCHI
+    parent_event_id: 286185fa-1a79-41ca-b621-84dfa90bf69a
+    start_lat: 58.0168978
+    start_lon: 17.9848013833333
+    start_time: '20240410080120'
+    stop_lat: 58.01688005
+    stop_lon: 17.9847852666667
+    stop_time: '20240410090723'
+    wind_dir: 200
+    wind_speed: 9.6
   91368c98-617d-47d3-aa62-2d5675b64955:
     air_pres: 1000.4
     air_temp: 6.6
@@ -84638,6 +86571,30 @@ WEATHER_QNH:
     stop_time: '20230413050554'
     wind_dir: 97
     wind_speed: 11.0
+  919703fb-55f9-4ed3-ba97-495785743b50:
+    air_pres: 1006.7
+    air_temp: 7.9
+    event_id: 919703fb-55f9-4ed3-ba97-495785743b50
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - ZOOPLANKTON
+    - HOSE
+    - BOTTLE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.2601183
+    start_lon: 11.43566755
+    start_time: '20240414152038'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
+    wind_dir: 256
+    wind_speed: 15.0
   91c629fa-4417-40f7-9ab0-9e4589282a5b:
     air_temp: 2.1
     event_id: 91c629fa-4417-40f7-9ab0-9e4589282a5b
@@ -85214,6 +87171,30 @@ WEATHER_QNH:
     stop_time: '20240310191407'
     wind_dir: 99
     wind_speed: 15.3
+  a019fcc1-6498-42d4-b9bb-d77fba71baa6:
+    air_pres: 1007.2
+    air_temp: 8.6
+    event_id: a019fcc1-6498-42d4-b9bb-d77fba71baa6
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.9396337
+    start_lon: 12.21324715
+    start_time: '20240413235519'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
+    wind_dir: 230
+    wind_speed: 9.6
   a01fb739-0b90-4945-8287-724e90887ae5:
     air_pres: 1014.5
     air_temp: 16.1
@@ -85340,6 +87321,27 @@ WEATHER_QNH:
     stop_time: '20230215145837'
     wind_dir: 226
     wind_speed: 5.9
+  a3f9fc9d-0f20-45f6-8319-8645d02a6de8:
+    air_pres: 1022.0
+    air_temp: 7.2
+    event_id: a3f9fc9d-0f20-45f6-8319-8645d02a6de8
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - CTD
+    parent_event_id: 20f99d8d-596c-42e4-a0b8-880e8a50a250
+    start_lat: 55.6174120166667
+    start_lon: 14.8679670333333
+    start_time: '20240412214925'
+    stop_lat: 55.6173983333333
+    stop_lon: 14.8679569333333
+    stop_time: '20240412224155'
+    wind_dir: 243
+    wind_speed: 7.4
   a3fb0ab3-0ab0-4a72-bf58-1065d5eef3a7:
     air_pres: 1016.8
     air_temp: 3.9
@@ -85919,6 +87921,30 @@ WEATHER_QNH:
     stop_time: '20230813230646'
     wind_dir: 219
     wind_speed: 4.3
+  b230abfc-fc2e-4363-a94c-0d6ea8e7f2cd:
+    air_pres: 1009.8
+    air_temp: 8.7
+    event_id: b230abfc-fc2e-4363-a94c-0d6ea8e7f2cd
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - ZOOPLANKTON
+    - HOSE
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688509833333
+    start_lon: 12.11192965
+    start_time: '20240413205505'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
+    wind_dir: 213
+    wind_speed: 7.7
   b29bc917-a4a6-4e37-8803-1b623dfe5aaf:
     air_pres: 1012.1
     air_temp: 5.4
@@ -87679,6 +89705,30 @@ WEATHER_QNH:
     stop_time: '20230615131124'
     wind_dir: 32
     wind_speed: 7.6
+  e51bea4a-a160-487b-b8a9-bf8d6612db5a:
+    air_pres: 1018.9
+    air_temp: 5.3
+    event_id: e51bea4a-a160-487b-b8a9-bf8d6612db5a
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    - ZOOPLANKTON
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.3872393833333
+    start_lon: 19.4366565666667
+    start_time: '20240411163230'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
+    wind_dir: 225
+    wind_speed: 13.9
   e5586ca9-6248-4718-a015-af3ae4e51b9a:
     air_pres: 1016.8
     air_temp: 17.4
@@ -87715,6 +89765,26 @@ WEATHER_QNH:
     parent_event_id: c1d69abd-8a10-431b-a166-09e97cd2350b
     start_time: '20230211024216'
     stop_time: '20230211040215'
+  e5eea3ff-06d9-47d9-855c-388e41e52b92:
+    air_pres: 1014.5
+    air_temp: 6.4
+    event_id: e5eea3ff-06d9-47d9-855c-388e41e52b92
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    parent_event_id: 8c12bada-e31d-4e05-a55c-e2c35434453e
+    start_lat: 58.9354061833333
+    start_lon: 19.1645652333333
+    start_time: '20240410180301'
+    stop_lat: 58.9362679666667
+    stop_lon: 19.1684089333333
+    stop_time: '20240410185301'
+    wind_dir: 240
+    wind_speed: 14.4
   e5fc9bac-3c64-47d5-9713-499ebd600c80:
     air_pres: 1007.9
     air_temp: 18.1
@@ -88120,6 +90190,29 @@ WEATHER_QNH:
     stop_time: '20230315011236'
     wind_dir: 288
     wind_speed: 9.4
+  f0abbaa1-5b6b-4a5c-8f5a-3b62e5c89bbe:
+    air_pres: 1006.8
+    air_temp: 7.4
+    event_id: f0abbaa1-5b6b-4a5c-8f5a-3b62e5c89bbe
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - SECCHI
+    - CTD
+    - HOSE
+    parent_event_id: 5ac8a0d1-1d6d-4ac0-8f19-6e7b89c7d1b8
+    start_lat: 57.1926434333333
+    start_lon: 11.6581320833333
+    start_time: '20240414061133'
+    stop_lat: 57.1925934333333
+    stop_lon: 11.6583768333333
+    stop_time: '20240414071418'
+    wind_dir: 263
+    wind_speed: 17.6
   f0af00c7-e8f9-4246-8646-9905ef6a5fa6:
     air_pres: 1022.8
     air_temp: 0.9
@@ -88333,6 +90426,31 @@ WEATHER_QNH:
     stop_time: '20230416152527'
     wind_dir: 39
     wind_speed: 9.5
+  f5b2c174-c97b-4087-8455-992668401fb6:
+    air_pres: 1023.6
+    air_temp: 7.6
+    event_id: f5b2c174-c97b-4087-8455-992668401fb6
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - ZOOPLANKTON
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.24956835
+    start_lon: 15.9842989833333
+    start_time: '20240412145457'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
+    wind_dir: 224
+    wind_speed: 11.1
   f5fe614f-3951-4757-a487-87ef39261bbe:
     air_pres: 1000.9
     air_temp: 3.3
@@ -88461,6 +90579,30 @@ WEATHER_QNH:
     stop_time: '20240313113119'
     wind_dir: 166
     wind_speed: 7.6
+  fa05fe76-e4d8-4336-a061-a8b79b40f0dc:
+    air_pres: 1022.8
+    air_temp: 6.8
+    event_id: fa05fe76-e4d8-4336-a061-a8b79b40f0dc
+    event_type: Event
+    full_name: Weather_QNH
+    id: Weather_QNH
+    name: WEATHER_QNH
+    ongoing_event_names:
+    - FERRYBOX
+    - ZOOPLANKTON
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.97144715
+    start_lon: 14.0991863833333
+    start_time: '20240413033630'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
+    wind_dir: 247
+    wind_speed: 8.9
   fc356a4e-e6ba-47d8-b744-46f73130e127:
     air_temp: 0.6
     event_id: fc356a4e-e6ba-47d8-b744-46f73130e127
@@ -89290,6 +91432,25 @@ ZOOPLANKTON:
     stop_lat: 0.0
     stop_lon: 0.0
     stop_time: '20220712093617'
+  22c1cb61-2c31-45e1-b364-f89699985ed9:
+    event_id: 22c1cb61-2c31-45e1-b364-f89699985ed9
+    event_type: Event
+    full_name: Zooplankton.0025
+    id: '0025'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - HOSE
+    - BOTTLE
+    - CTD
+    parent_event_id: c790777b-7a16-4b76-9474-d674f05c9a00
+    start_lat: 56.11680815
+    start_lon: 16.5347631333333
+    start_time: '20240409175956'
+    stop_lat: 56.116678
+    stop_lon: 16.5352711833333
+    stop_time: '20240409192026'
   231de2cd-53af-4efa-92f0-06e89d17d67d:
     event_id: 231de2cd-53af-4efa-92f0-06e89d17d67d
     event_type: Event
@@ -89480,6 +91641,25 @@ ZOOPLANKTON:
     stop_lat: 55.2494456333333
     stop_lon: 15.982893
     stop_time: '20231113155625'
+  309cbafd-fdc8-4135-9b4c-2436fa3200c2:
+    event_id: 309cbafd-fdc8-4135-9b4c-2436fa3200c2
+    event_type: Event
+    full_name: Zooplankton.0031
+    id: '0031'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    parent_event_id: 47aad402-3d7d-4fd2-85bb-74d65876d277
+    start_lat: 56.9396342666667
+    start_lon: 12.21324675
+    start_time: '20240413235521'
+    stop_lat: 56.9396368833333
+    stop_lon: 12.2132513166667
+    stop_time: '20240414004607'
   30b5f248-f1ea-4c95-b01e-96090025ff9e:
     event_id: 30b5f248-f1ea-4c95-b01e-96090025ff9e
     event_type: Event
@@ -89904,6 +92084,25 @@ ZOOPLANKTON:
     stop_lat: 56.1179427333333
     stop_lon: 16.5193855166667
     stop_time: '20230309100102'
+  50a10707-6c68-4adc-bd1e-3ee1b31bb4eb:
+    event_id: 50a10707-6c68-4adc-bd1e-3ee1b31bb4eb
+    event_type: Event
+    full_name: Zooplankton.0029
+    id: 0029
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    parent_event_id: db1bc0c2-5c4f-4e3e-b51b-dce9118734c7
+    start_lat: 54.9714426
+    start_lon: 14.0991814666667
+    start_time: '20240413033632'
+    stop_lat: 54.9721104166667
+    stop_lon: 14.0993279666667
+    stop_time: '20240413045742'
   50dac2d0-846a-4073-8c25-427b41997147:
     event_id: 50dac2d0-846a-4073-8c25-427b41997147
     event_type: Event
@@ -90885,6 +93084,25 @@ ZOOPLANKTON:
     stop_lat: 54.9714235
     stop_lon: 14.09721545
     stop_time: '20230510173648'
+  903a0d02-9933-4f01-bcaa-7bdae83c2d67:
+    event_id: 903a0d02-9933-4f01-bcaa-7bdae83c2d67
+    event_type: Event
+    full_name: Zooplankton.0032
+    id: '0032'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - PHYTOPLANKTON
+    - CTD
+    - HOSE
+    - BOTTLE
+    parent_event_id: 2164dc13-4328-4999-b2e9-0e9dc30d80e3
+    start_lat: 58.2601142333333
+    start_lon: 11.4356694333333
+    start_time: '20240414152040'
+    stop_lat: 58.2598654666667
+    stop_lon: 11.4357406166667
+    stop_time: '20240414162522'
   923c0bd6-eeb8-4504-b3d3-5071e69512de:
     event_id: 923c0bd6-eeb8-4504-b3d3-5071e69512de
     event_type: Event
@@ -91097,6 +93315,45 @@ ZOOPLANKTON:
     stop_lat: 54.9705207
     stop_lon: 14.0978194
     stop_time: '20231023181813'
+  a2e9b821-bd45-4f92-bf87-18ef9a0d8720:
+    event_id: a2e9b821-bd45-4f92-bf87-18ef9a0d8720
+    event_type: Event
+    full_name: Zooplankton.0030
+    id: '0030'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - HOSE
+    - CTD
+    - BOTTLE
+    - PHYTOPLANKTON
+    - FERRYBOX
+    parent_event_id: 0fdd7b91-4f7c-406c-91fb-2ac536789c43
+    start_lat: 56.6688505833333
+    start_lon: 12.11192325
+    start_time: '20240413205512'
+    stop_lat: 56.80265245
+    stop_lon: 12.1677288833333
+    stop_time: '20240413225800'
+  a3880dba-dc3b-4a04-8ed0-57653cb7a792:
+    event_id: a3880dba-dc3b-4a04-8ed0-57653cb7a792
+    event_type: Event
+    full_name: Zooplankton.0028
+    id: 0028
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - BOTTLE
+    - CTD
+    - SECCHI
+    parent_event_id: 04dcece5-b713-4cee-8e38-c50f705b9cd4
+    start_lat: 55.2495515833333
+    start_lon: 15.98428755
+    start_time: '20240412145458'
+    stop_lat: 55.3024083833333
+    stop_lon: 15.7672333666667
+    stop_time: '20240412170746'
   a3e336c8-f2bd-408f-a279-33cd9c2631bb:
     event_id: a3e336c8-f2bd-408f-a279-33cd9c2631bb
     event_type: Event
@@ -92484,6 +94741,26 @@ ZOOPLANKTON:
     stop_lat: 55.2495569
     stop_lon: 15.9841115333333
     stop_time: '20230511053232'
+  fc6a0532-ab10-4bbd-b1bb-bc2244ed0f61:
+    event_id: fc6a0532-ab10-4bbd-b1bb-bc2244ed0f61
+    event_type: Event
+    full_name: Zooplankton.0026
+    id: '0026'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - HOSE
+    - PHYTOPLANKTON
+    - SECCHI
+    - CTD
+    - BOTTLE
+    parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
+    start_lat: 58.5946234833333
+    start_lon: 18.2356313166667
+    start_time: '20240410123107'
+    stop_lat: 58.59461555
+    stop_lon: 18.23565695
+    stop_time: '20240410142431'
   fe3a9e09-9bfd-4851-9427-9d2a1699526d:
     event_id: fe3a9e09-9bfd-4851-9427-9d2a1699526d
     event_type: Event
@@ -92503,6 +94780,25 @@ ZOOPLANKTON:
     stop_lat: 58.2598640666667
     stop_lon: 11.4355896333333
     stop_time: '20221109182405'
+  fed12703-2a09-45f6-bc59-52a6d4f2926a:
+    event_id: fed12703-2a09-45f6-bc59-52a6d4f2926a
+    event_type: Event
+    full_name: Zooplankton.0027
+    id: '0027'
+    name: ZOOPLANKTON
+    ongoing_event_names:
+    - FERRYBOX
+    - BOTTLE
+    - HOSE
+    - CTD
+    - PHYTOPLANKTON
+    parent_event_id: 798c59f6-b950-4074-979b-6a92e7059cbb
+    start_lat: 57.38723575
+    start_lon: 19.4366488666667
+    start_time: '20240411163231'
+    stop_lat: 57.3870989
+    stop_lon: 19.4338625333333
+    stop_time: '20240411175836'
   ff7b120d-0247-4017-af41-a71fac1a2e39:
     event_id: ff7b120d-0247-4017-af41-a71fac1a2e39
     event_type: Event
@@ -94786,6 +97082,25 @@ ZOOPLANKTON:
     stop_lat: 57.42346735
     stop_lon: 18.9929078
     stop_time: '20220715175945'
+  962d1ca3-3751-43be-becc-bcabfa5f2b24:
+    event_id: 962d1ca3-3751-43be-becc-bcabfa5f2b24
+    event_type: Station
+    full_name: "\xD6stergarnsholm.0262"
+    id: '0262'
+    max_depth: 23.3
+    min_depth: 21.2
+    name: "\xD6STERGARNSHOLM"
+    ongoing_event_names:
+    - FERRYBOX
+    - CTD
+    - BOTTLE
+    parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
+    start_lat: 57.4243399
+    start_lon: 18.9991312
+    start_time: '20240411112946'
+    stop_lat: 57.4211653
+    stop_lon: 18.9950979666667
+    stop_time: '20240411140741'
   f0f45707-96aa-490c-b1cd-49230beffe34:
     event_id: f0f45707-96aa-490c-b1cd-49230beffe34
     event_type: Station
