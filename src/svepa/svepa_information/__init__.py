@@ -135,6 +135,28 @@ def get_svepa_events(platform: str = None, time: datetime.datetime = None, lat: 
     return ssi.get_events(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
 
 
+def print_trip_list():
+    exps = sorted(get_svepa_events(platform='svea'))
+    last_year = None
+    for exp in exps:
+        if not last_year:
+            last_year = exp.start_time.year
+            print()
+            print(last_year)
+        if last_year != exp.start_time.year:
+            last_year = exp.start_time.year
+            print()
+            print(last_year)
+        start_time = ''
+        if exp.start_time:
+            start_time = exp.start_time.date()
+        stop_time = ''
+        if exp.stop_time:
+            stop_time = exp.stop_time.date()
+        print(f'{exp.full_name.ljust(20)}{start_time}  >>>  {str(stop_time).ljust(15)} ({exp.duration or "?"})')
+
+
+
 
 
 

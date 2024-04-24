@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
@@ -30,6 +31,13 @@ class SvepaEvent:
         if item not in self._info:
             raise AttributeError(item)
         return self._info.get(item)
+
+    def __lt__(self, other):
+        if self.start_time and other.start_time:
+            return self.start_time < other.start_time
+        if self.start_time:
+            return True
+        return False
 
     @property
     def attributes(self) -> list[str]:
@@ -68,6 +76,11 @@ class SvepaEvent:
     @property
     def ongoing_events(self) -> [SvepaEvent]:
         return self._stored_svepa_info.get_ongoing_events(self)
+
+    @property
+    def duration(self) -> datetime.timedelta | None:
+        if self.start_time and self.stop_time:
+            return self.stop_time - self.start_time
 
     def get_ongoing_event(self, event_name: str, first: bool = True) -> SvepaEvent | list[SvepaEvent] | None:
         ongoing_events = []
