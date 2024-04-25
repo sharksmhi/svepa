@@ -23,10 +23,9 @@ def update_local_svepa_data() -> None:
         if res.status_code == 404:
             logger.warning(f'Svepa info file not found: {helpers.SVEPA_INFO_URL}. Cannot update local info!')
             return
-        print(f'{target_path=}')
         with open(target_path, 'w', encoding='utf8') as fid:
             fid.write(res.text)
-            logger.info(f'Svepa info file "{name}" updated from {helpers.SVEPA_INFO_URL}')
+            logger.info(f'Svepa info file "{target_path}" updated from {helpers.SVEPA_INFO_URL}')
         helpers.save_pickle_from_yaml()
     except requests.exceptions.ConnectionError:
         logger.warning('Connection error. Could not update svepa info file!')
@@ -115,7 +114,7 @@ def get_time_range() -> tuple | None:
                 start = min(start, _id['start_time'])
                 stop = max(stop, _id['stop_time'])
             except TypeError:
-                logging.warning('Different data types when trying to find min and max time')
+                logging.info('Different data types when trying to find min and max time')
     return start, stop
 
 
@@ -147,13 +146,17 @@ def print_trip_list():
             last_year = exp.start_time.year
             print()
             print(last_year)
+
         start_time = ''
         if exp.start_time:
             start_time = exp.start_time.date()
         stop_time = ''
         if exp.stop_time:
             stop_time = exp.stop_time.date()
-        print(f'{exp.full_name.ljust(20)}{start_time}  >>>  {str(stop_time).ljust(15)} ({exp.duration or "?"})')
+        duration = f'({exp.duration or "?"})'
+        departure_port = exp['departure_port'] or ''
+        arrival_port = exp['arrival_port'] or ''
+        print(f'{exp.full_name.ljust(20)}{start_time}  >>>  {str(stop_time).ljust(15)} {duration.ljust(20)} :  {departure_port} -> {arrival_port}')
 
 
 

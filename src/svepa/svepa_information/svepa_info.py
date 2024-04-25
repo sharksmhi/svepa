@@ -1,6 +1,6 @@
 import datetime
 from svepa.svepa_information import helpers
-from svepa.svepa_information.svepa_event import SvepaEvent, SvepaChildrenEvents
+from svepa.svepa_information.svepa_event import SvepaEvent, SvepaEventCollection
 from functools import lru_cache
 # from typing import List
 import logging
@@ -68,13 +68,11 @@ class StoredSvepaInfo:
                 if any([year, month, dtime]):
                     if not _info['start_time']:
                         msg = f'Missing start time for event: {_info["event_id"]}'
-                        logger.warning(msg)
-                        print(msg)
+                        logger.info(msg)
                         continue
                     if not _info['stop_time']:
                         msg = f'Missing stop time for event: {_info["event_id"]}'
-                        logger.warning(msg)
-                        print(msg)
+                        logger.info(msg)
                         continue
                 if year and not (_info['start_time'].year == year or _info['stop_time'].year == year):
                     continue
@@ -96,9 +94,13 @@ class StoredSvepaInfo:
         return lst
 
     def get_events(self, platform: str = None, time: datetime.datetime = None, lat: float = None, lon: float = None,
-                   year: int = None, month: int = None):
+                   year: int = None, month: int = None) -> SvepaEventCollection[SvepaEvent]:
         info_lst = self.get_infos(platform=platform, time=time, lat=lat, lon=lon, year=year, month=month)
-        return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
+        events = SvepaEventCollection()
+        for info in info_lst:
+            events.append(SvepaEvent(stored_svepa_info=self, info=info))
+        return events
+        # return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
 
     def get_children_info(self, event_id: str) -> list[str]:
         lst = []
@@ -108,18 +110,17 @@ class StoredSvepaInfo:
                     lst.append(_info)
         return lst
 
-    def get_children_events(self, event_id: str) -> SvepaChildrenEvents[SvepaEvent]:
+    def get_children_events(self, event_id: str) -> SvepaEventCollection[SvepaEvent]:
         info_lst = self.get_children_info(event_id=event_id)
-        lst = SvepaChildrenEvents()
+        lst = SvepaEventCollection()
         for info in info_lst:
             lst.append(SvepaEvent(stored_svepa_info=self, info=info))
         return lst
-        # return [SvepaEvent(stored_svepa_info=self, info=info) for info in info_lst]
 
     @lru_cache
-    def get_ongoing_events(self, event: SvepaEvent) -> SvepaChildrenEvents[SvepaEvent]:
+    def get_ongoing_events(self, event: SvepaEvent) -> SvepaEventCollection[SvepaEvent]:
         # event_lst = []
-        event_lst = SvepaChildrenEvents()
+        event_lst = SvepaEventCollection()
         for key in self._info:
             for _id, _info in self._info[key].items():
                 ev = None

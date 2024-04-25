@@ -7,12 +7,27 @@ if TYPE_CHECKING:
     from svepa.svepa_information.svepa_info import StoredSvepaInfo
 
 
-class SvepaChildrenEvents(list):
+class SvepaEventCollection(list):
 
     def __getattr__(self, item):
-        for event in self:
+        """Returns first occurrence of event with name equals item"""
+        for event in sorted(self):
             if item.upper() in event.name:
                 return event
+
+    def __str__(self):
+        lines = []
+        for event in sorted(self):
+            start_time = ''
+            if event.start_time:
+                start_time = event.start_time.date()
+            stop_time = ''
+            if event.stop_time:
+                stop_time = event.stop_time.date()
+            duration = f'({event.duration or "?"})'
+            lines.append(f'{event.full_name.ljust(20)}{start_time}  >>>  {str(stop_time).ljust(15)} {duration.ljust(20)}')
+        return '\n'.join(lines)
+
 
 class SvepaEvent:
     def __init__(self, stored_svepa_info: StoredSvepaInfo = None, info: dict = None):
@@ -30,17 +45,18 @@ class SvepaEvent:
         ]
         ljust = 30
         for key in sorted(self._info):
-            if key == 'ongoing_event_names':
-                continue
             lst.append(f'  {key.ljust(ljust)}{self._info[key]}')
-        ongoing_events = ', '.join(sorted([event.name for event in self.ongoing_events]))
-        lst.append(f'  {"ongoing_event".ljust(ljust)}{ongoing_events}')
+        ongoing_events = ', '.join(sorted(set([event.name for event in self.ongoing_events])))
+        lst.append(f'  {"ongoing_events".ljust(ljust)}{ongoing_events}')
         lst.append('')
         return '\n'.join(lst)
 
     def __getattr__(self, item):
         if item not in self._info:
             raise AttributeError(item)
+        return self._info.get(item)
+
+    def __getitem__(self, item):
         return self._info.get(item)
 
     def __lt__(self, other):
@@ -61,7 +77,7 @@ class SvepaEvent:
         return self._stored_svepa_info.get_event(event_id=self.parent_event_id)
 
     @property
-    def station_event(self) -> SvepaEvent:
+    def station_event(self) -> SvepaEvent | None:
         event = self
         while True:
             event = event.parent
@@ -81,12 +97,11 @@ class SvepaEvent:
                 return
 
     @property
-    def children(self) -> SvepaChildrenEvents[SvepaEvent]:
-    # def children(self) -> list[SvepaEvent]:
+    def children(self) -> SvepaEventCollection[SvepaEvent]:
         return self._stored_svepa_info.get_children_events(self.event_id)
 
     @property
-    def ongoing_events(self) -> [SvepaEvent]:
+    def ongoing_events(self) -> SvepaEventCollection[SvepaEvent]:
         return self._stored_svepa_info.get_ongoing_events(self)
 
     @property
@@ -94,8 +109,10 @@ class SvepaEvent:
         if self.start_time and self.stop_time:
             return self.stop_time - self.start_time
 
-    def get_ongoing_event(self, event_name: str, first: bool = True) -> SvepaEvent | list[SvepaEvent] | None:
-        ongoing_events = []
+    def get_ongoing_event(self, event_name: str = None, first: bool = True) -> SvepaEvent | SvepaEventCollection[SvepaEvent] | None:
+        if not event_name:
+            return self.ongoing_events
+        ongoing_events = SvepaEventCollection()
         en = event_name.upper()
         for event in self.ongoing_events:
             if en in event.name.upper():

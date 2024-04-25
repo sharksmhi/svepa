@@ -186,6 +186,48 @@ class Event:
         return round(float(value), 1)
 
     @property
+    def departure_port(self):
+        if not self._info.get('departure_port'):
+            return None
+        value = self._info['departure_port']
+        if not value:
+            return None
+        return value
+
+    @property
+    def arrival_port(self):
+        if not self._info.get('arrival_port'):
+            return None
+        value = self._info['arrival_port']
+        if not value:
+            return None
+        return value
+
+    @property
+    def exp_leader(self):
+        if not self._info.get('resp_staff'):
+            return None
+        value = self._info['resp_staff']
+        if not value:
+            return None
+        return value
+
+    @property
+    def ices_rectangle(self):
+        if not self._info.get('ICESrect'):
+            return None
+        value = self._info['ICESrect']
+        if not value:
+            return None
+        return value
+
+    @property
+    def note(self):
+        if not self._info.get('Note'):
+            return None
+        return self._info['Note'].strip()
+
+    @property
     def parent(self):
         return self._parent
 
@@ -238,6 +280,12 @@ class Event:
             wind_speed=self.wind_speed,
             min_depth=self.min_depth,
             max_depth=self.max_depth,
+
+            departure_port=self.departure_port,
+            arrival_port=self.arrival_port,
+            exp_leader=self.exp_leader,
+            # ices_rectangle=self.ices_rectangle,
+            note=self.note,
         )
         return info
 

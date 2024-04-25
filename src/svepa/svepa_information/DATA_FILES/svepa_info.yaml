@@ -35,6 +35,7 @@
     full_name: "10 NE \xD6stergarn.0861"
     id: 0861
     name: "10 NE \xD6STERGARN"
+    note: "Provar att fiska. D\xE5ligt v\xE4der!"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.5500998
     start_lon: 19.2079909
@@ -77,6 +78,7 @@
     full_name: 10 WNW Nidingen.0639
     id: 0639
     name: 10 WNW NIDINGEN
+    note: "v\xE4ntade p\xE5 labbet.... fick 5 ton i f\xF6rra draget"
     parent_event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     start_lat: 57.2847487
     start_lon: 11.58039965
@@ -133,6 +135,7 @@
     full_name: "11 SW Norra Midsj\xF6banken.0883"
     id: 0883
     name: "11 SW NORRA MIDSJ\xD6BANKEN"
+    note: "kraftig sj\xF6g\xE5ng"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 56.0827471333333
     start_lon: 17.0629126333333
@@ -422,6 +425,7 @@
     full_name: "17 E N\xE4r.0864"
     id: 0864
     name: "17 E N\xC4R"
+    note: ingen fisk
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.1785438333333
     start_lon: 19.22491815
@@ -573,6 +577,8 @@
     full_name: "2 N T\xE5ngen.0881"
     id: 0881
     name: "2 N T\xC5NGEN"
+    note: "tr\xE5len l\xE5g i ytan l\xE4nge f\xF6r att kylningen till tr\xE5lvincharna\
+      \ slutade fungera. togs inte in f\xF6rr\xE4n efter ca 1 timma"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 55.7677971333333
     start_lon: 15.7578255
@@ -614,6 +620,7 @@
     full_name: 20 N Hanstholm.0615
     id: '0615'
     name: 20 N HANSTHOLM
+    note: "Bytt ut 43F814 pga tv\xE5 kablar tv\xE4rs sp\xE5ret"
     parent_event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     start_lat: 57.4521612166667
     start_lon: 8.50905771666667
@@ -1033,6 +1040,7 @@
     full_name: 36 N Hanstholm.0630
     id: '0630'
     name: 36 N HANSTHOLM
+    note: "bytt ut 44F803 pga kablar \xF6ver sp\xE5ret"
     parent_event_id: 11892518-df48-4084-91e9-85993f60fbf6
     start_lat: 57.7913827166667
     start_lon: 8.8242715
@@ -1341,6 +1349,9 @@
     full_name: 4_4_I.0029
     id: 0029
     name: 4_4_I
+    note: '1:a hugg misslyckat._x000D_
+
+      2:a hugg misslyckat.'
     parent_event_id: d2a5a028-dd71-4038-9f21-e05a5fc72811
     start_lat: 58.4521728833333
     start_lon: 10.5764825166667
@@ -1369,6 +1380,7 @@
     full_name: 4_5_I.0009
     id: 0009
     name: 4_5_I
+    note: "Gl\xF6mde s\xE4tta ig\xE5ng Svepa."
     parent_event_id: 5842c228-6896-42a5-a292-c9eba17bd24c
     start_lat: 58.4667113666667
     start_lon: 10.5928865333333
@@ -2016,6 +2028,7 @@
     full_name: "7 W H\xE5ll\xF6 test.0139"
     id: 0139
     name: "7 W H\xC5LL\xD6 TEST"
+    note: Test av GOV 1
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 58.2850938166667
     start_lon: 10.94130775
@@ -2058,6 +2071,7 @@
     full_name: 8 NE Nielsengrund.0850
     id: 0850
     name: 8 NE NIELSENGRUND
+    note: tv80 laggade ca 20 minuter vilket vi kom underfund med efter vi fiskat klart-
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 58.3327469166667
     start_lon: 18.2571183666667
@@ -2086,6 +2100,7 @@
     full_name: 8 SE Skagen.0591
     id: 0591
     name: 8 SE SKAGEN
+    note: 'Ljudhastighet: 1504.97 m/s'
     parent_event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     start_lat: 57.6535454
     start_lon: 10.77655215
@@ -2325,6 +2340,7 @@
     full_name: 9_5_R.0014
     id: '0014'
     name: 9_5_R
+    note: "Huggaren st\xE4ngde ej p\xE5 f\xF6rsta. Ett hugg till."
     parent_event_id: 3fdf5944-e8fd-453c-8e98-d8a4150c24ee
     start_lat: 58.28826355
     start_lon: 10.5212169
@@ -2471,6 +2487,7 @@ ADCP:
     full_name: ADCP.006
     id: '006'
     name: ADCP
+    note: "S\xE4nkk\xF6l upp kl 07.20 _x000D_\n_x000D_\nRADERAS"
     parent_event_id: 477b0c41-d3e8-4e6d-8334-3b0cd3e9a9b3
     start_lat: 55.63199305
     start_lon: 12.9197473333333
@@ -2484,6 +2501,7 @@ ADCP:
     full_name: ADCP.012
     id: '012'
     name: ADCP
+    note: "Event startat f\xF6r sent. WH600 ig\xE5ng fr\xE5n Sl\xE4gg\xF6"
     parent_event_id: a4cecb2f-66ed-4261-93ae-6803ac233c0a
     start_lat: 58.2651219
     start_lon: 11.3007152
@@ -2495,6 +2513,7 @@ ADCP:
     full_name: ADCP.004
     id: '004'
     name: ADCP
+    note: "Start av ADCP'er vid Sl\xE4gg\xF6. /Mats"
     parent_event_id: dd825a85-e695-440f-8fbb-7bc2e54dcf8b
     start_lat: 58.2599256
     start_lon: 11.43591475
@@ -2534,6 +2553,7 @@ ADCP:
     full_name: ADCP.003
     id: '003'
     name: ADCP
+    note: Drop Keel down at start.
     parent_event_id: d7793149-1113-46b8-b085-c16bc864fc11
     start_lat: 56.5881134
     start_lon: 16.3306635333333
@@ -2547,6 +2567,7 @@ ADCP:
     full_name: ADCP.011
     id: '011'
     name: ADCP
+    note: "ADCP.011. ADCP start ca + 2h d\xE5 Svea l\xE4mnade kaj tidigt. /Mats._x000D_"
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 56.3705948333333
     start_lon: 16.2010598833333
@@ -2571,6 +2592,7 @@ ADCP:
     full_name: ADCP.013
     id: '013'
     name: ADCP
+    note: "S\xE4nkk\xF6l UPP 0m"
     parent_event_id: 11892518-df48-4084-91e9-85993f60fbf6
     start_lat: 58.46652885
     start_lon: 11.0100258
@@ -2584,6 +2606,7 @@ ADCP:
     full_name: ADCP.007
     id: '007'
     name: ADCP
+    note: "Start Stockholms inre sk\xE4rg\xE5rd._x000D_\nS\xE4nkk\xF6l uppe. /Mats"
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 59.3604319833333
     start_lon: 18.2644743666667
@@ -2645,6 +2668,8 @@ ADCP:
     full_name: ADCP.004
     id: '004'
     name: ADCP
+    note: WH600 started even if "Start up tests" failed. Data to be considerated as
+      non valid, until looked at by SMHI. /Mats
     parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
     start_lat: 56.5995991
     start_lon: 16.3377933166667
@@ -2706,6 +2731,8 @@ ADCP:
     full_name: ADCP.008
     id: 008
     name: ADCP
+    note: "ADCP'er startade sent tfa problem med bla. EK80. S\xE4nkk\xF6len nere vid\
+      \ start. /Mats"
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 58.3181994
     start_lon: 10.94026095
@@ -2844,6 +2871,7 @@ ADCP-OS150:
     full_name: ADCP-OS150.008
     id: 008
     name: ADCP-OS150
+    note: Test01. BY32.
     parent_event_id: 698d6510-eada-455a-8491-28f585c4575a
     start_lat: 58.0166775333333
     start_lon: 17.9846443666667
@@ -2870,6 +2898,7 @@ ADCP-OS150:
     full_name: ADCP-OS150.009
     id: 009
     name: ADCP-OS150
+    note: TEST02.
     parent_event_id: 698d6510-eada-455a-8491-28f585c4575a
     start_lat: 57.6080997333333
     start_lon: 17.76073655
@@ -2884,6 +2913,7 @@ ADCP-WH600:
     full_name: ADCP-WH600.007
     id: '007'
     name: ADCP-WH600
+    note: '2023-06-18 16:20:38'
     parent_event_id: 698d6510-eada-455a-8491-28f585c4575a
     start_lat: 59.3587127333333
     start_lon: 18.2570272333333
@@ -2898,6 +2928,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels down.
     parent_event_id: 0ccf02b6-3913-4d4c-a241-4095f78e6111
     start_lat: 59.2280419833333
     start_lon: 19.0825910833333
@@ -2911,6 +2942,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "s\xE4nkk\xF6l ej neds\xE4nkt efter uppstart"
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 57.05019915
     start_lon: 12.1229037666667
@@ -2924,6 +2956,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner, \xD6stersj\xF6n. /Mats"
     parent_event_id: be309b06-8c60-4435-848a-6282206c98a2
     start_lat: 55.5870143833333
     start_lon: 12.84188555
@@ -2937,6 +2970,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Keel down.
     parent_event_id: bf0a4214-c6aa-4996-b4f1-89243406792f
     start_lat: 57.8052327
     start_lon: 11.3274275666667
@@ -2950,6 +2984,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp \xD6stersjon."
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.3386962833333
     start_lon: 12.66806405
@@ -2963,6 +2998,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Startar igen efter passage av skyddsomrade vastra Kattegatt. Ola
     parent_event_id: c21b9eeb-f5a5-481b-9ec9-34a36faaf318
     start_lat: 56.1534736166667
     start_lon: 11.4932647166667
@@ -2976,6 +3012,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6larna upp, v\xE4sterhavet."
     parent_event_id: be309b06-8c60-4435-848a-6282206c98a2
     start_lat: 58.1340728333333
     start_lon: 11.2951216
@@ -2989,6 +3026,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "WH600 stopped at \xD6stergarns holm for new \"Start up tests\"."
     parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
     start_lat: 57.4308677166667
     start_lon: 19.0246417333333
@@ -3002,6 +3040,11 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: '2023-04-14 // 20:55_x000D_
+
+      _x000D_
+
+      DROPKEEL UP'
     parent_event_id: eb16cf87-8c72-4dd7-a626-f28ddebd13e2
     start_time: '20230414163103'
     stop_time: '20230414163105'
@@ -3011,6 +3054,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels Up. Kalmar.
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 56.4716293333333
     start_lon: 16.31259555
@@ -3024,6 +3068,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel up, \xD6resund."
     parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
     start_lat: 55.4223473333333
     start_lon: 12.6924416166667
@@ -3037,6 +3082,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6lar upp, \xD6stersj\xF6n. /Mats"
     parent_event_id: be309b06-8c60-4435-848a-6282206c98a2
     start_lat: 55.4223014
     start_lon: 12.7006371166667
@@ -3050,6 +3096,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: BYTTE kommandofil
     parent_event_id: 0bf2f438-9cdf-4e29-a853-176bf08a42b4
     start_lat: 57.02097
     start_lon: 19.8728454666667
@@ -3063,6 +3110,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "dcp cmd error p\xE5 BB filen. Bytte tbx till den vanlig NB 211214 f\xF6\
+      r \xD6stersj\xF6n, d\xE5 funkade det. / Ola"
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.46486025
     start_lon: 20.0766086
@@ -3076,6 +3125,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp, \xD6stersj\xF6n."
     parent_event_id: 724e70cc-5448-4b12-bfcc-6f19375c4b75
     start_lat: 55.2818538333333
     start_lon: 12.7992949666667
@@ -3089,6 +3139,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel down at start.
     parent_event_id: 4c916a30-1830-4682-bfd7-90745de79839
     start_lat: 56.5876209833333
     start_lon: 16.3303182333333
@@ -3102,6 +3153,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l NER 08.35"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 56.14893265
     start_lon: 12.49191835
@@ -3115,6 +3167,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels down.
     parent_event_id: 5eda11ea-0e74-431c-8f00-2d45e8cd711b
     start_lat: 59.2280419833333
     start_lon: 19.0825910833333
@@ -3128,6 +3181,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner. V\xE4sterhavet."
     parent_event_id: 724e70cc-5448-4b12-bfcc-6f19375c4b75
     start_lat: 55.7109074166667
     start_lon: 12.8773606833333
@@ -3141,6 +3195,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner vid \xC517. Sent tfa. visning f\xF6r bes\xF6kare. /Mats"
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 58.2833715166667
     start_lon: 10.4993282333333
@@ -3154,6 +3209,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 58.1569918666667
     start_lon: 11.34354655
@@ -3167,6 +3223,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel down. Visby
     parent_event_id: c089193c-12b4-4e7c-b6f9-0f23d742d84f
     start_lat: 57.7670554333333
     start_lon: 18.3121818
@@ -3180,6 +3237,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel Up. Flintr\xE4nnan."
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.2752962333333
     start_lon: 11.44755135
@@ -3193,6 +3251,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels up.
     parent_event_id: 0ccf02b6-3913-4d4c-a241-4095f78e6111
     start_lat: 55.4048440833333
     start_lon: 12.6956705
@@ -3206,6 +3265,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Byte cmd filer vid W Landskrona, p\xE5 v\xE4g in i \xD6stersj\xF6n. ADCP\
+      \ eventet startades f\xF6rst nu. / Ola"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.8273093833333
     start_lon: 12.7580715666667
@@ -3219,6 +3280,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keel up \xD6stersj\xF6n. Rough est."
     parent_event_id: 4c916a30-1830-4682-bfd7-90745de79839
     start_lat: 55.47330835
     start_lon: 12.7075632333333
@@ -3232,6 +3294,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Adjusted to 1m
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 55.6476567666667
     start_lon: 12.95215075
@@ -3245,6 +3308,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xC4NKK\xD6L UPP"
     parent_event_id: aba11e00-3b12-4f11-b7a0-3805b4488e27
     start_lat: 55.5957102333333
     start_lon: 12.8583409
@@ -3258,6 +3322,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte cmd fil till V\xE4sterhavet /Ola"
     parent_event_id: c21b9eeb-f5a5-481b-9ec9-34a36faaf318
     start_lat: 56.1311012166667
     start_lon: 12.55127265
@@ -3271,6 +3336,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel Up.
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.27873545
     start_lon: 11.2743180666667
@@ -3284,6 +3350,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keels down. Lysekil._x000D_\nDrop keels not lowerd during \xC517-\xC5\
+      13 and MVP-recovery."
     parent_event_id: 3c00a774-393f-4dea-8b4b-7c6fef3c1642
     start_lat: 58.2632952166667
     start_lon: 11.3270838333333
@@ -3297,6 +3365,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte till NB f\xF6r OS vid avf\xE4rd fr\xE5n \xC517 mot \xC514. / Ola"
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.2849604
     start_lon: 10.5058746
@@ -3310,6 +3379,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6len upp - Malm\xF6. /Mats"
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.6862037666667
     start_lon: 12.9131872833333
@@ -3323,6 +3393,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l UPP"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_time: '20220818115022'
     stop_lat: 58.1819566
@@ -3334,6 +3405,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeels down. Conf. V\xE4sterhavet."
     parent_event_id: c3b971c1-e491-4ba1-b0be-f3586fa1b964
     start_lat: 55.7229918166667
     start_lon: 12.8762276166667
@@ -3347,6 +3419,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Stangde av pga Tumlar zon i Kattegat. Ola
     parent_event_id: c21b9eeb-f5a5-481b-9ec9-34a36faaf318
     start_lat: 57.4654588166667
     start_lon: 10.9011039
@@ -3360,6 +3433,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel Up. Lysekil.
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 58.20252935
     start_lon: 11.2349569666667
@@ -3373,6 +3447,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Adjusted to 1 m
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 58.3396468
     start_lon: 11.0270692833333
@@ -3386,6 +3461,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: WH600 omstartad och nu fungerar allt som vanligt.
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 58.01663065
     start_lon: 17.9842376666667
@@ -3399,6 +3475,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Byte conf, \xD6stersj\xF6n => V\xE4sterhavet. /Mats"
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.31988145
     start_lon: 12.6680924666667
@@ -3412,6 +3489,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel down \xD6resund."
     parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
     start_lat: 55.7375550666667
     start_lon: 12.8546399833333
@@ -3425,6 +3503,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Byte conf, V\xE4sterhavet => \xD6stersj\xF6n. /Mats"
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.5615254333333
     start_lon: 12.8058694833333
@@ -3438,6 +3517,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: dropkeel UP 2023-04-17 -- 08:10
     parent_event_id: eb16cf87-8c72-4dd7-a626-f28ddebd13e2
     start_time: '20230417063350'
     stop_time: '20230417063352'
@@ -3460,6 +3540,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel down - Lysekil
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 56.9400100333333
     start_lon: 12.2111344333333
@@ -3473,6 +3554,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel down. Lysekil.
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 58.27660135
     start_lon: 11.2822775333333
@@ -3486,6 +3568,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 58.1580501
     start_lon: 11.3450609333333
@@ -3499,6 +3582,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel Up. Malm\xF6"
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 55.8665865666667
     start_lon: 12.7493738166667
@@ -3512,6 +3596,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keel up - \xD6resund. Time roughly etimated. /Mats"
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 55.6877075333333
     start_lon: 12.9074017833333
@@ -3525,6 +3610,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Fel i utdata, inga hastigheter i LTA och STA filer, men Raw var ok. Full\
+      \ omstart av OS (dator och d\xE4cksenhet och VmDAS) fixade problemet. / Ola"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.3025076166667
     start_lon: 14.5483266666667
@@ -3538,6 +3625,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Correction of target folder C:\
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 57.8599466333333
     start_lon: 11.3035424
@@ -3551,6 +3639,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "s\xE4nkk\xF6l ner ca 21.30"
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 57.1236785166667
     start_lon: 12.0272762333333
@@ -3564,6 +3653,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeels down. Conf. V\xE4sterhavet."
     parent_event_id: 0ccf02b6-3913-4d4c-a241-4095f78e6111
     start_lat: 55.7230438333333
     start_lon: 12.87616205
@@ -3577,6 +3667,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "byte cmd i \xD6resund p\xE5 v\xE4g norrut"
     parent_event_id: 0bf2f438-9cdf-4e29-a853-176bf08a42b4
     start_lat: 55.5389817333333
     start_lon: 12.7741880333333
@@ -3590,6 +3681,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: drop keel adjusted to 0m
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 55.38430875
     start_lon: 12.6885691833333
@@ -3603,6 +3695,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels down, Kalmar
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 56.2144502166667
     start_lon: 16.3281970666667
@@ -3616,6 +3709,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp. V\xE4sterhavet."
     parent_event_id: 724e70cc-5448-4b12-bfcc-6f19375c4b75
     start_lat: 58.3101443
     start_lon: 11.0980253833333
@@ -3629,6 +3723,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Start agin after two successful startip tests.
     parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
     start_lat: 57.4212803666667
     start_lon: 18.9952765666667
@@ -3642,6 +3737,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l NER"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_time: '20220524125441'
     stop_time: '20220524125444'
@@ -3651,6 +3747,10 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Velocity f\xF6rsvann p\xE5 WH600._x000D_\nFelmeddelande: \"NO NMEA titlt\
+      \ data will be stored in the NAV field\"_x000D_\n_x000D_\nJag f\xF6rs\xF6kte\
+      \ en omstart av transducer samt VMDAS._x000D_\n_x000D_\nLyckades aldrig f\xE5\
+      \ det att fungera \"NMEA tilt data is now unavailable from its primary source\""
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 58.0166306166667
     start_lon: 17.9842103166667
@@ -3664,6 +3764,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keel down - \xD6resund. Time roughly etimated. /Mats"
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 55.61173215
     start_lon: 12.8821776666667
@@ -3677,6 +3778,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel up Lysekil.
     parent_event_id: 9edf717f-efaa-4b96-94a6-972ba1d65448
     start_lat: 58.25983365
     start_lon: 11.4356174833333
@@ -3690,6 +3792,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keels down. \xD6stersj\xF6n."
     parent_event_id: 3c00a774-393f-4dea-8b4b-7c6fef3c1642
     start_lat: 55.4854341833333
     start_lon: 12.7082472
@@ -3703,6 +3806,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel Adjusted to 0m
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 58.2206696
     start_lon: 11.2343130833333
@@ -3716,6 +3820,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l UPP"
     parent_event_id: 0bf2f438-9cdf-4e29-a853-176bf08a42b4
     start_lat: 55.6806190666667
     start_lon: 12.9231328833333
@@ -3729,6 +3834,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Restart Lysekil
     parent_event_id: bac9309e-9a89-4bd0-82c9-5f502a84b406
     start_lat: 58.2750085666667
     start_lon: 11.4469516
@@ -3742,6 +3848,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6larna ner, v\xE4sterhavet."
     parent_event_id: be309b06-8c60-4435-848a-6282206c98a2
     start_lat: 55.7262895666667
     start_lon: 12.8694004666667
@@ -3755,6 +3862,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel Down. V\xE4sterhavet"
     parent_event_id: c089193c-12b4-4e7c-b6f9-0f23d742d84f
     start_lat: 55.4401019
     start_lon: 12.7072016833333
@@ -3768,6 +3876,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "K\xF6len ner. +- 10 min. /Mats."
     parent_event_id: 724e70cc-5448-4b12-bfcc-6f19375c4b75
     start_lat: 59.27187685
     start_lon: 18.9671520666667
@@ -3781,6 +3890,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "St\xE4ngde av OS. Bara grunda djup p\xE5 danska sidan samt ej till\xE5\
+      tet att k\xF6ra instr med frek < 180 kHz kring station Kattegat SW"
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 56.1996148333333
     start_lon: 12.1453015166667
@@ -3794,6 +3905,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Upptackte Ens I/O error p\xE5 OS, oklar n\xE4r det b\xF6rjade (kanske vid\
+      \ 09 samma dag). Aktiverade i KSync och den startade d\xE4refter /Ola"
     parent_event_id: c21b9eeb-f5a5-481b-9ec9-34a36faaf318
     start_lat: 55.39455305
     start_lon: 17.1375361
@@ -3807,6 +3920,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop kell down. \xD6resund. Rough est."
     parent_event_id: 4c916a30-1830-4682-bfd7-90745de79839
     start_lat: 55.6810468333333
     start_lon: 12.9177909333333
@@ -3820,6 +3934,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner, V\xE4sterhavet."
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.62858215
     start_lon: 12.9155837166667
@@ -3833,6 +3948,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel down. Baltic.
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 56.2887797666667
     start_lon: 12.3363536833333
@@ -3846,6 +3962,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Info till ref kast Huvudsk\xE4r. Avst\xE5nd ca 500-600 m fr\xE5n boj. \
+      \ / Ola"
     parent_event_id: a802185b-f230-45ed-be60-64e4e2040580
     start_lat: 0.0
     start_lon: 0.0
@@ -3859,6 +3977,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Testar ny Broadband cmd fil f\xF6r OS. En av de gamla gav cmd error h\xE4\
+      romdagen. / Ola"
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 55.0194074666667
     start_lon: 13.3545955833333
@@ -3872,6 +3992,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte till cmd \xD6stersj\xF6n ungef\xE4r vid P22. / Ola"
     parent_event_id: a802185b-f230-45ed-be60-64e4e2040580
     start_lat: 56.2774915666667
     start_lon: 12.34224765
@@ -3885,6 +4006,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l UPP"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.6312266333333
     start_lon: 12.9271608166667
@@ -3898,6 +4020,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel up - Lysekil
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 58.2821523333333
     start_lon: 11.2078833166667
@@ -3911,6 +4034,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp, V\xE4sterhavet. /Mats"
     parent_event_id: be309b06-8c60-4435-848a-6282206c98a2
     start_lat: 55.5871134
     start_lon: 12.8422980666667
@@ -3937,6 +4061,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keels Up. V\xE4stervik."
     parent_event_id: 3c00a774-393f-4dea-8b4b-7c6fef3c1642
     start_lat: 57.7351664833333
     start_lon: 16.97304585
@@ -3950,6 +4075,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel down. Kalmar.
     parent_event_id: c089193c-12b4-4e7c-b6f9-0f23d742d84f
     start_lat: 56.13487955
     start_lon: 16.3300312666667
@@ -3976,6 +4102,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "B\xE5da s\xE4nkk\xF6lar har varit nere 1m hela resan. _x000D_\n_x000D_\n\
+      Nu tar vi upp babords s\xE4nkk\xF6l."
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 56.6336455
     start_lon: 19.58524305
@@ -3989,6 +4117,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "OS har g\xE5tt d\xE5ligt, kan vara beroende p\xE5 mkt lite partiklar (siktdjup\
+      \ 18 m). Testar BB och ser om det blir skillnad. / Ola"
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.8832882833333
     start_lon: 20.3348778666667
@@ -4002,6 +4132,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner, \xF6stersjon."
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 55.5719975833333
     start_lon: 12.82105335
@@ -4015,6 +4146,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeel UP. \xD6stersj\xF6n."
     parent_event_id: c089193c-12b4-4e7c-b6f9-0f23d742d84f
     start_lat: 55.1824796166667
     start_lon: 13.06748415
@@ -4028,6 +4160,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Bytte till BB for OS vid Vinga SW
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 57.5471935
     start_lon: 11.4639630666667
@@ -4041,6 +4174,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel up. Lysekil.
     parent_event_id: 4c916a30-1830-4682-bfd7-90745de79839
     start_lat: 58.3027479
     start_lon: 11.1694649
@@ -4054,6 +4188,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels UP, Lysekil.
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 58.27231325
     start_lon: 11.2948820833333
@@ -4067,6 +4202,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: OS stannade igen, utan varning eller felmeddelande. Startade om. / Ola
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 55.4297714166667
     start_lon: 12.7116571
@@ -4080,6 +4216,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l tog upp (ungef\xE4r h\xE4r, missade exakt tid), kring \xD6\
+      lands S udde. / Ola"
     parent_event_id: a802185b-f230-45ed-be60-64e4e2040580
     start_lat: 56.1004573333333
     start_lon: 16.39729635
@@ -4093,6 +4231,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Trigger in \xD6stersj\xF6n."
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 55.2159372166667
     start_lon: 12.9143511333333
@@ -4106,6 +4245,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keels Up. \xD6resund."
     parent_event_id: 3c00a774-393f-4dea-8b4b-7c6fef3c1642
     start_lat: 55.7203799
     start_lon: 12.8720759833333
@@ -4119,6 +4259,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Profile, \xD6stersj\xF6n."
     parent_event_id: 3c00a774-393f-4dea-8b4b-7c6fef3c1642
     start_lat: 55.4249285833333
     start_lon: 12.6655210833333
@@ -4132,6 +4273,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l INNE"
     parent_event_id: 62b8645d-20a5-4e70-939b-7407fd438d1c
     start_lat: 57.6046524666667
     start_lon: 16.93034935
@@ -4145,6 +4287,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l NER"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.6316912333333
     start_lon: 12.9290247166667
@@ -4156,6 +4299,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte (lite f\xF6r sent) CMD fil till V\xE4sterhavet. Har NAV I/O error\
+      \ p\xE5 WH. F\xF6rs\xF6kt starta om allt, men hj\xE4lper inte. / Ola"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 57.2307658
     start_lon: 11.8946037166667
@@ -4169,6 +4314,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Uppt\xE4ckte att Velocity p\xE5 LTA/STA f\xF6r OS saknades. Omstart av\
+      \ VmDAs hj\xE4lpte inte, orkade inte greja mer \xE4n s\xE5. / Ola"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 56.35062915
     start_lon: 16.1910851666667
@@ -4182,6 +4329,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Startade om OS med nya ist\xE4llningar enligt Loic Michel p\xE5 Teledyne.\
+      \ Verkar funka / Ola"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.2496649666667
     start_lon: 13.3797998333333
@@ -4195,6 +4344,9 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: '2023-04-17 -- 10:04_x000D_
+
+      Dropkeel DOWN'
     parent_event_id: eb16cf87-8c72-4dd7-a626-f28ddebd13e2
     start_time: '20230417083340'
     stop_time: '20230417083342'
@@ -4204,6 +4356,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l NER"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.3785906166667
     start_lon: 14.7978566166667
@@ -4217,6 +4370,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp Lysekil."
     parent_event_id: 301868cb-32f5-4650-a59b-65629a1feeb4
     start_lat: 58.0909552333333
     start_lon: 11.2965734166667
@@ -4230,6 +4384,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Drop keel up. Visby.
     parent_event_id: c089193c-12b4-4e7c-b6f9-0f23d742d84f
     start_lat: 57.6371120833333
     start_lon: 18.2857515333333
@@ -4243,6 +4398,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel Up. Kalmar.
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 56.9935430166667
     start_lon: 16.6539706166667
@@ -4256,6 +4412,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Andrat droop Keel
     parent_event_id: c21b9eeb-f5a5-481b-9ec9-34a36faaf318
     start_lat: 58.1401995833333
     start_lon: 11.31403085
@@ -4282,6 +4439,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l UPP"
     parent_event_id: c0bee1d1-2893-4a5c-ad34-c6c479b10007
     start_lat: 55.3785608833333
     start_lon: 14.7950732333333
@@ -4295,6 +4453,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner utanf\xF6r Lysekil"
     parent_event_id: a802185b-f230-45ed-be60-64e4e2040580
     start_lat: 58.27435045
     start_lon: 11.28375755
@@ -4308,6 +4467,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l UPP"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 55.6526753833333
     start_lon: 12.939027
@@ -4321,6 +4481,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l ner"
     parent_event_id: 0bf2f438-9cdf-4e29-a853-176bf08a42b4
     start_lat: 58.2651642666667
     start_lon: 11.2995748333333
@@ -4332,6 +4493,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Startade allt 07:00.
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 56.1716607166667
     start_lon: 16.33110665
@@ -4345,6 +4507,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Stop Lysekil
     parent_event_id: bac9309e-9a89-4bd0-82c9-5f502a84b406
     start_lat: 58.2753004833333
     start_lon: 11.44752465
@@ -4358,6 +4521,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "s\xE4nkk\xF6l upp n om \xF6resund"
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 55.6802160666667
     start_lon: 12.9248759166667
@@ -4371,6 +4535,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keel up - \xD6resund. Time estimated by bridge. /Mats"
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 55.4501338333333
     start_lon: 12.7023016333333
@@ -4384,6 +4549,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Dropkeels down. \xD6stersj\xF6n._x000D_\nTrigger in, \xD6sersj\xF6n."
     parent_event_id: d7092ebf-d785-42bf-9860-f9eba0077139
     start_lat: 55.4915244
     start_lon: 12.71846635
@@ -4397,6 +4563,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Drop keel down - \xD6resund. Time roughly etimated. /Mats"
     parent_event_id: cf32d985-d5d3-47da-91c0-a582efb14185
     start_lat: 55.4552504833333
     start_lon: 12.6772583833333
@@ -4410,6 +4577,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel down.
     parent_event_id: 8e7da5bd-4424-4f06-b022-3f1f9c772753
     start_lat: 57.8493647
     start_lon: 11.3172844166667
@@ -4423,6 +4591,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte till cmd Vasterhavet (BB f\xF6r OS) f\xF6r b\xE5da. / Ola"
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 55.4553632833333
     start_lon: 12.7191086166667
@@ -4436,6 +4605,8 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte till cmd Vasterhavet f\xF6r b\xE5da. Valde BB f\xF6r OS eftersom\
+      \ vi inte kommer g\xE5 \xC5-snittet"
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 55.7709137666667
     start_lon: 12.7966619833333
@@ -4449,6 +4620,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Restart OS150. Unknown stoplength.
     parent_event_id: bf0a4214-c6aa-4996-b4f1-89243406792f
     start_lat: 58.0667534
     start_lon: 10.7213498333333
@@ -4462,6 +4634,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "Bytte till cmd Ostersjon f\xF6r b\xE5da sensorerna"
     parent_event_id: e3ef1d41-e063-45a1-80c6-2125a7979fd8
     start_lat: 55.1632033166667
     start_lon: 14.0750471833333
@@ -4475,6 +4648,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels up.
     parent_event_id: 0ccf02b6-3913-4d4c-a241-4095f78e6111
     start_lat: 58.2861346666667
     start_lon: 11.2416956
@@ -4488,6 +4662,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l NER"
     parent_event_id: 0bf2f438-9cdf-4e29-a853-176bf08a42b4
     start_lat: 56.0848639
     start_lon: 12.6089588
@@ -4501,6 +4676,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels up.
     parent_event_id: c3b971c1-e491-4ba1-b0be-f3586fa1b964
     start_lat: 58.2861346666667
     start_lon: 11.2416956
@@ -4514,6 +4690,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xC4NKK\xD6L NER"
     parent_event_id: aba11e00-3b12-4f11-b7a0-3805b4488e27
     start_lat: 55.7684832166667
     start_lon: 12.82498965
@@ -4527,6 +4704,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeel down.
     parent_event_id: 94ba7787-fada-4888-9c42-271da44117dd
     start_lat: 58.2753224
     start_lon: 11.4475504
@@ -4540,6 +4718,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xE4nkk\xF6l upp"
     parent_event_id: c32ca67a-32f3-48b7-bd4a-b96ad272c6c2
     start_lat: 55.6334581833333
     start_lon: 12.9225747666667
@@ -4553,6 +4732,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: Dropkeels up.
     parent_event_id: c3b971c1-e491-4ba1-b0be-f3586fa1b964
     start_lat: 55.4048440833333
     start_lon: 12.6956705
@@ -4566,6 +4746,7 @@ ADCP_ADJUSTMENT:
     full_name: ADCP_Adjustment
     id: ADCP_Adjustment
     name: ADCP_ADJUSTMENT
+    note: "S\xC4NKK\xD6L UPP (St\xE4nger av ADCP)"
     parent_event_id: aba11e00-3b12-4f11-b7a0-3805b4488e27
     start_lat: 58.3291183
     start_lon: 11.0764204666667
@@ -4578,6 +4759,7 @@ ADCP_ADJUSTMENT 01:
     full_name: ADCP_Adjustment 01
     id: ADCP_Adjustment 01
     name: ADCP_ADJUSTMENT 01
+    note: ADCP_Adjustment 01. Bottom Track fix test. OS150.
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 56.38254805
     start_lon: 12.2799449166667
@@ -4592,6 +4774,9 @@ ADCP_ADJUSTMENT 02:
     full_name: ADCP_Adjustment 02
     id: ADCP_Adjustment 02
     name: ADCP_ADJUSTMENT 02
+    note: "ADCP_Adjustment 02. S\xE4nkk\xF6l ner. Ej s\xE4nkts tidigare tfa oklart\
+      \ besked/instruktion till bryggan. F\xF6rslag: F\xF6r in s\xE4nkk\xF6len som\
+      \ instrument att anv\xE4nda i \"Details for planned survey\"."
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 56.2358688833333
     start_lon: 12.3686968333333
@@ -4606,6 +4791,7 @@ ADCP_ADJUSTMENT 03:
     full_name: ADCP_Adjustment 03
     id: ADCP_Adjustment 03
     name: ADCP_ADJUSTMENT 03
+    note: "ADCP_Adjustment 03. S\xE4nk\xF6l upp."
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 55.6553307
     start_lon: 12.9471952666667
@@ -4620,6 +4806,7 @@ ADCP_ADJUSTMENT 04:
     full_name: ADCP_Adjustment 04
     id: ADCP_Adjustment 04
     name: ADCP_ADJUSTMENT 04
+    note: "ADCP_Adjustment 04. V\xE4sterhavet-\xD6stersj\xF6n"
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 55.5877041833333
     start_lon: 12.8442998333333
@@ -4634,6 +4821,7 @@ ADCP_ADJUSTMENT 05:
     full_name: ADCP_Adjustment 05
     id: ADCP_Adjustment 05
     name: ADCP_ADJUSTMENT 05
+    note: "ADCP_Adjustment 05. S\xE4nk\xF6l ner."
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 55.51105695
     start_lon: 12.7294836
@@ -4648,6 +4836,8 @@ ADCP_ADJUSTMENT 06:
     full_name: ADCP_Adjustment 06
     id: ADCP_Adjustment 06
     name: ADCP_ADJUSTMENT 06
+    note: "ADCP_Adjustment 06. SB s\xE4nkk\xF6l ner 1m efter utredning av ADCP-placering.\
+      \ enl. ritningar. /Mats"
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 56.9306592
     start_lon: 17.4830659833333
@@ -4662,6 +4852,7 @@ ADCP_ADJUSTMENT 07:
     full_name: ADCP_Adjustment 07
     id: ADCP_Adjustment 07
     name: ADCP_ADJUSTMENT 07
+    note: "ADCP_Adjustment 07. S\xE4nkk\xF6l upp."
     parent_event_id: 783a6152-da45-447d-99f8-8e186c5c4432
     start_lat: 56.3709172666667
     start_lon: 16.2015573666667
@@ -4676,6 +4867,7 @@ ADCP_ADJUSTMENT_DK_DOWN:
     full_name: ADCP_Adjustment_DK_Down
     id: ADCP_Adjustment_DK_Down
     name: ADCP_ADJUSTMENT_DK_DOWN
+    note: "S\xE4nkk\xF6l ner, V\xE4sterhavet."
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 55.7226566333333
     start_lon: 12.8766484333333
@@ -4689,6 +4881,7 @@ ADCP_ADJUSTMENT_DK_DOWN:
     full_name: ADCP_Adjustment_DK_Down
     id: ADCP_Adjustment_DK_Down
     name: ADCP_ADJUSTMENT_DK_DOWN
+    note: "S\xE4nkk\xF6l ner kl 6.30. /Mats"
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 56.3705948333333
     start_lon: 16.2010598833333
@@ -4703,6 +4896,7 @@ ADCP_ADJUSTMENT_DK_UP:
     full_name: ADCP_Adjustment_DK_Up
     id: ADCP_Adjustment_DK_Up
     name: ADCP_ADJUSTMENT_DK_UP
+    note: "S\xE4nkk\xF6l upp \xD6stersj\xF6n."
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 55.4115379
     start_lon: 12.69676795
@@ -4730,6 +4924,8 @@ ADCP_ADJUSTMENT_OSTERSJ-VASTERH:
     full_name: ADCP_Adjustment_Ostersj-Vasterh
     id: ADCP_Adjustment_Ostersj-Vasterh
     name: ADCP_ADJUSTMENT_OSTERSJ-VASTERH
+    note: "Missat byta av config-filer, \xD6stersj\xF6n o V\xE4sterhavet. OK fr. N14.\
+      \ /Mats"
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 56.9404814333333
     start_lon: 12.2116376333333
@@ -4744,6 +4940,7 @@ ADCP_ADJUSTMENT_OSTERSJ-VASTERH:
     full_name: "ADCP_Adjustment_V\xE4sterhavet"
     id: "ADCP_Adjustment_V\xE4sterhavet"
     name: "ADCP_ADJUSTMENT_V\xC4STERHAVET"
+    note: "S\xE4nkk\xF6l ner, v\xE4sterhavet. /Mats"
     parent_event_id: 3eaa8033-8ee8-44c8-8730-71326f705ff0
     start_lat: 55.6291367333333
     start_lon: 12.9210132
@@ -4758,6 +4955,7 @@ ADCP_ADJUSTMENT_OSTERSJ-VASTERH:
     full_name: "ADCP_Adjustment_\xD6stersj\xF6n"
     id: "ADCP_Adjustment_\xD6stersj\xF6n"
     name: "ADCP_ADJUSTMENT_\xD6STERSJ\xD6N"
+    note: "S\xE4nkk\xF6lar upp. Byte till v\xE4sterhavet. /Mats"
     parent_event_id: 3eaa8033-8ee8-44c8-8730-71326f705ff0
     start_lat: 55.2767638833333
     start_lon: 13.0027695666667
@@ -4772,6 +4970,9 @@ ADCP_OS150_ALIGN_OVERRIDE_ON:
     full_name: ADCP_OS150_Align_Override_On
     id: ADCP_OS150_Align_Override_On
     name: ADCP_OS150_ALIGN_OVERRIDE_ON
+    note: "Gl\xF6mt att sl\xE5 av Alignment Override efter test. Manuellt v\xE4rde\
+      \ 45 grader. Noterat basv\xE4rde: 45,4 grader. Korrigerat vid ankomst Anholt._x000D_\n\
+      /Mats"
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 55.0586938
     start_lon: 13.4750544666667
@@ -4786,6 +4987,8 @@ ADCP_RESTART:
     full_name: ADCP_Restart
     id: ADCP_Restart
     name: ADCP_RESTART
+    note: "OS150 tappad komunikation under natten 19/10 => BY20. \xC5tg\xE4rdat kl\
+      \ 8.12, 20/10. /Mats"
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 58.03080315
     start_lon: 19.7516959
@@ -4799,6 +5002,8 @@ ADCP_RESTART:
     full_name: ADCP_Restart
     id: ADCP_Restart
     name: ADCP_RESTART
+    note: "OS150 tappad komunikation \xD6stergarnsholm. \xC5tg\xE4rdat kl 15.00, 20/10.\
+      \ /Mats"
     parent_event_id: 5f3e8e2d-ed14-429a-be7a-3e4c65222ea9
     start_lat: 57.4235735
     start_lon: 18.9942086333333
@@ -5868,8 +6073,11 @@ BCSIII-10:
     stop_time: '20230312051942'
 BIAS:
   48bb966e-b850-493e-b7c2-5dd68f3c7980:
+    arrival_port: Kalmar
+    departure_port: Kalmar
     event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     event_type: Trip
+    exp_leader: larson
     full_name: BIAS.2023.002
     id: '002'
     name: BIAS
@@ -5918,6 +6126,7 @@ BOTTENHUGG 4R2:
     full_name: Bottenhugg 4R2.0003
     id: '0003'
     name: BOTTENHUGG 4R2
+    note: fixa i efterhand
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4933743333333
     start_lon: 10.5712979666667
@@ -5932,6 +6141,7 @@ BOTTENHUGG 4R3:
     full_name: Bottenhugg 4R3.0004
     id: '0004'
     name: BOTTENHUGG 4R3
+    note: "D\xE5 var vi ig\xE5ng med Svepa."
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4835986833333
     start_lon: 10.5862058833333
@@ -6002,6 +6212,7 @@ BOTTENHUGG_4I_4A:
     full_name: Bottenhugg_4I_4a.0020
     id: '0020'
     name: BOTTENHUGG_4I_4A
+    note: Ogiltigt. Vajern fastnade
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4435976
     start_lon: 10.59458145
@@ -6058,6 +6269,7 @@ BOTTENHUGG_4I_7A:
     full_name: Bottenhugg_4I_7a.0024
     id: '0024'
     name: BOTTENHUGG_4I_7A
+    note: ogiltigt, fastnade i vajern
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4647210333333
     start_lon: 10.5742525333333
@@ -6184,6 +6396,7 @@ BOTTENHUGG_4R6A:
     full_name: Bottenhugg_4R6a.0007
     id: '0007'
     name: BOTTENHUGG_4R6A
+    note: "Ogiltigt. Vajer h\xE4ngde sig i vikten"
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4648068166667
     start_lon: 10.61368005
@@ -6198,6 +6411,7 @@ BOTTENHUGG_4R6B:
     full_name: Bottenhugg_4R6b.0008
     id: 0008
     name: BOTTENHUGG_4R6B
+    note: "Ogiltigt. St\xE4ngde ej helt pga vajertrassel"
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.4648076333333
     start_lon: 10.6136374
@@ -6212,6 +6426,7 @@ BOTTENHUGG_4R6C:
     full_name: Bottenhugg_4R6c.0009
     id: 0009
     name: BOTTENHUGG_4R6C
+    note: "Vajer fastnade p\xE5\xB4ytterligare ett s\xE4tt. Ogiltigt"
     parent_event_id: 1f57238d-760a-4818-9ce6-c1122ae209ce
     start_lat: 58.46479525
     start_lon: 10.6136515833333
@@ -6520,6 +6735,7 @@ BOTTENHUGG_9_R8:
     full_name: Bottenhugg_9_R8.0030
     id: '0030'
     name: BOTTENHUGG_9_R8
+    note: "Svepa ig\xE5ng lite tidigt. Hugg at 3 min"
     parent_event_id: 1fa42170-3746-4357-8c60-97d4fba8478d
     start_lat: 58.2803380333333
     start_lon: 10.5533060166667
@@ -6586,6 +6802,11 @@ BOTTLE:
     full_name: Bottle.0240
     id: '0240'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 15m_x000D_
+
+      Bottendjup: 19 m'
     parent_event_id: 8a0d2994-3275-44cb-af19-067281d7e582
     start_lat: 56.4354757166667
     start_lon: 11.0836699
@@ -6972,6 +7193,11 @@ BOTTLE:
     full_name: Bottle.0227
     id: '0227'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 78m_x000D_
+
+      Bottendjup: 81m'
     parent_event_id: 95ac7efc-290c-42a4-8665-491570eec587
     start_lat: 57.6202860166667
     start_lon: 8.79415631666667
@@ -7310,6 +7536,11 @@ BOTTLE:
     full_name: Bottle.0228
     id: 0228
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 55m_x000D_
+
+      Bottendjup: 59m'
     parent_event_id: 5b023dd5-1061-4c09-a343-6a47c6fab5f0
     start_lat: 57.4557909166667
     start_lon: 8.49802095
@@ -7605,6 +7836,11 @@ BOTTLE:
     full_name: Bottle.0268
     id: 0268
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 133m_x000D_
+
+      Bottendjup: 137m'
     parent_event_id: 8909a317-0224-439d-ba1b-0e4bc5df82cd
     start_lat: 58.0871957
     start_lon: 11.0629202833333
@@ -8004,6 +8240,8 @@ BOTTLE:
     full_name: Bottle.0232
     id: '0232'
     name: BOTTLE
+    note: "eDNA provtagning 4m ovanf\xF6r botten._x000D_\nprov 1: 155m_x000D_\nbottendjup:\
+      \ 159m"
     parent_event_id: 530b8819-15dd-4d68-80ed-b8c17ec5911e
     start_lat: 58.63268915
     start_lon: 10.4997236833333
@@ -8141,6 +8379,8 @@ BOTTLE:
     full_name: Bottle.0257
     id: '0257'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 62 m djup."
     parent_event_id: bb0e35cc-9c1a-4585-bd0e-d378bf9cb1fd
     start_lat: 57.8652854
     start_lon: 11.2139084
@@ -8739,6 +8979,11 @@ BOTTLE:
     full_name: Bottle.0249
     id: 0249
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 68m_x000D_
+
+      Bottendjup: 72m'
     parent_event_id: a9125b63-b18a-42bc-8f0c-1b82dec30350
     start_lat: 57.17964425
     start_lon: 11.6576188333333
@@ -9086,6 +9331,8 @@ BOTTLE:
     full_name: Bottle.0258
     id: 0258
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 62m djup."
     parent_event_id: bb0e35cc-9c1a-4585-bd0e-d378bf9cb1fd
     start_lat: 57.87244155
     start_lon: 11.2062277
@@ -9268,6 +9515,11 @@ BOTTLE:
     full_name: Bottle.0216
     id: '0216'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten. _x000D_
+
+      prov 1 (76m)_x000D_
+
+      bottendjup 80m'
     parent_event_id: 85871e4e-4990-4ca7-bdb3-27ee7f40e03b
     start_lat: 58.3970249333333
     start_lon: 11.00322525
@@ -9650,6 +9902,8 @@ BOTTLE:
     full_name: Bottle.0261
     id: '0261'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca  m djup."
     parent_event_id: 65e2dfb8-1cb4-44ea-934f-2ed2854df022
     start_lat: 57.6750874166667
     start_lon: 10.95794115
@@ -9663,6 +9917,11 @@ BOTTLE:
     full_name: Bottle.0230
     id: '0230'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 75m_x000D_
+
+      Bottendjup: 79m'
     parent_event_id: fcab8de8-dd69-4722-84cb-19502976c5a8
     start_lat: 57.8357441666667
     start_lon: 10.2098268
@@ -9754,6 +10013,11 @@ BOTTLE:
     full_name: Bottle.0220
     id: '0220'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Prov1: 34m_x000D_
+
+      Bottendjup: 38m.'
     parent_event_id: d72af3d1-8975-485e-8d92-70414c316ecc
     start_lat: 57.6221897166667
     start_lon: 9.18593418333334
@@ -9988,6 +10252,11 @@ BOTTLE:
     full_name: Bottle.0219
     id: 0219
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Prov1: 145m_x000D_
+
+      Bottendjup: 149m'
     parent_event_id: 8e48d5d4-518c-458b-b401-89e497da97dc
     start_lat: 57.8990011333333
     start_lon: 9.4108322
@@ -10105,6 +10374,8 @@ BOTTLE:
     full_name: Bottle.0262
     id: '0262'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca  m djup."
     parent_event_id: 65e2dfb8-1cb4-44ea-934f-2ed2854df022
     start_lat: 57.6677497666667
     start_lon: 10.9696178333333
@@ -10372,6 +10643,11 @@ BOTTLE:
     full_name: Bottle.0253
     id: '0253'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 37m_x000D_
+
+      Bottendjup: 41m'
     parent_event_id: c73104c1-681c-4679-9203-bb7ab18b47e8
     start_lat: 57.4403256
     start_lon: 10.8317425833333
@@ -11174,6 +11450,11 @@ BOTTLE:
     full_name: Bottle.0250
     id: '0250'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 69m_x000D_
+
+      Bottendjup: 73m'
     parent_event_id: ab2f2d43-0857-4c52-b77f-ae598b7d003a
     start_lat: 57.2838040666667
     start_lon: 11.57340175
@@ -11330,6 +11611,11 @@ BOTTLE:
     full_name: Bottle.0254
     id: '0254'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 27m_x000D_
+
+      Bottendjup: 31m'
     parent_event_id: 2714ab3d-1b8d-4afd-9fdb-04eacc7d7c0b
     start_lat: 57.5877275666667
     start_lon: 10.9836103666667
@@ -11378,6 +11664,11 @@ BOTTLE:
     full_name: Bottle.0229
     id: 0229
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 68m_x000D_
+
+      Bottendjup: 72m'
     parent_event_id: 319c6fee-b7a3-43ed-b2d4-b39e1c9ab919
     start_lat: 57.7623539333333
     start_lon: 9.28439623333333
@@ -12429,6 +12720,11 @@ BOTTLE:
     full_name: Bottle.0223
     id: '0223'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 60m_x000D_
+
+      Bottendjup: 64m'
     parent_event_id: f56f81ea-7611-4a25-9172-0fcf2712a7e4
     start_lat: 57.1301473333333
     start_lon: 6.30336561666667
@@ -12507,6 +12803,11 @@ BOTTLE:
     full_name: Bottle.0255
     id: '0255'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 40m_x000D_
+
+      Bottendjup: 44m'
     parent_event_id: 13e3b1ea-506b-4c6e-a96b-32510451cabb
     start_lat: 57.6886881
     start_lon: 11.54051615
@@ -12624,6 +12925,11 @@ BOTTLE:
     full_name: Bottle.0225
     id: '0225'
     name: BOTTLE
+    note: 'eDNA provtagning 3m ovan botten._x000D_
+
+      Provdjup: 28m_x000D_
+
+      Bottendjup: 31m'
     parent_event_id: a1f953c1-4498-445e-bdfa-087defc51d8f
     start_lat: 56.967709
     start_lon: 7.12035803333333
@@ -12676,6 +12982,8 @@ BOTTLE:
     full_name: Bottle.0263
     id: '0263'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca  m djup."
     parent_event_id: 65e2dfb8-1cb4-44ea-934f-2ed2854df022
     start_lat: 57.65999125
     start_lon: 10.9814054333333
@@ -12741,6 +13049,8 @@ BOTTLE:
     full_name: Bottle.0259
     id: 0259
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 62m djup."
     parent_event_id: bb0e35cc-9c1a-4585-bd0e-d378bf9cb1fd
     start_lat: 57.8810639666667
     start_lon: 11.1967655666667
@@ -12832,6 +13142,11 @@ BOTTLE:
     full_name: Bottle.0266
     id: '0266'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 60m_x000D_
+
+      Bottendjup: 64m'
     parent_event_id: dc6b290d-0db2-4d58-b841-a67714962cb0
     start_lat: 57.8895879
     start_lon: 11.1867399
@@ -13001,6 +13316,11 @@ BOTTLE:
     full_name: Bottle.0233
     id: '0233'
     name: BOTTLE
+    note: 'eDNA provtagning 3m ovan botten._x000D_
+
+      Provdjup: 97m_x000D_
+
+      Bottendjup: 100m'
     parent_event_id: afaaba95-8a9d-47bd-8018-b8b645f23a33
     start_lat: 58.72856205
     start_lon: 10.6366921666667
@@ -13144,6 +13464,11 @@ BOTTLE:
     full_name: Bottle.0265
     id: '0265'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 29m_x000D_
+
+      Bottendjup: 33m'
     parent_event_id: d18de7bc-8918-42ca-8794-96241fce0baf
     start_lat: 57.64558855
     start_lon: 11.002714
@@ -13183,6 +13508,8 @@ BOTTLE:
     full_name: Bottle.0231
     id: '0231'
     name: BOTTLE
+    note: "eDNA provtagning 4m ovanf\xF6r botten._x000D_\nprov 1: 178m_x000D_\nbottendjup:\
+      \ 182m"
     parent_event_id: e4d9c640-db48-47a7-b96c-561bc8d3e966
     start_lat: 58.384614
     start_lon: 10.7018195166667
@@ -13322,6 +13649,11 @@ BOTTLE:
     full_name: Bottle.0222
     id: '0222'
     name: BOTTLE
+    note: 'eDNA provtagning 3m ovan botten._x000D_
+
+      Provdjup: 51m_x000D_
+
+      Bottendjup: 54m'
     parent_event_id: 920cdbae-e17b-469d-9900-dd6b64ed2afe
     start_lat: 57.1528345333333
     start_lon: 5.85117138333333
@@ -13478,6 +13810,8 @@ BOTTLE:
     full_name: Bottle.0269
     id: 0269
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 131m djup."
     parent_event_id: 8909a317-0224-439d-ba1b-0e4bc5df82cd
     start_lat: 58.0700726
     start_lon: 11.0757718666667
@@ -13998,6 +14332,11 @@ BOTTLE:
     full_name: Bottle.0244
     id: '0244'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 19m_x000D_
+
+      Bottendjup: 23m'
     parent_event_id: 04e0838f-1217-4a68-8be7-00a41f11309e
     start_lat: 56.5484185666667
     start_lon: 12.5752676333333
@@ -14050,6 +14389,11 @@ BOTTLE:
     full_name: Bottle.0248
     id: 0248
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 27m_x000D_
+
+      Bottendjup: 31m'
     parent_event_id: 32480e54-3d11-4ad4-854a-60b355cca942
     start_lat: 57.194792
     start_lon: 12.0521929
@@ -14178,6 +14522,8 @@ BOTTLE:
     full_name: Bottle.0267
     id: '0267'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 64m djup."
     parent_event_id: dc6b290d-0db2-4d58-b841-a67714962cb0
     start_lat: 57.8789421
     start_lon: 11.20781935
@@ -14269,6 +14615,11 @@ BOTTLE:
     full_name: Bottle.0218
     id: 0218
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 147m_x000D_
+
+      Bottendjup: 151m_x000D_'
     parent_event_id: b0834ee3-4078-4439-bf34-689fe39abac3
     start_lat: 58.04740945
     start_lon: 9.95461386666666
@@ -14867,6 +15218,11 @@ BOTTLE:
     full_name: Bottle.0245
     id: '0245'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 35m_x000D_
+
+      Bottendjup: 39m'
     parent_event_id: ba95a5f5-3201-4d81-9f4f-c1a37a845ec6
     start_lat: 56.80561685
     start_lon: 12.2013097
@@ -14880,6 +15236,8 @@ BOTTLE:
     full_name: Bottle.0264
     id: '0264'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca  m djup."
     parent_event_id: 65e2dfb8-1cb4-44ea-934f-2ed2854df022
     start_lat: 57.6523334166667
     start_lon: 10.9954883666667
@@ -15179,6 +15537,11 @@ BOTTLE:
     full_name: Bottle.0239
     id: 0239
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 18m_x000D_
+
+      Bottendjup: 22m'
     parent_event_id: 70ad3df4-9ca2-41f8-a395-8ed7e9a64f0e
     start_lat: 56.2048787166667
     start_lon: 10.96208745
@@ -15400,6 +15763,8 @@ BOTTLE:
     full_name: Bottle.0256
     id: '0256'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 44m djup."
     parent_event_id: 13e3b1ea-506b-4c6e-a96b-32510451cabb
     start_lat: 57.71602045
     start_lon: 11.5264194833333
@@ -15582,6 +15947,11 @@ BOTTLE:
     full_name: Bottle.0246
     id: '0246'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 32m_x000D_
+
+      Bottendjup: 36m'
     parent_event_id: 36c97ee7-a5f9-4870-8cc9-4d56e385a4cf
     start_lat: 57.0001800833333
     start_lon: 12.2098336666667
@@ -15699,6 +16069,11 @@ BOTTLE:
     full_name: Bottle.0235
     id: '0235'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 73m_x000D_
+
+      Bottendjup: 77m'
     parent_event_id: f0b4a66f-1063-48a1-a8d0-8f917ea20f70
     start_lat: 57.19598185
     start_lon: 11.4378731666667
@@ -15868,6 +16243,8 @@ BOTTLE:
     full_name: Bottle.0260
     id: '0260'
     name: BOTTLE
+    note: "extra dunk-i-botten-h\xE4mtare (ca 1m \xF6ver botten) f\xF6r eDNA. Vatten\
+      \ fr\xE5n ca 63m djup."
     parent_event_id: bb0e35cc-9c1a-4585-bd0e-d378bf9cb1fd
     start_lat: 57.892082
     start_lon: 11.1843744333333
@@ -15972,6 +16349,11 @@ BOTTLE:
     full_name: Bottle.0226
     id: '0226'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 133m_x000D_
+
+      Bottendjup: 137m'
     parent_event_id: 3fcf31f1-d25d-42c0-bc0d-06526322accb
     start_lat: 57.4472837833333
     start_lon: 7.928257
@@ -16011,6 +16393,11 @@ BOTTLE:
     full_name: Bottle.0221
     id: '0221'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      prov1: 23m_x000D_
+
+      bottendjup: 27m'
     parent_event_id: 50cbffe0-86c8-40a0-8f60-e08885ae4076
     start_lat: 57.4909079833333
     start_lon: 9.04979036666667
@@ -16167,6 +16554,11 @@ BOTTLE:
     full_name: Bottle.0224
     id: '0224'
     name: BOTTLE
+    note: 'eDNA provtagning 3m ovan botten._x000D_
+
+      Provdjup: 53m_x000D_
+
+      Bottendjup: 56m'
     parent_event_id: 094b8688-0c5b-4047-870e-a22dd5cf65c7
     start_lat: 56.9574791
     start_lon: 6.54627151666667
@@ -16193,6 +16585,11 @@ BOTTLE:
     full_name: Bottle.0243
     id: '0243'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 29m_x000D_
+
+      Bottendjup: 33 m'
     parent_event_id: 1748989a-cada-465a-9427-941290519df9
     start_lat: 56.3980531666667
     start_lon: 12.2612775
@@ -16453,6 +16850,11 @@ BOTTLE:
     full_name: Bottle.0217
     id: '0217'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten. Djup 62m _x000D_
+
+      prov 1 61m _x000D_
+
+      prov 2 58m'
     parent_event_id: 85871e4e-4990-4ca7-bdb3-27ee7f40e03b
     start_lat: 58.3948672
     start_lon: 11.03603665
@@ -16609,6 +17011,11 @@ BOTTLE:
     full_name: Bottle.0234
     id: '0234'
     name: BOTTLE
+    note: 'eDNA provtagning 4m ovan botten._x000D_
+
+      Provdjup: 100m_x000D_
+
+      Bottendjup: 104m'
     parent_event_id: 1749fb1f-30a4-4208-89f7-b0c44a4b89de
     start_lat: 58.6749370666667
     start_lon: 10.8063169333333
@@ -17659,6 +18066,7 @@ BY13:
     max_depth: 129.9
     min_depth: 120.0
     name: BY13
+    note: "Ers\xE4tter BY15"
     parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
     start_lat: 57.3872400833333
     start_lon: 19.4367782166667
@@ -21496,6 +21904,7 @@ CALIBRATION:
   03b9cd89-4a50-43de-b5fe-1fdcfb32d146:
     event_id: 03b9cd89-4a50-43de-b5fe-1fdcfb32d146
     event_type: Trip
+    exp_leader: Larson
     full_name: Calibration.2023.002
     id: '002'
     name: CALIBRATION
@@ -34189,6 +34598,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: "Djup 1 m p\xE5 s\xE4nkk\xF6l"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 56.8323168666667
     start_lon: 17.13457105
@@ -34202,6 +34612,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: dropkeel 1,5m
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.74012985
     start_lon: 19.3435779333333
@@ -34228,6 +34639,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: "Dropkeel 1 meter g\xE5r ur slite"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.6663496666667
     start_lon: 18.8367195333333
@@ -34241,6 +34653,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: "omstart p\xE5 samma djup som innan p\xE5 drop keel 1,5m"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 55.41234525
     start_lon: 14.98755105
@@ -34267,6 +34680,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: Drop keel 1m
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.4862659833333
     start_lon: 19.158379
@@ -34293,6 +34707,7 @@ DROPKEEL_V1:
     full_name: DropKeel_v1
     id: DropKeel_v1
     name: DROPKEEL_V1
+    note: dropkeel 2 m
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.64418615
     start_lon: 19.2704649833333
@@ -34450,6 +34865,7 @@ EKO80DROPKEEL:
     full_name: EKO80DropKeel
     id: EKO80DropKeel
     name: EKO80DROPKEEL
+    note: "s\xE4nkk\xF6l 1 m g\xE5r ur slite"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.6667723333333
     start_lon: 18.83603865
@@ -34463,6 +34879,7 @@ EKO80DROPKEEL:
     full_name: EKO80DropKeel
     id: EKO80DropKeel
     name: EKO80DROPKEEL
+    note: "s\xE4nkk\xF6l 2m"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.54900915
     start_lon: 19.2096722
@@ -34476,6 +34893,7 @@ EKO80DROPKEEL:
     full_name: EKO80DropKeel
     id: EKO80DropKeel
     name: EKO80DROPKEEL
+    note: "S\xE4nkk\xF6l 0m G\xE5r till hamn"
     parent_event_id: 48bb966e-b850-493e-b7c2-5dd68f3c7980
     start_lat: 57.6588757666667
     start_lon: 18.897291
@@ -34489,6 +34907,9 @@ EKO80DROPKEEL:
     full_name: EKO80DropKeel
     id: EKO80DropKeel
     name: EKO80DROPKEEL
+    note: "kalibrering S\xE4nkk\xF6l p\xE5 1 m_x000D_\nsurvey start 1m_x000D_\nsen\
+      \ varierande se event under trip_x000D_\nse dropkeelevents under trip _x000D_\n\
+      stoppad i efterhand (d\xE4rf\xF6r 00 i sekundernotationen p\xE5 stopptid"
     parent_event_id: 8630ce5e-7986-4de4-97bb-7fd2fa057145
     start_lat: 57.5794366666667
     start_lon: 16.5922861833333
@@ -34753,6 +35174,8 @@ FERRYBOX:
     full_name: Ferrybox.008
     id: 008
     name: FERRYBOX
+    note: "Sj\xF6v.pumen var avst\xE4ngd en stund strax efter start. Oklart varf\xF6\
+      r. /Mats"
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 58.2742028
     start_lon: 11.4444194666667
@@ -34866,6 +35289,9 @@ FERRYBOX:
     full_name: Ferrybox.004
     id: '004'
     name: FERRYBOX
+    note: 'Pump stopped 20.00 11/4 due to rough weather and a new 1:st enigneer._x000D_
+
+      Restarted 12/4 around 9.40 local time.'
     parent_event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
     start_lat: 56.6612335
     start_lon: 16.372791
@@ -36303,6 +36729,7 @@ HERTAS FLAK:
     full_name: Hertas Flak.0590
     id: 0590
     name: HERTAS FLAK
+    note: 'Ljudhastighet: 1510.4 m/s'
     parent_event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     start_lat: 57.6714716333333
     start_lon: 10.9626611333333
@@ -36395,6 +36822,7 @@ HOSE:
     full_name: Hose.0044
     id: '0044'
     name: HOSE
+    note: "\xC4ven poolat prov till SU, slang + 12,5 + 15 +17,5 + 20m."
     parent_event_id: 1685252b-41a5-4e71-8c8a-676f66b42888
     start_lat: 58.59462475
     start_lon: 18.2356324833333
@@ -37674,6 +38102,7 @@ HOSE:
     full_name: Hose.0093
     id: 0093
     name: HOSE
+    note: "Prim\xE4rproduktion"
     parent_event_id: 19861aed-676b-4a02-8095-1bb891bdbb8b
     start_lat: 57.1933155333333
     start_lon: 11.6561886
@@ -39282,6 +39711,7 @@ HOSE:
     full_name: Hose.0115
     id: '0115'
     name: HOSE
+    note: "Prim\xE4rproduktion, tog extra algaware fr\xE5n slangen."
     parent_event_id: 026605a7-5ea9-46e3-a250-7aa3031b5bc8
     start_lat: 56.6344578166667
     start_lon: 19.58537565
@@ -40371,6 +40801,7 @@ HOSE:
     max_depth: 92.6
     min_depth: 90.8
     name: "HUVUDSK\xC4R"
+    note: "referenskast vid Huvudsk\xE4r samt test av kr\xE5nglande konduktivitetssensor."
     parent_event_id: 0f29785c-f547-473a-88a9-f2f60f15da82
     start_lat: 58.9354919666667
     start_lon: 19.1585112666667
@@ -40386,6 +40817,7 @@ HOSE:
     max_depth: 89.4
     min_depth: 89.1
     name: "HUVUDSK\xC4R"
+    note: "referenskast efter uts\xE4ttning av havsboj"
     parent_event_id: 0f29785c-f547-473a-88a9-f2f60f15da82
     start_lat: 58.9333214166667
     start_lon: 19.155274
@@ -40778,6 +41210,8 @@ KNOLLS GRUND:
     max_depth: 93.6
     min_depth: 91.5
     name: KNOLLS GRUND
+    note: "Byte av v\xE5gboj._x000D_\n11:05 UTC vikten p\xE5 d\xE4ck._x000D_\n11:20\
+      \ UTC nya bojen \xE4r ute."
     parent_event_id: 395780d6-2178-40c1-8163-eca122783e18
     start_lat: 57.5171620833333
     start_lon: 17.6147369833333
@@ -40985,6 +41419,7 @@ LILLE SKUTT:
     full_name: "L\xE4s\xF6 R\xE4nna.0592"
     id: 0592
     name: "L\xC4S\xD6 R\xC4NNA"
+    note: 'Ljudhastighet: 1500.96 m/s'
     parent_event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     start_lat: 57.4680537333333
     start_lon: 10.87470615
@@ -41807,6 +42242,9 @@ MVP:
     id: '064'
     max_depth: 112.1
     name: MVP
+    note: "MVP.064. 2 min intervall. Paus 9.30 - 10.12 Pga. s\xE4nkning SB s\xE4nkk\xF6\
+      l. (S\xE4nkt fart)._x000D_\nGap mellan kast 28 och 29, of\xF6rklarligt. AML\
+      \ informerade."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 57.10661175
     start_lon: 17.6527425666667
@@ -41821,6 +42259,7 @@ MVP:
     id: 059
     max_depth: 77.0
     name: MVP
+    note: "MVP059. BY2 - Han\xF6bukten"
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 55.4264580833333
     start_lon: 14.67988865
@@ -41835,6 +42274,7 @@ MVP:
     id: '013'
     max_depth: 204.2
     name: MVP
+    note: Fault 13:10. Profile halted due to speed reduction. => 9 kn. /Mats
     parent_event_id: 9e52f9f9-d75d-4af9-8e98-d0eb4c38ccce
     start_lat: 58.93146215
     start_lon: 19.1791535666667
@@ -41863,6 +42303,7 @@ MVP:
     id: '057'
     max_depth: 155.5
     name: MVP
+    note: "MVP057: \xC515-\xC513. 2 min intervall."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 58.3023866833333
     start_lon: 10.8451112333333
@@ -41947,6 +42388,7 @@ MVP:
     id: '074'
     max_depth: 78.3
     name: MVP
+    note: Stoppat pga kyla, trolig isbildning pa vajer eller whinch
     parent_event_id: e935d53a-12ec-4d9d-b3c0-c26933240057
     start_lat: 63.7921202666667
     start_lon: 21.4858682333333
@@ -41961,6 +42403,7 @@ MVP:
     id: 058
     max_depth: 48.6
     name: MVP
+    note: "MVP058. Anholt-H\xF6gan\xE4s."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 56.6649915666667
     start_lon: 12.1130506166667
@@ -41975,6 +42418,7 @@ MVP:
     id: '044'
     max_depth: 243.6
     name: MVP
+    note: MVP.044. Ostergarnsholm-BY15
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 57.42284855
     start_lon: 19.0308388
@@ -41989,6 +42433,7 @@ MVP:
     id: 048
     max_depth: 72.6
     name: MVP
+    note: "MVP.048. Stolpe R\xE4nna - BY5"
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 55.3955298166667
     start_lon: 16.5167759666667
@@ -42045,6 +42490,9 @@ MVP:
     id: '003'
     max_depth: 87.8
     name: MVP
+    note: '4min_x000D_
+
+      max 95m'
     parent_event_id: 65edacfe-be8e-4bc8-8f6d-6b4954ed41f5
     start_lat: 55.11816175
     start_lon: 14.3093220333333
@@ -42073,6 +42521,7 @@ MVP:
     id: '003'
     max_depth: 184.5
     name: MVP
+    note: 'Note: Data folder on disk, MVP003b'
     parent_event_id: 00757bad-294f-41ff-9952-16fcee36e007
     start_lat: 57.9222744833333
     start_lon: 17.7975221166667
@@ -42087,6 +42536,8 @@ MVP:
     id: '026'
     max_depth: 243.9
     name: MVP
+    note: "Noterat. De fyra sista profilerna \xE4r saknade/ofullst\xE4ndiga i FME-processeringen.\
+      \ Comm-error noterat i MVP200 p\xE5 sista profilen. /Mats"
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 57.3072070666667
     start_lon: 20.0737466166667
@@ -42101,6 +42552,7 @@ MVP:
     id: '042'
     max_depth: 116.6
     name: MVP
+    note: MVP.042. BY39-BY38
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 56.1329964
     start_lon: 16.5508175166667
@@ -42115,6 +42567,9 @@ MVP:
     id: '002'
     max_depth: 95.5
     name: MVP
+    note: '4min liggetid_x000D_
+
+      maxdjup 100m'
     parent_event_id: 65edacfe-be8e-4bc8-8f6d-6b4954ed41f5
     start_lat: 57.8661006333333
     start_lon: 11.2935432833333
@@ -42129,6 +42584,8 @@ MVP:
     id: 028
     max_depth: 88.3
     name: MVP
+    note: "MVP028 Start Stolpe R\xE4nna, Syd-Nord._x000D_\nsista profilen annorlunda\
+      \ pga l\xE4gre fart. /Mats"
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 55.1402058333333
     start_lon: 16.66998665
@@ -42143,6 +42600,9 @@ MVP:
     id: '001'
     max_depth: 94.8
     name: MVP
+    note: '4min ytlage_x000D_
+
+      max djup 150m'
     parent_event_id: 65edacfe-be8e-4bc8-8f6d-6b4954ed41f5
     start_lat: 58.09653075
     start_lon: 11.2746764
@@ -42171,6 +42631,7 @@ MVP:
     id: 009
     max_depth: 239.3
     name: MVP
+    note: "Ett kast avbrutet pga, missad bub\xE4rare vid dyk. /Mats"
     parent_event_id: 0f29785c-f547-473a-88a9-f2f60f15da82
     start_lat: 57.3056607166667
     start_lon: 20.0759537666667
@@ -42199,6 +42660,7 @@ MVP:
     id: '054'
     max_depth: 117.2
     name: MVP
+    note: MVP.054 5Kn
     parent_event_id: 56f7274b-4314-47a3-8038-e8a229327567
     start_lat: 58.3124237333333
     start_lon: 11.5355675
@@ -42213,6 +42675,7 @@ MVP:
     id: '033'
     max_depth: 293.2
     name: MVP
+    note: "Stopp p\xE5 \xC515."
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 58.28382305
     start_lon: 10.5187731
@@ -42297,6 +42760,11 @@ MVP:
     id: '010'
     max_depth: 126.9
     name: MVP
+    note: '10m depth off bottom_x000D_
+
+      max 40m _x000D_
+
+      pga kuperade avsnitt'
     parent_event_id: 65edacfe-be8e-4bc8-8f6d-6b4954ed41f5
     start_lat: 56.9806689166667
     start_lon: 11.7434426666667
@@ -42365,6 +42833,8 @@ MVP:
     id: '014'
     max_depth: 242.8
     name: MVP
+    note: "BY10-BY15._x000D_\nMVPn upptagen kl 10.30 tfa maskinproblem._x000D_\nMVPn\
+      \ sj\xF6satt igen kl 10.50._x000D_"
     parent_event_id: dd825a85-e695-440f-8fbb-7bc2e54dcf8b
     start_lat: 56.6409526
     start_lon: 19.5919258333333
@@ -42379,6 +42849,7 @@ MVP:
     id: '046'
     max_depth: 92.0
     name: MVP
+    note: "MVP.046. BCSIII10-30NE Fredriks\xF6"
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 55.5505043666667
     start_lon: 18.3745079666667
@@ -42435,6 +42906,7 @@ MVP:
     id: 029
     max_depth: 92.3
     name: MVP
+    note: "Avbruten pga transekt ligger i dumpningsomr\xE5de. /Mats"
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 55.2526564333333
     start_lon: 15.95946435
@@ -42505,6 +42977,9 @@ MVP:
     id: '015'
     max_depth: 237.7
     name: MVP
+    note: '12:51 Intervall 0 - 2 minutes. /Mats_x000D_
+
+      Max cable 400m!?...'
     parent_event_id: 9e52f9f9-d75d-4af9-8e98-d0eb4c38ccce
     start_lat: 57.4072837
     start_lon: 19.07393435
@@ -42519,6 +42994,7 @@ MVP:
     id: '045'
     max_depth: 117.7
     name: MVP
+    note: MVP.045. BY10-BCSIII10
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 55.9269574833333
     start_lon: 18.7804408666667
@@ -42533,6 +43009,8 @@ MVP:
     id: '036'
     max_depth: 245.0
     name: MVP
+    note: "MVP036 ofullst\xE4ndig profilering. Endast f\xF6rsta 20 minuterna samlades\
+      \ data. /Mats"
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 56.6453839
     start_lon: 19.5943130833333
@@ -42575,6 +43053,7 @@ MVP:
     id: '055'
     max_depth: 117.2
     name: MVP
+    note: MVP.055. 9 Kn
     parent_event_id: 56f7274b-4314-47a3-8038-e8a229327567
     start_lat: 58.3836784
     start_lon: 11.6176665
@@ -42589,6 +43068,7 @@ MVP:
     id: '060'
     max_depth: 94.2
     name: MVP
+    note: "MVP.060. Han\xF6bukten-BY4."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 55.6271795
     start_lon: 14.8856752833333
@@ -42617,6 +43097,8 @@ MVP:
     id: '047'
     max_depth: 71.9
     name: MVP
+    note: "MVP.047. Stople R\xE4nna._x000D_\nSista profilen i serien skall ej avara\
+      \ med!_x000D_\n/Mats"
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 55.1410691166667
     start_lon: 16.6594732
@@ -42659,6 +43141,7 @@ MVP:
     id: '002'
     max_depth: 99.5
     name: MVP
+    note: "Bormholmsdjupet - Stolpe tr\xF6skel."
     parent_event_id: 00757bad-294f-41ff-9952-16fcee36e007
     start_lat: 55.2510646333333
     start_lon: 16.0149876833333
@@ -42673,6 +43156,8 @@ MVP:
     id: 038
     max_depth: 198.1
     name: MVP
+    note: "MVP038. Profiler saknas mellan kl: 8.58 o 9.34 pga onot. dockningsbudb\xE4\
+      rare, nedkast. /Mats"
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 57.97735195
     start_lon: 17.9646300333333
@@ -42869,6 +43354,8 @@ MVP:
     id: '063'
     max_depth: 357.0
     name: MVP
+    note: "MVP063. Huvudsk\xE4r - BY31._x000D_\nKl. 17.15 => Max 100m pga bottenkontur._x000D_\n\
+      Kl. 17.34 => Max 200m pga \xF6kat djup."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 58.9036708
     start_lon: 19.0737619833333
@@ -42967,6 +43454,7 @@ MVP:
     id: '043'
     max_depth: 204.8
     name: MVP
+    note: MVP.043. BY20-Ostergarnsholm
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 57.9882872666667
     start_lon: 19.8684507833333
@@ -42995,6 +43483,7 @@ MVP:
     id: '065'
     max_depth: 57.9
     name: MVP
+    note: MVP065. 2 min intervall. Gap mellan kast igen. I dialog med AML.
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 56.33923715
     start_lon: 16.8894376
@@ -43009,6 +43498,7 @@ MVP:
     id: '037'
     max_depth: 244.0
     name: MVP
+    note: "MVP037 Profiler OK j\xE4mf\xF6rt med saknade i MVP036. /Mats"
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 57.3123627166667
     start_lon: 20.0595405
@@ -43023,6 +43513,7 @@ MVP:
     id: '053'
     max_depth: 117.5
     name: MVP
+    note: 'MVP053: Profiling interrupted by winch error.'
     parent_event_id: 56f7274b-4314-47a3-8038-e8a229327567
     start_lat: 58.3305349166667
     start_lon: 11.5562433833333
@@ -43037,6 +43528,8 @@ MVP:
     id: 068
     max_depth: 433.8
     name: MVP
+    note: "Max depth 130 m, pg av sprickor som korsar_x000D_\nStoppad o startat en\
+      \ ny transect f\xF6r neh\xF6vde dubbelkolla datat"
     parent_event_id: e935d53a-12ec-4d9d-b3c0-c26933240057
     start_lat: 58.5964626833333
     start_lon: 18.2419480333333
@@ -43079,6 +43572,8 @@ MVP:
     id: '056'
     max_depth: 319.9
     name: MVP
+    note: "MVP056: \xC517-\xC515. Bortse fr\xE5n sista profilen. Oklart varf\xF6r\
+      \ den uppstod. M\xF6jligen tfa fartminskning."
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 58.2909551
     start_lon: 10.5172259166667
@@ -43135,6 +43630,7 @@ MVP:
     id: '035'
     max_depth: 70.0
     name: MVP
+    note: "Stolpe r\xE4nna k\xF6rdes ej av tidssk\xE4l. (AHC-tetst)."
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 55.3114877166667
     start_lon: 16.4345462666667
@@ -43149,6 +43645,7 @@ MVP:
     id: '061'
     max_depth: 243.3
     name: MVP
+    note: MVP.061. BCS-III-BY15
     parent_event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     start_lat: 56.6398950833333
     start_lon: 19.6062152833333
@@ -43177,6 +43674,9 @@ MVP:
     id: '070'
     max_depth: 133.9
     name: MVP
+    note: '4min liggetid_x000D_
+
+      140m max djup'
     parent_event_id: e935d53a-12ec-4d9d-b3c0-c26933240057
     start_lat: 61.0852642666667
     start_lon: 19.59421385
@@ -43247,6 +43747,7 @@ MVP:
     id: '067'
     max_depth: 423.2
     name: MVP
+    note: 4min liggetid
     parent_event_id: e935d53a-12ec-4d9d-b3c0-c26933240057
     start_lat: 58.3957959833333
     start_lon: 18.1596590333333
@@ -43261,6 +43762,8 @@ MVP:
     id: 049
     max_depth: 80.6
     name: MVP
+    note: "MVP.049. Han\xF6bukten - BY2._x000D_\nAvbrott ca 12.08. \xC5terstart ca\
+      \ 12.25_x000D_\n/Mats"
     parent_event_id: fe2e5931-8bf5-4bc8-ad12-5301f1c2181a
     start_lat: 55.6118393166667
     start_lon: 14.8557201166667
@@ -43334,6 +43837,7 @@ MVP_A13-A17:
     id: '012'
     max_depth: 337.1
     name: MVP_A13-A17
+    note: MVPn stoppad 2 ggr pga "avsaknad bottendjup" (?!)  /Mats
     parent_event_id: dd825a85-e695-440f-8fbb-7bc2e54dcf8b
     start_lat: 58.33295235
     start_lon: 10.9826752166667
@@ -43762,6 +44266,7 @@ NB1/B3:
     full_name: "Nubbah\xE5let.0618"
     id: 0618
     name: "NUBBAH\xC5LET"
+    note: e-DNA
     parent_event_id: 11892518-df48-4084-91e9-85993f60fbf6
     start_lat: 58.3970444666667
     start_lon: 11.0032287166667
@@ -43776,6 +44281,8 @@ NB1/B3:
     full_name: "NW Sk\xE4gga.0617"
     id: '0617'
     name: "NW SK\xC4GGA"
+    note: "f\xF6rs\xF6kte 2 ggr p\xE5 1,4 NW Sk\xE4gga men d\xE5lig \xF6ppning. gav\
+      \ upp pr\xF6var NW Sk\xE4gga"
     parent_event_id: 11892518-df48-4084-91e9-85993f60fbf6
     start_lat: 58.48783135
     start_lon: 11.1661962
@@ -44276,6 +44783,7 @@ P22:
     max_depth: 30.1
     min_depth: 0.0
     name: P22
+    note: "Upptag bottenrigg._x000D_\nUts\xE4ttning ny bottenrigg."
     parent_event_id: 118fb168-bb32-4f52-ad72-b32f14a1900e
     start_lat: 56.2907861666667
     start_lon: 12.3351154666667
@@ -50952,6 +51460,8 @@ SKALLEPER:
     full_name: SkallePer.0627
     id: '0627'
     name: SKALLEPER
+    note: "Lodat SkallePer med ME70BO. 3-5 knops fart. Ok. Kunde inte se vad vii m\xF6\
+      jligen fastnat i i vintras"
     parent_event_id: 11892518-df48-4084-91e9-85993f60fbf6
     start_lat: 56.8966026666667
     start_lon: 6.33026781666667
@@ -50965,6 +51475,7 @@ SKALLEPER:
     full_name: SkallePer.0065
     id: '0065'
     name: SKALLEPER
+    note: "k\xF6rde fast efter 200 m men oklart varf\xF6r"
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.8726495
     start_lon: 6.26432781666667
@@ -51557,6 +52068,7 @@ STATION:
     full_name: Station.0059
     id: 0059
     name: STATION
+    note: Ruta 42F7
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.8344924333333
     start_lon: 7.24952538333333
@@ -51570,6 +52082,7 @@ STATION:
     full_name: Station.0044
     id: '0044'
     name: STATION
+    note: 44G0
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.8679774833333
     start_lon: 10.4641668833333
@@ -51583,6 +52096,7 @@ STATION:
     full_name: Station.0051
     id: '0051'
     name: STATION
+    note: 43F8
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.4154976
     start_lon: 8.32917416666666
@@ -51596,6 +52110,7 @@ STATION:
     full_name: Station.0063
     id: '0063'
     name: STATION
+    note: 42F5
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.5521783833333
     start_lon: 5.84711101666667
@@ -51609,6 +52124,7 @@ STATION:
     full_name: Station.0053
     id: '0053'
     name: STATION
+    note: 43F6
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.19924865
     start_lon: 6.84099025
@@ -51648,6 +52164,7 @@ STATION:
     full_name: Station.0068
     id: 0068
     name: STATION
+    note: 44F8
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.5302376166667
     start_lon: 8.95616195
@@ -51661,6 +52178,7 @@ STATION:
     full_name: Station.0039
     id: 0039
     name: STATION
+    note: 44G1
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.61570535
     start_lon: 11.38814055
@@ -51687,6 +52205,7 @@ STATION:
     full_name: Station.0052
     id: '0052'
     name: STATION
+    note: 43F7
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.2498813166667
     start_lon: 7.83326775
@@ -51700,6 +52219,7 @@ STATION:
     full_name: Station.0120
     id: '0120'
     name: STATION
+    note: "Min MIKhight \xE4r felaktigt"
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 58.1177653166667
     start_lon: 9.82766078333333
@@ -51739,6 +52259,7 @@ STATION:
     full_name: Station.0045
     id: '0045'
     name: STATION
+    note: 44F9
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.8280526166667
     start_lon: 9.8364648
@@ -51752,6 +52273,7 @@ STATION:
     full_name: Station.0038
     id: 0038
     name: STATION
+    note: 44G1
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.8048529666667
     start_lon: 11.3278253166667
@@ -51791,6 +52313,7 @@ STATION:
     full_name: Station.0121
     id: '0121'
     name: STATION
+    note: "Har \xE4ndrat startdjup. Min MIKhight \xE4r felaktigt."
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 58.2635845166667
     start_lon: 9.9219456
@@ -51830,6 +52353,7 @@ STATION:
     full_name: Station.0062
     id: '0062'
     name: STATION
+    note: 42F5
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.7489923166667
     start_lon: 5.83869418333333
@@ -51869,6 +52393,7 @@ STATION:
     full_name: Station.0058
     id: 0058
     name: STATION
+    note: 43F7
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.0789254666667
     start_lon: 7.27294893333333
@@ -51960,6 +52485,7 @@ STATION:
     full_name: Station.0061
     id: '0061'
     name: STATION
+    note: 42F6
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.7517871833333
     start_lon: 6.49584271666667
@@ -51986,6 +52512,7 @@ STATION:
     full_name: Station.0054
     id: '0054'
     name: STATION
+    note: 43F5
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.1658123
     start_lon: 5.98152796666667
@@ -52025,6 +52552,7 @@ STATION:
     full_name: Station.0067
     id: '0067'
     name: STATION
+    note: 43f8
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.2480897166667
     start_lon: 8.1646965
@@ -52077,6 +52605,7 @@ STATION:
     full_name: Station.0114
     id: '0114'
     name: STATION
+    note: Krillhal...
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.8687609
     start_lon: 10.6925811
@@ -52090,6 +52619,7 @@ STATION:
     full_name: Station.0060
     id: '0060'
     name: STATION
+    note: 42F6
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 56.8332276333333
     start_lon: 6.84503436666667
@@ -52142,6 +52672,7 @@ STATION:
     full_name: Station.0046
     id: '0046'
     name: STATION
+    note: 44F9
     parent_event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     start_lat: 57.79986555
     start_lon: 9.42459083333333
@@ -52296,6 +52827,7 @@ STATION 4 DAY 2:
     max_depth: 109.0
     min_depth: 108.6
     name: STATION 4 DAY 2
+    note: At glider position
     parent_event_id: 56f7274b-4314-47a3-8038-e8a229327567
     start_lat: 58.3092028333333
     start_lon: 11.5293393666667
@@ -52398,6 +52930,8 @@ SU 3125:
     max_depth: 11.2
     min_depth: 11.0
     name: SU 3125
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.3069009833333
     start_lon: 18.7548090333333
@@ -52414,6 +52948,8 @@ SU 3127:
     max_depth: 19.9
     min_depth: 19.8
     name: SU 3127
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.20506815
     start_lon: 18.7283990833333
@@ -52430,6 +52966,8 @@ SU 3129:
     max_depth: 44.3
     min_depth: 43.7
     name: SU 3129
+    note: "Bottenhugg SU_x000D_\n3 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.16281525
     start_lon: 18.8238451166667
@@ -52446,6 +52984,8 @@ SU BY2:
     max_depth: 47.5
     min_depth: 46.0
     name: SU BY2
+    note: "Bottenhugg SU_x000D_\n3 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.00909755
     start_lon: 14.0740455166667
@@ -52462,6 +53002,8 @@ SU BY5:
     max_depth: 88.9
     min_depth: 88.6
     name: SU BY5
+    note: "Bottenhugg SU_x000D_\n3 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.25065195
     start_lon: 15.9890171333333
@@ -52478,6 +53020,8 @@ SU DM 106:
     max_depth: 36.8
     min_depth: 36.4
     name: SU DM 106
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.23331775
     start_lon: 13.1169940666667
@@ -52494,6 +53038,8 @@ SU DM 107:
     max_depth: 44.3
     min_depth: 43.6
     name: SU DM 107
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.1333621333333
     start_lon: 13.6668616833333
@@ -52510,6 +53056,8 @@ SU GO 13:
     max_depth: 59.3
     min_depth: 59.1
     name: SU GO 13
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.3933194
     start_lon: 19.1262974333333
@@ -52526,6 +53074,9 @@ SU GO 14:
     max_depth: 36.5
     min_depth: 36.4
     name: SU GO 14
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n_x000D_\n(F\xF6rsta hugget ej godk\xE4nt, \xF6ver 2cm glipa (B,\
+      \ 40kg), andra hugget godk\xE4nt (B,40kg)"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.3512610166667
     start_lon: 18.94222085
@@ -52542,6 +53093,8 @@ SU GO 3:
     max_depth: 51.0
     min_depth: 50.9
     name: SU GO 3
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.20891325
     start_lon: 18.8826730333333
@@ -52558,6 +53111,8 @@ SU GO 4:
     max_depth: 53.0
     min_depth: 52.5
     name: SU GO 4
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.27236745
     start_lon: 18.9440264166667
@@ -52574,6 +53129,8 @@ SU GO 5:
     max_depth: 29.5
     min_depth: 29.5
     name: SU GO 5
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.4336158166667
     start_lon: 19.0234446
@@ -52590,6 +53147,8 @@ SU GO 6:
     max_depth: 16.1
     min_depth: 15.9
     name: SU GO 6
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.3092811333333
     start_lon: 18.7903688666667
@@ -52606,6 +53165,8 @@ SU GT 10:
     max_depth: 40.6
     min_depth: 40.0
     name: SU GT 10
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2333792666667
     start_lon: 13.3336440833333
@@ -52622,6 +53183,8 @@ SU GT 8:
     max_depth: 39.9
     min_depth: 39.7
     name: SU GT 8
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2500998166667
     start_lon: 13.5002804833333
@@ -52638,6 +53201,8 @@ SU H 128:
     max_depth: 35.8
     min_depth: 35.7
     name: SU H 128
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.16665595
     start_lon: 18.7830332666667
@@ -52654,6 +53219,8 @@ SU I:1:
     max_depth: 40.2
     min_depth: 40.0
     name: SU I:1
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2247940666667
     start_lon: 13.2670013666667
@@ -52670,6 +53237,8 @@ SU I:2:
     max_depth: 38.5
     min_depth: 38.3
     name: SU I:2
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.1238666833333
     start_lon: 13.2617357166667
@@ -52686,6 +53255,8 @@ SU P 204:
     max_depth: 41.4
     min_depth: 40.8
     name: SU P 204
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2246543833333
     start_lon: 13.41853755
@@ -52702,6 +53273,8 @@ SU P 206:
     max_depth: 42.9
     min_depth: 42.6
     name: SU P 206
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n1 x Kajak corer"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2250570166667
     start_lon: 13.6338082833333
@@ -52718,6 +53291,8 @@ SU PMK 14:
     max_depth: 54.0
     min_depth: 53.8
     name: SU PMK 14
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8330599666667
     start_lon: 15.8444613
@@ -52734,6 +53309,8 @@ SU PMK 15:
     max_depth: 42.9
     min_depth: 35.0
     name: SU PMK 15
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8629703333333
     start_lon: 15.8408123666667
@@ -52750,6 +53327,8 @@ SU PMK 16:
     max_depth: 50.0
     min_depth: 48.6
     name: SU PMK 16
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8208687333333
     start_lon: 15.6832751
@@ -52766,6 +53345,8 @@ SU PMK 17:
     max_depth: 43.3
     min_depth: 35.1
     name: SU PMK 17
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8824829166667
     start_lon: 15.7270222
@@ -52782,6 +53363,8 @@ SU PMK 18:
     max_depth: 39.3
     min_depth: 39.2
     name: SU PMK 18
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.9526880833333
     start_lon: 15.8937844166667
@@ -52798,6 +53381,8 @@ SU PMK 19:
     max_depth: 46.3
     min_depth: 46.0
     name: SU PMK 19
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8568508
     start_lon: 15.77270695
@@ -52814,6 +53399,8 @@ SU PMK 53:
     max_depth: 44.2
     min_depth: 44.1
     name: SU PMK 53
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.8540948166667
     start_lon: 15.9125097166667
@@ -52830,6 +53417,8 @@ SU PMK 54:
     max_depth: 30.3
     min_depth: 30.2
     name: SU PMK 54
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.9176540166667
     start_lon: 15.7604636166667
@@ -52846,6 +53435,8 @@ SU SK 4:
     max_depth: 31.7
     min_depth: 31.6
     name: SU SK 4
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2782184166667
     start_lon: 13.3100449666667
@@ -52862,6 +53453,8 @@ SU SK 6:
     max_depth: 32.3
     min_depth: 32.0
     name: SU SK 6
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.2909943166667
     start_lon: 13.1669498
@@ -52878,6 +53471,9 @@ SU TORH 11:
     max_depth: 51.8
     min_depth: 51.5
     name: SU TORH 11
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n_x000D_\n(F\xF6rsta hugget \xF6ppen >2cm, ej godk\xE4nd (B,40kg).\
+      \ Andra hugget godk\xE4nt (B,40kg))."
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.83299765
     start_lon: 15.7975482166667
@@ -52894,6 +53490,8 @@ SU TORH 13:
     max_depth: 50.1
     min_depth: 49.8
     name: SU TORH 13
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 55.7496579666667
     start_lon: 15.7256793333333
@@ -52910,6 +53508,8 @@ SU VAE 10:
     max_depth: 57.7
     min_depth: 56.9
     name: SU VAE 10
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.5613977
     start_lon: 16.9040719833333
@@ -52926,6 +53526,8 @@ SU VAE 18:
     max_depth: 49.1
     min_depth: 49.0
     name: SU VAE 18
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.63819305
     start_lon: 16.9508203166667
@@ -52942,6 +53544,8 @@ SU VAE 21:
     max_depth: 55.7
     min_depth: 54.4
     name: SU VAE 21
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.7932046333333
     start_lon: 16.93548865
@@ -52958,6 +53562,9 @@ SU VAE 24:
     max_depth: 42.3
     min_depth: 42.2
     name: SU VAE 24
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n_x000D_\n(F\xF6rsta hugget \xF6ppet >2cm (C,25kg), andra hugget\
+      \ godk\xE4nt (C,25kg)"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.60389415
     start_lon: 16.9303798
@@ -52974,6 +53581,8 @@ SU VAE 25:
     max_depth: 52.4
     min_depth: 52.3
     name: SU VAE 25
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.8133609166667
     start_lon: 16.9394275666667
@@ -52990,6 +53599,8 @@ SU VAE 26:
     max_depth: 39.2
     min_depth: 39.1
     name: SU VAE 26
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.7829279666667
     start_lon: 16.9092801666667
@@ -53006,6 +53617,10 @@ SU VAE 27:
     max_depth: 43.9
     min_depth: 41.8
     name: SU VAE 27
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n_x000D_\n(F\xF6rsta hugg med l\xE4tt huggare (C, 25kg) \xF6ppen.\
+      \ Andra hugg ej godk\xE4nt heller (C,25kg). Tredje hugg med tung huggare (A,\
+      \ 40kg) godk\xE4nt.)"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.8502152333333
     start_lon: 16.9651193166667
@@ -53022,6 +53637,9 @@ SU VAE 4B:
     max_depth: 52.7
     min_depth: 52.5
     name: SU VAE 4B
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare_x000D_\n_x000D_\n(F\xF6rsta hugget (C,25kg) tomt, andra hugget (C, 25kg)\
+      \ godk\xE4nt)"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.7250102166667
     start_lon: 16.9734212833333
@@ -53038,6 +53656,8 @@ SU VAE 7:
     max_depth: 47.3
     min_depth: 47.1
     name: SU VAE 7
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.5857557833333
     start_lon: 16.8892405166667
@@ -53054,6 +53674,8 @@ SU VAE 9:
     max_depth: 57.9
     min_depth: 57.7
     name: SU VAE 9
+    note: "Bottenhugg SU_x000D_\n1 x Van Veen-huggare_x000D_\n1 x bottenvattenh\xE4\
+      mtare"
     parent_event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     start_lat: 57.53459195
     start_lon: 16.9454477333333
@@ -53085,8 +53707,11 @@ SVEA:
     stop_lon: 16.3214024666667
     stop_time: '20230216093850'
   0f29785c-f547-473a-88a9-f2f60f15da82:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: 0f29785c-f547-473a-88a9-f2f60f15da82
     event_type: Trip
+    exp_leader: OBAC
     full_name: SVEA.2022.005
     id: '005'
     name: SVEA
@@ -53097,8 +53722,10 @@ SVEA:
     stop_lon: 11.4475453166667
     stop_time: '20220322215827'
   11892518-df48-4084-91e9-85993f60fbf6:
+    departure_port: Lysekil
     event_id: 11892518-df48-4084-91e9-85993f60fbf6
     event_type: Trip
+    exp_leader: babl0001
     full_name: SVEA.2023.014
     id: '014'
     name: SVEA
@@ -53109,6 +53736,8 @@ SVEA:
     stop_lon: 11.4475795333333
     stop_time: '20230901161528'
   118fb168-bb32-4f52-ad72-b32f14a1900e:
+    arrival_port: Kalmar
+    departure_port: Lysekil
     event_id: 118fb168-bb32-4f52-ad72-b32f14a1900e
     event_type: Trip
     full_name: SVEA.2022.016
@@ -53121,8 +53750,11 @@ SVEA:
     stop_lon: 16.3713167333333
     stop_time: '20220921135638'
   1d1e2a50-605c-49c4-8c73-2310d01b6625:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: 1d1e2a50-605c-49c4-8c73-2310d01b6625
     event_type: Trip
+    exp_leader: SJoh
     full_name: SVEA.2023.012
     id: '012'
     name: SVEA
@@ -53131,14 +53763,19 @@ SVEA:
     start_time: '20230711120003'
     stop_time: '20230716165354'
   22e7baa1-620c-42f4-8d14-be9556072e2b:
+    arrival_port: Kalmar
+    departure_port: Lysekil
     event_id: 22e7baa1-620c-42f4-8d14-be9556072e2b
     event_type: Trip
+    exp_leader: Johan Kronsell
     full_name: SVEA.2023.009
     id: 009
     name: SVEA
+    note: Gemensam expedition med SU (bottenhugg). Skall bli kul.
     start_time: '20230508095120'
     stop_time: '20230514155927'
   395780d6-2178-40c1-8163-eca122783e18:
+    departure_port: Lysekil
     event_id: 395780d6-2178-40c1-8163-eca122783e18
     event_type: Trip
     full_name: SVEA.2022.013
@@ -53151,16 +53788,24 @@ SVEA:
     stop_lon: 11.4041446333333
     stop_time: '20220818123125'
   3a60299b-df29-414b-82a7-eac2fa509574:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: 3a60299b-df29-414b-82a7-eac2fa509574
     event_type: Trip
+    exp_leader: Martin Hansson
     full_name: SVEA.2023.021
     id: '021'
     name: SVEA
+    note: "Hamnstuds i G\xE4vle f\xF6r att h\xE4mta upp UMF. Byte av personal i G\xE4\
+      vle efter kartering i Bottniska viken."
     start_time: '20231204213053'
     stop_time: ''
   3f4546a2-16bf-444c-86ca-b11dda758e85:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     event_type: Trip
+    exp_leader: Anna-Kerstin Thell
     full_name: SVEA.2022.012
     id: '012'
     name: SVEA
@@ -53179,8 +53824,11 @@ SVEA:
     start_time: '20220519040000'
     stop_time: '20220525060425'
   64b6b360-9657-41d6-bd9a-ef0f692f5579:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: 64b6b360-9657-41d6-bd9a-ef0f692f5579
     event_type: Trip
+    exp_leader: OBac
     full_name: SVEA.2024.009
     id: 009
     name: SVEA
@@ -53229,6 +53877,7 @@ SVEA:
   8630ce5e-7986-4de4-97bb-7fd2fa057145:
     event_id: 8630ce5e-7986-4de4-97bb-7fd2fa057145
     event_type: Survey
+    exp_leader: larson
     full_name: SVEA.2023.017
     id: '017'
     name: SVEA
@@ -53249,8 +53898,11 @@ SVEA:
     stop_lon: 16.36819415
     stop_time: '20231116223311'
   98660422-bf9e-487c-9266-7e43c25d1a9f:
+    arrival_port: Kalmar
+    departure_port: Falkenberg
     event_id: 98660422-bf9e-487c-9266-7e43c25d1a9f
     event_type: Trip
+    exp_leader: SJoh
     full_name: SVEA.2022.020
     id: '020'
     name: SVEA
@@ -53261,8 +53913,11 @@ SVEA:
     stop_lon: 16.3756002333333
     stop_time: '20221114211959'
   99dcca5a-4cad-46d4-85f7-2997227c5bc2:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: 99dcca5a-4cad-46d4-85f7-2997227c5bc2
     event_type: Trip
+    exp_leader: babl0001
     full_name: SVEA.2023.002
     id: '002'
     name: SVEA
@@ -53273,11 +53928,16 @@ SVEA:
     stop_lon: 11.4427037
     stop_time: '20230207145616'
   9e214069-f801-4c4a-ac54-0b3e57c1d46d:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: 9e214069-f801-4c4a-ac54-0b3e57c1d46d
     event_type: Trip
+    exp_leader: Sara Johansson
     full_name: SVEA.2022.001
     id: '001'
     name: SVEA
+    note: "SMHI-expedition med n\xE4rsaltskartering i Kattegatt. Stora delar av \xD6\
+      stersj\xF6n provtogs ej. Avbruten expedition pga av covid."
     start_lat: 58.2753102333333
     start_lon: 11.4475515666667
     start_time: '20220110093255'
@@ -53285,8 +53945,11 @@ SVEA:
     stop_lon: 11.4475812833333
     stop_time: '20220114170519'
   9e52f9f9-d75d-4af9-8e98-d0eb4c38ccce:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: 9e52f9f9-d75d-4af9-8e98-d0eb4c38ccce
     event_type: Trip
+    exp_leader: Martin Hansson
     full_name: SVEA.2023.005
     id: '005'
     name: SVEA
@@ -53307,6 +53970,8 @@ SVEA:
     start_time: '20230810090658'
     stop_time: '20230817070018'
   ab57b478-f5a0-47bf-9e70-207324291627:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: ab57b478-f5a0-47bf-9e70-207324291627
     event_type: Survey
     full_name: SVEA.2022.019
@@ -53319,8 +53984,11 @@ SVEA:
     stop_lon: 11.4545138
     stop_time: '20221027135453'
   bb170c3b-61fc-4e90-9a2a-770ebffa6c7e:
+    arrival_port: Kalmar
+    departure_port: "G\xF6teborg"
     event_id: bb170c3b-61fc-4e90-9a2a-770ebffa6c7e
     event_type: Trip
+    exp_leader: "\xD6rjan B\xE4ck"
     full_name: SVEA.2023.016
     id: '016'
     name: SVEA
@@ -53331,6 +53999,8 @@ SVEA:
     stop_lon: 16.3714277833333
     stop_time: '20230921091812'
   d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba:
+    arrival_port: Lysekil
+    departure_port: Stockholm
     event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     event_type: Trip
     full_name: SVEA.2022.011
@@ -53365,11 +54035,16 @@ SVEA:
     start_time: '20230412083606'
     stop_time: '20230418071353'
   dd825a85-e695-440f-8fbb-7bc2e54dcf8b:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: dd825a85-e695-440f-8fbb-7bc2e54dcf8b
     event_type: Trip
+    exp_leader: Sara Johansson
     full_name: SVEA.2022.007
     id: '007'
     name: SVEA
+    note: "GD SMHI, HaV, Formas, Havsambassad\xF6ren UD, Thorell, Hubbe och UD-person\
+      \ bes\xF6k tis-tors."
     start_lat: 58.2751475666667
     start_lon: 11.4474009333333
     start_time: '20220420050000'
@@ -53377,18 +54052,26 @@ SVEA:
     stop_lon: 11.4475431333333
     stop_time: '20220426181228'
   e935d53a-12ec-4d9d-b3c0-c26933240057:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: e935d53a-12ec-4d9d-b3c0-c26933240057
     event_type: Trip
+    exp_leader: MHan
     full_name: SVEA.2022.022
     id: '022'
     name: SVEA
+    note: "Decemberexpedition. Ben 1 tillsammans med UMF. Personalbyte i G\xE4vle,\
+      \ ben 2 G\xE4vle till Lysekil."
     start_lat: 56.6632603
     start_lon: 16.37167845
     start_time: '20221205090951'
     stop_time: ''
   f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e:
+    arrival_port: Lysekil
+    departure_port: Lysekil
     event_id: f7a87a1e-4ad4-47bb-b5f2-4ffb8b94078e
     event_type: Trip
+    exp_leader: babl0001
     full_name: SVEA.2022.014
     id: '014'
     name: SVEA
@@ -53399,8 +54082,11 @@ SVEA:
     stop_lon: 11.4465087833333
     stop_time: '20220901113003'
   fc91bb5b-5f1e-49a4-af9a-b8a54ec8d283:
+    arrival_port: Lysekil
+    departure_port: Kalmar
     event_id: fc91bb5b-5f1e-49a4-af9a-b8a54ec8d283
     event_type: Trip
+    exp_leader: Martin Hansson
     full_name: SVEA.2023.018
     id: 018
     name: SVEA
@@ -53577,6 +54263,7 @@ TRAWL:
     id: '022'
     max_depth: 33.9
     name: TRAWL
+    note: "Home: \nLiftoff: \nTouchdown: \nShoot: \nSurface:"
     parent_event_id: 1a659efb-54cf-4a57-b964-a1240e385b9a
     start_lat: 56.3645755166667
     start_lon: 12.2606040666667
@@ -53595,6 +54282,7 @@ TRAWL:
     id: '173'
     max_depth: 33.7
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \nShoot: \nHome: \n\nSurface:"
     parent_event_id: a9bee0b0-cc05-455b-abb2-a5892ee61584
     start_lat: 56.3716911833333
     start_lon: 12.2571247833333
@@ -53613,6 +54301,7 @@ TRAWL:
     id: '173'
     max_depth: 64.2
     name: TRAWL
+    note: "Surface: \nTouchdown: \n\nHome: \nShoot:"
     parent_event_id: dc6b290d-0db2-4d58-b841-a67714962cb0
     start_lat: 57.8663039166667
     start_lon: 11.2183261666667
@@ -53649,6 +54338,7 @@ TRAWL:
     id: '209'
     max_depth: 56.9
     name: TRAWL
+    note: "Tr\xE5l\xF6gat upph\xE4ngt."
     parent_event_id: b4f2d859-5c48-461c-96d4-50e04707a240
     start_lat: 55.7615267
     start_lon: 14.8024328666667
@@ -53667,6 +54357,7 @@ TRAWL:
     id: '156'
     max_depth: 54.4
     name: TRAWL
+    note: "Liftoff: \n\nHome: \nShoot: \nTouchdown: \nSurface:"
     parent_event_id: 80038c6f-247b-4240-951b-a41ec25c71ce
     start_lat: 57.18621405
     start_lon: 5.78490076666667
@@ -53685,6 +54376,7 @@ TRAWL:
     id: '170'
     max_depth: 22.4
     name: TRAWL
+    note: "Home: \n\nShoot: \nTouchdown: \nLiftoff: \nSurface:"
     parent_event_id: 46cb53d0-1e23-4d8f-9fc0-367fa0ae606e
     start_lat: 56.2139002666667
     start_lon: 10.9610157333333
@@ -53703,6 +54395,8 @@ TRAWL:
     id: '159'
     max_depth: 57.0
     name: TRAWL
+    note: "Shoot: \nSurface: \nLiftoff: \nTouchdown: \nM\xE5nga felslag p\xE5 height\
+      \ och opening. Bd\xF6mde \xF6ppningen till 4,3_x000D_\n\nHome:"
     parent_event_id: 660245fb-d23a-4afe-8906-7503b4745656
     start_lat: 57.4539565166667
     start_lon: 8.53388098333333
@@ -53739,6 +54433,8 @@ TRAWL:
     id: '152'
     max_depth: 34.9
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \n16 kulor +2 f\xF6r ving-sensorerna\nHome: \nShoot:\
+      \ \nSurface:"
     parent_event_id: 4b02d83e-8b7b-4862-9da6-1f431e8c9210
     start_lat: 56.6179787
     start_lon: 11.8285405333333
@@ -53757,6 +54453,7 @@ TRAWL:
     id: '161'
     max_depth: 34.7
     name: TRAWL
+    note: "Home: \nLiftoff: 2023-08-29 14:52:02\nTouchdown: \nShoot: \nSurface:"
     parent_event_id: 36c97ee7-a5f9-4870-8cc9-4d56e385a4cf
     start_lat: 57.0141366333333
     start_lon: 12.2064702166667
@@ -53793,6 +54490,8 @@ TRAWL:
     id: '012'
     max_depth: 51.2
     name: TRAWL
+    note: "Kortat, fisk p\xE5 lodet. \nLiftoff: \nHome: \nTouchdown: \nSurface: \n\
+      Shoot:"
     parent_event_id: 2044a732-95ad-44de-affb-5b7afe5a6143
     start_lat: 56.5837433166667
     start_lon: 5.93208423333333
@@ -53811,6 +54510,7 @@ TRAWL:
     id: '147'
     max_depth: 136.6
     name: TRAWL
+    note: "Surface: \n\nHome: \nLiftoff: \nShoot: \nTouchdown:"
     parent_event_id: 5b577a03-5780-4960-9f5c-5a82018e2682
     start_lat: 58.35435835
     start_lon: 10.8460356666667
@@ -53829,6 +54529,10 @@ TRAWL:
     id: '129'
     max_depth: 63.6
     name: TRAWL
+    note: "Surface: \nShoot: \nLiftoff: \nTouchdown: \nHalet kortades pga mycket fisk\
+      \ p\xE5 lodet i stort sett hela tiden. Opening-v\xE4rdet l\xE5gt pga att lodet\
+      \ slog p\xE5 fisken. Height och opening-v\xE4rdet approximerat baserat p\xE5\
+      \ lucka i stimmet.\nHome:"
     parent_event_id: 85871e4e-4990-4ca7-bdb3-27ee7f40e03b
     start_lat: 58.3862367833333
     start_lon: 11.0753827833333
@@ -53865,6 +54569,7 @@ TRAWL:
     id: '140'
     max_depth: 71.5
     name: TRAWL
+    note: "rej\xE4l medstr\xF6m\nLiftoff: \nSurface: \nShoot: \nTouchdown: \nHome:"
     parent_event_id: 0ad2ec9e-f881-4875-a282-f035ff2295c2
     start_lat: 57.8107190166667
     start_lon: 10.8252600833333
@@ -53883,6 +54588,8 @@ TRAWL:
     id: '192'
     max_depth: 54.5
     name: TRAWL
+    note: "undulerande lager av fisk alldeles innan vi fiskade_x000D_\nst\xF6rre storleksf\xF6\
+      rdelning enl lodet under halet"
     parent_event_id: 33888b91-672e-485a-ba43-d3055a0c505e
     start_lat: 57.6684702166667
     start_lon: 19.2387852333333
@@ -53901,6 +54608,8 @@ TRAWL:
     id: '182'
     max_depth: 64.5
     name: TRAWL
+    note: "Liftoff: 2022-08-31 16:00:09\nShoot: \n\nTouchdown: 2022-08-31 15:31:19\n\
+      Surface: \nHome:"
     parent_event_id: 832e5a37-d2b3-4fd8-a173-534683c84d41
     start_lat: 57.3206657166667
     start_lon: 11.5770831333333
@@ -53955,6 +54664,8 @@ TRAWL:
     id: '138'
     max_depth: 32.0
     name: TRAWL
+    note: "Shoot: \nHome: \nSurface: \nTouchdown: \nTr\xE5l\xF6ppning och h\xF6jd\
+      \ approximerade baserat p\xE5 ekogram fr\xE5n TV80 och enstaka siffror.\nLiftoff:"
     parent_event_id: a1f953c1-4498-445e-bdfa-087defc51d8f
     start_lat: 56.93256735
     start_lon: 7.08252688333333
@@ -53973,6 +54684,8 @@ TRAWL:
     id: '151'
     max_depth: 47.5
     name: TRAWL
+    note: "Shoot: \nTouchdown: \nLiftoff: 2023-08-27 13:12:52\nHome: \nSurface: \n\
+      Vingar p\xE5 och ig\xE5ng_x000D_\nmkt fisk p\xE5 lodet"
     parent_event_id: 698210c6-16a7-4843-9093-0da72bf9950b
     start_lat: 56.7982024
     start_lon: 11.8392405333333
@@ -54009,6 +54722,8 @@ TRAWL:
     id: '137'
     max_depth: 56.0
     name: TRAWL
+    note: "Home: \nTr\xE5l\xF6ppning och tr\xE5lh\xF6jd uppskattat baserat p\xE5 enstaka\
+      \ v\xE4rden och ekogram p\xE5 TV80.\nTouchdown: \nSurface: \nShoot: \nLiftoff:"
     parent_event_id: 094b8688-0c5b-4047-870e-a22dd5cf65c7
     start_lat: 56.9620354166667
     start_lon: 6.46631728333333
@@ -54027,6 +54742,8 @@ TRAWL:
     id: '146'
     max_depth: 149.3
     name: TRAWL
+    note: "Home: \nShoot: \nLiftoff: \nInga vingsensorer. Kulor ist\xE4llet f\xF6\
+      r sk\xE4rplan.\nSurface: \nTouchdown:"
     parent_event_id: 530b8819-15dd-4d68-80ed-b8c17ec5911e
     start_lat: 58.6539425833333
     start_lon: 10.4884288833333
@@ -54045,6 +54762,7 @@ TRAWL:
     id: '150'
     max_depth: 51.4
     name: TRAWL
+    note: "Touchdown: \nLiftoff: \nSurface: \nHome: \nShoot:"
     parent_event_id: 02638956-7122-4c33-9f9b-f76785217090
     start_lat: 57.7201017833333
     start_lon: 10.0837947666667
@@ -54063,6 +54781,7 @@ TRAWL:
     id: '045'
     max_depth: 136.7
     name: TRAWL
+    note: "Home: \nTouchdown: \nShoot: \nSurface: \nLiftoff:"
     parent_event_id: a6c69426-b738-4384-a0bb-771a698b17ee
     start_lat: 58.3636484666667
     start_lon: 10.8478250333333
@@ -54081,6 +54800,7 @@ TRAWL:
     id: 038
     max_depth: 152.4
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nHome: \nSurface: \nTouchdown: \nHalat pga kabel."
     parent_event_id: 3f8862c0-c4a5-477c-8077-07f702881c2b
     start_lat: 58.00892505
     start_lon: 9.82450193333334
@@ -54099,6 +54819,7 @@ TRAWL:
     id: '126'
     max_depth: 131.8
     name: TRAWL
+    note: "Home: \nTestdrag\nSurface: \nTouchdown: \nShoot: \nLiftoff:"
     parent_event_id: 20ba8736-9a72-405e-9d1e-3bd42c9ac178
     start_lat: 58.3685662333333
     start_lon: 10.8322219666667
@@ -54117,6 +54838,7 @@ TRAWL:
     id: '035'
     max_depth: 50.1
     name: TRAWL
+    note: "Surface: \nTouchdown: \nHome: \nLiftoff: \nErs\xE4tter SW Vinga\nShoot:"
     parent_event_id: 85b1c416-29a0-4a25-b7c5-43163d9af94a
     start_lat: 57.8228032666667
     start_lon: 11.04421555
@@ -54135,6 +54857,8 @@ TRAWL:
     id: '143'
     max_depth: 69.1
     name: TRAWL
+    note: "Surface: \nHome: \nInga vingsensorer. Tr\xE5l\xF6ppning manuellt fr\xE5\
+      n TV80. Kulor ist\xE4llet f\xF6r sk\xE4rplan.\nLiftoff: \nTouchdown: \nShoot:"
     parent_event_id: 319c6fee-b7a3-43ed-b2d4-b39e1c9ab919
     start_lat: 57.7679737166667
     start_lon: 9.3105495
@@ -54171,6 +54895,7 @@ TRAWL:
     id: '158'
     max_depth: 98.7
     name: TRAWL
+    note: "Home: \nTouchdown: \nShoot: \nLiftoff: \nSurface:"
     parent_event_id: 35053b4b-c7e2-424c-ad75-b282ba9f7013
     start_lat: 57.5163755833333
     start_lon: 8.39857043333333
@@ -54189,6 +54914,7 @@ TRAWL:
     id: '174'
     max_depth: 24.3
     name: TRAWL
+    note: "Touchdown: \nSurface: \nShoot: \nLiftoff: \nHome:"
     parent_event_id: a186cb92-f44e-4ff0-89f5-ed7915ce0d02
     start_lat: 56.3564409666667
     start_lon: 12.5537215833333
@@ -54207,6 +54933,8 @@ TRAWL:
     id: '165'
     max_depth: 97.8
     name: TRAWL
+    note: "Shoot: \nSurface: \nHome: \nTouchdown: \nLiftoff: \nkortat halet 5 min\
+      \ pga fisk p\xE5 lodet."
     parent_event_id: 02b5e5c2-b71e-429d-a924-a3dda4572385
     start_lat: 58.3341590333333
     start_lon: 11.01430315
@@ -54225,6 +54953,7 @@ TRAWL:
     id: '191'
     max_depth: 61.8
     name: TRAWL
+    note: "Inga vingsensorer mpnterade pga d\xE5ligt v\xE4der"
     parent_event_id: 109533d7-2357-4d2b-9791-34dabcd4778e
     start_lat: 57.5359413
     start_lon: 19.2273106833333
@@ -54243,6 +54972,7 @@ TRAWL:
     id: '146'
     max_depth: 53.9
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \nShoot: \nHome: \nSurface:"
     parent_event_id: 89e2a015-7783-4d49-8e74-2ff4248648e4
     start_lat: 58.4691162833333
     start_lon: 11.1551219166667
@@ -54261,6 +54991,7 @@ TRAWL:
     id: '032'
     max_depth: 32.7
     name: TRAWL
+    note: "Liftoff: \n\nShoot: \nSurface: \nTouchdown: \nHome:"
     parent_event_id: 8397726f-a40d-48f8-b232-59017c13e87f
     start_lat: 57.1847946666667
     start_lon: 12.0630143666667
@@ -54279,6 +55010,7 @@ TRAWL:
     id: '154'
     max_depth: 35.2
     name: TRAWL
+    note: "Touchdown: \n\nShoot: \nSurface: \nHome: \nLiftoff:"
     parent_event_id: acdcfb08-4898-4118-83ba-bfb9c45f217a
     start_lat: 57.1014976666667
     start_lon: 7.3138549
@@ -54297,6 +55029,7 @@ TRAWL:
     id: '023'
     max_depth: 24.7
     name: TRAWL
+    note: "Surface: \nHome: \nTouchdown: \nShoot: \nLiftoff: \ningen str\xF6m"
     parent_event_id: 7df6ac01-a977-4fcd-ac62-05e8e13f9409
     start_lat: 56.3395023333333
     start_lon: 12.6041086333333
@@ -54315,6 +55048,7 @@ TRAWL:
     id: '166'
     max_depth: 41.1
     name: TRAWL
+    note: "Liftoff: 2023-08-30 14:56:43\nTouchdown: \nHome: \n\nSurface: \nShoot:"
     parent_event_id: 253ce300-4a94-4f7b-8284-3b868fca7257
     start_lat: 57.3770147666667
     start_lon: 11.3164362333333
@@ -54333,6 +55067,7 @@ TRAWL:
     id: '157'
     max_depth: 146.1
     name: TRAWL
+    note: "Surface: \nHome: \nTouchdown: \nShoot: \nLiftoff:"
     parent_event_id: e82e81b8-f6a4-4df6-b0b4-4ed4a9305ed2
     start_lat: 57.4741792833333
     start_lon: 8.00421018333333
@@ -54351,6 +55086,7 @@ TRAWL:
     id: '155'
     max_depth: 61.5
     name: TRAWL
+    note: "Liftoff: \n\nTouchdown: \nHome: \nShoot: \nSurface:"
     parent_event_id: a34c3642-f39e-42dc-9512-7e10c6a7f26d
     start_lat: 57.0986187
     start_lon: 6.8270998
@@ -54387,6 +55123,7 @@ TRAWL:
     id: '171'
     max_depth: 49.7
     name: TRAWL
+    note: "Surface: \nHome: \nTouchdown: \nLiftoff: 2023-08-31 17:03:08\n\nShoot:"
     parent_event_id: 13e3b1ea-506b-4c6e-a96b-32510451cabb
     start_lat: 57.7407142166667
     start_lon: 11.5048524166667
@@ -54405,6 +55142,8 @@ TRAWL:
     id: '185'
     max_depth: 96.5
     name: TRAWL
+    note: "fiskat 30 min n\xE4ra botten sen upp till tio meter p\xE5 \xF6verten och\
+      \ 30 min till."
     parent_event_id: ed962b02-773a-47c6-8280-90512b886032
     start_lat: 59.2990082833333
     start_lon: 19.6001216166667
@@ -54423,6 +55162,8 @@ TRAWL:
     id: '044'
     max_depth: 57.7
     name: TRAWL
+    note: "Touchdown: \nKortat pga fisk p\xE5 lodet.\nHome: \nSurface: \nShoot: \n\
+      Liftoff:"
     parent_event_id: dba4026a-7d13-4b4c-92c5-dc6e69f77f74
     start_lat: 58.4660645833333
     start_lon: 11.1343679666667
@@ -54441,6 +55182,8 @@ TRAWL:
     id: '177'
     max_depth: 27.8
     name: TRAWL
+    note: "Shoot: \nHome: \n\nTouchdown: 2022-08-30 15:28:00\nSurface: \nLiftoff:\
+      \ 2022-08-30 16:03:19"
     parent_event_id: 4ba72bfd-2c00-43f6-8dcf-1c9cbe33e384
     start_lat: 56.8721736666667
     start_lon: 12.29019575
@@ -54459,6 +55202,8 @@ TRAWL:
     id: '007'
     max_depth: 25.9
     name: TRAWL
+    note: "Liftoff: \nShoot: \nKortat pga av h\xE5la_x000D_\nIngen ctd pga tidsbrist\n\
+      Touchdown: \nHome: \nSurface:"
     parent_event_id: e98a0251-f48f-4ded-a49c-935f4889b715
     start_lat: 57.4867843833333
     start_lon: 9.09338668333334
@@ -54495,6 +55240,7 @@ TRAWL:
     id: '149'
     max_depth: 53.8
     name: TRAWL
+    note: "Touchdown: \nSurface: \nHome: \n\nLiftoff: \nShoot:"
     parent_event_id: 8bc615ab-14ad-40b8-9d25-cb60673429b2
     start_lat: 57.8489179333333
     start_lon: 9.75658083333334
@@ -54513,6 +55259,7 @@ TRAWL:
     id: '172'
     max_depth: 32.4
     name: TRAWL
+    note: "Shoot: \nSurface: \nLiftoff: \nHome: \nTouchdown:"
     parent_event_id: d11839f6-4edf-4559-ac59-be603bd9216f
     start_lat: 56.3534539666667
     start_lon: 11.8946632666667
@@ -54531,6 +55278,8 @@ TRAWL:
     id: '021'
     max_depth: 32.7
     name: TRAWL
+    note: "Surface: \nLiftoff: \nHome: \nShoot: \nInga v\xE4rden p\xE5 opening. Tog\
+      \ height.\nTouchdown:"
     parent_event_id: 1631e03c-fce4-4dbb-bcc4-dbdc0840c0fc
     start_lat: 56.3461692833333
     start_lon: 11.9654081833333
@@ -54549,6 +55298,7 @@ TRAWL:
     id: '047'
     max_depth: 135.7
     name: TRAWL
+    note: "Home: \n\nTouchdown: \nShoot: \nSurface: \nLiftoff:"
     parent_event_id: b0402c07-a266-4bbd-aeaf-b3aebf80c34b
     start_lat: 58.0908036333333
     start_lon: 11.0659766333333
@@ -54567,6 +55317,7 @@ TRAWL:
     id: '164'
     max_depth: 82.5
     name: TRAWL
+    note: "Surface: \n\nShoot: \nLiftoff: 2023-08-30 10:51:30\nHome: \nTouchdown:"
     parent_event_id: a9125b63-b18a-42bc-8f0c-1b82dec30350
     start_lat: 57.1829253
     start_lon: 11.65908915
@@ -54585,6 +55336,8 @@ TRAWL:
     id: '198'
     max_depth: 98.9
     name: TRAWL
+    note: "fiskade en halvtimme p\xE5 \xF6vre lagret samt en halvtimme p\xE5 tio meter\
+      \ fr\xE5n botten-_x000D_\nVingarna funkade i tio minuter sen ballade dom ur"
     parent_event_id: 1152d072-0259-4c3b-94c3-8e1c9db142fd
     start_lat: 56.3431375
     start_lon: 18.5614971
@@ -54603,6 +55356,7 @@ TRAWL:
     id: '174'
     max_depth: 136.9
     name: TRAWL
+    note: "Home: \nSurface: \nTouchdown: \nLiftoff: 2023-09-01 15:26:19\nShoot:"
     parent_event_id: 8909a317-0224-439d-ba1b-0e4bc5df82cd
     start_lat: 58.0578186166667
     start_lon: 11.0803721
@@ -54621,6 +55375,9 @@ TRAWL:
     id: '141'
     max_depth: 82.2
     name: TRAWL
+    note: "Liftoff: \nSurface: \nShoot: \nInga vingsensorer pga f\xF6rlust av dom\
+      \ vid f\xF6rra halet._x000D_\nHalet kortades pga ev hinder i sp\xE5ret.\nHome:\
+      \ \nTouchdown:"
     parent_event_id: 95ac7efc-290c-42a4-8665-491570eec587
     start_lat: 57.6249123
     start_lon: 8.79857905
@@ -54639,6 +55396,7 @@ TRAWL:
     id: '034'
     max_depth: 86.0
     name: TRAWL
+    note: "Surface: \nTouchdown: \nShoot: \nHome: \nLiftoff:"
     parent_event_id: b3925994-44c3-4075-a46b-27616ac82c7d
     start_lat: 57.1866576666667
     start_lon: 11.6606195333333
@@ -54675,6 +55433,8 @@ TRAWL:
     id: '043'
     max_depth: 96.9
     name: TRAWL
+    note: "Dyningen g\xF6r att farten \xE4r sv\xE5r att kontrollera\nTouchdown: \n\
+      Home: \nSurface: \nShoot: \nLiftoff:"
     parent_event_id: 4d9a0b84-cfe9-44e8-9804-8530372a2b19
     start_lat: 58.54457
     start_lon: 10.8475036
@@ -54693,6 +55453,8 @@ TRAWL:
     id: '163'
     max_depth: 32.9
     name: TRAWL
+    note: "Shoot: \nLiftoff: 2023-08-30 07:38:09\nTouchdown: \nKortade pga sill p\xE5\
+      \ lodet\nHome: \nSurface:"
     parent_event_id: 32480e54-3d11-4ad4-854a-60b355cca942
     start_lat: 57.1854974
     start_lon: 12.06190015
@@ -54711,6 +55473,8 @@ TRAWL:
     id: 029
     max_depth: 41.9
     name: TRAWL
+    note: "Oms\xE4ttning, sk\xE4rplan h\xE4ktade\nSurface: \nHome: \nTouchdown: \n\
+      Shoot: \nLiftoff:"
     parent_event_id: bd9667d5-c420-4bc9-99ef-89d12fc8ad51
     start_lat: 56.81474895
     start_lon: 12.21087185
@@ -54729,6 +55493,7 @@ TRAWL:
     id: '027'
     max_depth: 63.3
     name: TRAWL
+    note: "Surface: \nLiftoff: \n\nShoot: \nTouchdown: \nHome:"
     parent_event_id: 67f32545-62b7-4e70-be59-90a8c6a4b8eb
     start_lat: 56.92725495
     start_lon: 11.69151085
@@ -54783,6 +55548,8 @@ TRAWL:
     id: '132'
     max_depth: 155.6
     name: TRAWL
+    note: "Opening slag p\xE5 fisk, v\xE4rde taget fr\xE5n height.\nHome: \nSurface:\
+      \ \nLiftoff: \nShoot: \nTouchdown:"
     parent_event_id: 8e48d5d4-518c-458b-b401-89e497da97dc
     start_lat: 57.9195196166667
     start_lon: 9.46896106666666
@@ -54801,6 +55568,7 @@ TRAWL:
     id: '033'
     max_depth: 58.2
     name: TRAWL
+    note: "Home: \n\nSurface: \nShoot: \nLiftoff: \nTouchdown:"
     parent_event_id: 6721db57-791b-4b69-9dc3-e26dfdcd6f57
     start_lat: 57.1298376333333
     start_lon: 11.8465048333333
@@ -54818,6 +55586,7 @@ TRAWL:
     full_name: Trawl.142
     id: '142'
     name: TRAWL
+    note: "Home: \nSurface: \nLiftoff: \nShoot: \nTouchdown:"
     parent_event_id: 294d59a9-f077-499e-b6bd-4deecaab29fd
     start_lat: 58.1829897166667
     start_lon: 10.7938210666667
@@ -54836,6 +55605,8 @@ TRAWL:
     id: '136'
     max_depth: 31.8
     name: TRAWL
+    note: "Liftoff: \nShoot: \nHome: \nSurface: \nTouchdown: \nmanuellt taget v\xE4\
+      rde p\xE5 opening"
     parent_event_id: 19f99573-31e1-4e93-a081-f8ce11903a1a
     start_lat: 57.6546372666667
     start_lon: 10.9907660833333
@@ -54854,6 +55625,7 @@ TRAWL:
     id: '135'
     max_depth: 54.5
     name: TRAWL
+    note: "Shoot: \nHome: \nSurface: \nTouchdown: \nLiftoff:"
     parent_event_id: 920cdbae-e17b-469d-9900-dd6b64ed2afe
     start_lat: 57.153663
     start_lon: 5.85684938333333
@@ -54872,6 +55644,8 @@ TRAWL:
     id: '042'
     max_depth: 77.9
     name: TRAWL
+    note: "Stor dyning, p\xE5verkar farten\nHome: \nTouchdown: \nLiftoff: \nSurface:\
+      \ \nShoot:"
     parent_event_id: f44ddaf1-429f-4136-8064-ce67e9d31866
     start_lat: 58.5979820666667
     start_lon: 10.90514525
@@ -54890,6 +55664,7 @@ TRAWL:
     id: '036'
     max_depth: 107.2
     name: TRAWL
+    note: "Liftoff: 2023-02-03 16:31:35\nTouchdown: \nShoot: \nSurface: \nHome:"
     parent_event_id: 934ddcda-e33c-4333-b59f-c209dfaa6f1c
     start_lat: 57.8322104
     start_lon: 10.6367372666667
@@ -54926,6 +55701,7 @@ TRAWL:
     id: '006'
     max_depth: 82.4
     name: TRAWL
+    note: "Shoot: \nTouchdown: \nHome: \n\nSurface: \nLiftoff:"
     parent_event_id: 29874379-a2f6-49d0-99c5-d0f04d21926e
     start_lat: 57.6272545
     start_lon: 8.80177226666667
@@ -54944,6 +55720,7 @@ TRAWL:
     id: '166'
     max_depth: 71.4
     name: TRAWL
+    note: "Home: \n\nLiftoff: \nShoot: \nSurface: \nTouchdown:"
     parent_event_id: 021d0c7a-c758-4e80-9b41-aaa10223f97b
     start_lat: 57.1847920833333
     start_lon: 11.4449369666667
@@ -54962,6 +55739,7 @@ TRAWL:
     id: '020'
     max_depth: 22.6
     name: TRAWL
+    note: "Home: \nShoot: \nSurface: \nLiftoff: \n20 m/s i byarna enl fartyg\nTouchdown:"
     parent_event_id: d7f47315-2cad-4834-b691-8440035facda
     start_lat: 56.2156129833333
     start_lon: 10.9632304666667
@@ -54980,6 +55758,7 @@ TRAWL:
     id: '154'
     max_depth: 19.7
     name: TRAWL
+    note: "Home: \n\nShoot: \nTouchdown: \nSurface: \nLiftoff:"
     parent_event_id: 8a0d2994-3275-44cb-af19-067281d7e582
     start_lat: 56.44916125
     start_lon: 11.0873975166667
@@ -54998,6 +55777,8 @@ TRAWL:
     id: '139'
     max_depth: 41.4
     name: TRAWL
+    note: "Home: \nSurface: \nKortat pga mkt sill p\xE5 lodet\nShoot: \nTouchdown:\
+      \ \nLiftoff:"
     parent_event_id: 25a71316-d1fb-4683-a10b-7e2bd753f4ec
     start_lat: 57.3997621833333
     start_lon: 11.3232538833333
@@ -55016,6 +55797,7 @@ TRAWL:
     id: '183'
     max_depth: 132.3
     name: TRAWL
+    note: Stroppar till floats 308
     parent_event_id: 73154bd6-acfc-4b71-ae86-1ce7b6612699
     start_lat: 58.9297139833333
     start_lon: 19.2596453833333
@@ -55034,6 +55816,7 @@ TRAWL:
     id: '149'
     max_depth: 70.9
     name: TRAWL
+    note: "Shoot: \nHome: \nSurface: \nLiftoff: \nTouchdown:"
     parent_event_id: f0b4a66f-1063-48a1-a8d0-8f917ea20f70
     start_lat: 57.1853577833333
     start_lon: 11.4450587833333
@@ -55052,6 +55835,7 @@ TRAWL:
     id: '025'
     max_depth: 36.1
     name: TRAWL
+    note: "Liftoff: \n\nHome: \nTouchdown: \nSurface: \nShoot:"
     parent_event_id: 52b94fdc-d42e-46de-bc72-7e46b1466dda
     start_lat: 56.5905225833333
     start_lon: 11.8202955333333
@@ -55088,6 +55872,7 @@ TRAWL:
     id: '141'
     max_depth: 90.2
     name: TRAWL
+    note: "Touchdown: \nHome: \n\nSurface: \nLiftoff: \nShoot:"
     parent_event_id: 99b2c1c5-9071-4323-b491-bde6282cd634
     start_lat: 57.9306355833333
     start_lon: 11.2041063833333
@@ -55106,6 +55891,7 @@ TRAWL:
     id: '011'
     max_depth: 39.5
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nHome: \n\nTouchdown: \nSurface:"
     parent_event_id: bfe80ce5-ab50-4e5e-ad3f-278d3118f4a1
     start_lat: 57.0498274
     start_lon: 7.20525748333333
@@ -55124,6 +55910,7 @@ TRAWL:
     id: '131'
     max_depth: 171.7
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nTouchdown: \nHome: \nSurface:"
     parent_event_id: b0834ee3-4078-4439-bf34-689fe39abac3
     start_lat: 58.0572346666667
     start_lon: 9.97327725
@@ -55160,6 +55947,7 @@ TRAWL:
     id: '156'
     max_depth: 33.9
     name: TRAWL
+    note: "Liftoff: 2023-08-28 16:30:14\nShoot: \n\nTouchdown: \nSurface: \nHome:"
     parent_event_id: 720d2695-170a-4c71-bbbf-42ee7c8adf3a
     start_lat: 56.3716944
     start_lon: 12.2636345333333
@@ -55178,6 +55966,8 @@ TRAWL:
     id: '163'
     max_depth: 169.3
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nSurface: \nKortat halet pga fisk p\xE5 lodet\nTouchdown:\
+      \ \nHome:"
     parent_event_id: 57d79d14-adaf-48b0-8496-295d87b78f39
     start_lat: 58.0388908333333
     start_lon: 9.91809563333333
@@ -55196,6 +55986,8 @@ TRAWL:
     id: '015'
     max_depth: 32.6
     name: TRAWL
+    note: "Touchdown: \nSurface: \nShoot: \nKortat, tyckte vi s\xE5g mycket p\xE5\
+      \ lodet.\nLiftoff: \nHome:"
     parent_event_id: 00674342-78a3-49ea-ae74-fc9510993dd1
     start_lat: 57.6510950333333
     start_lon: 10.9971469833333
@@ -55214,6 +56006,8 @@ TRAWL:
     id: '172'
     max_depth: 32.9
     name: TRAWL
+    note: "Touchdown: \nMkt sill p\xE5 lodet\nLiftoff: 2023-09-01 07:40:05\nShoot:\
+      \ \nSurface: \nHome:"
     parent_event_id: d18de7bc-8918-42ca-8794-96241fce0baf
     start_lat: 57.6501583166667
     start_lon: 10.9962479833333
@@ -55232,6 +56026,8 @@ TRAWL:
     id: '050'
     max_depth: 111.8
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nSurface: \nHome: \n\xF6ppen kasse_x000D_\ntest av renoverad\
+      \ tr\xE5l, ny tr\xE5lkropp och telnar\nTouchdown:"
     parent_event_id: 67eaf0ce-5adc-438c-8b4e-4531f1bd81bd
     start_lat: 58.2988373333333
     start_lon: 10.9717752833333
@@ -55250,6 +56046,8 @@ TRAWL:
     id: '144'
     max_depth: 242.2
     name: TRAWL
+    note: "Home: \nTouchdown: \nLiftoff: \nvariabel \xF6ppning pga ngt kuperad botten\n\
+      Shoot: \nSurface:"
     parent_event_id: ee3569b7-9cbf-4edc-9ca5-b79a4c6de44a
     start_lat: 58.6633296333333
     start_lon: 10.30666675
@@ -55268,6 +56066,7 @@ TRAWL:
     id: '158'
     max_depth: 24.4
     name: TRAWL
+    note: "Liftoff: \nSurface: \nHome: \n\nShoot: \nTouchdown:"
     parent_event_id: 04e0838f-1217-4a68-8be7-00a41f11309e
     start_lat: 56.5476027
     start_lon: 12.5558912333333
@@ -55286,6 +56085,7 @@ TRAWL:
     id: '153'
     max_depth: 22.8
     name: TRAWL
+    note: "Home: \nkortat, mkt sill\nTouchdown: \nSurface: \nShoot:"
     parent_event_id: 70ad3df4-9ca2-41f8-a395-8ed7e9a64f0e
     start_lat: 56.21866265
     start_lon: 10.9623528333333
@@ -55304,6 +56104,8 @@ TRAWL:
     id: '003'
     max_depth: 67.8
     name: TRAWL
+    note: "f\xE5 v\xE4rden fr\xE5n vingarna\nTouchdown: \nShoot: \nLiftoff: \nSurface:\
+      \ \nHome:"
     parent_event_id: ee68e351-5640-404c-8076-6beacaf7c821
     start_lat: 57.8674356833333
     start_lon: 11.2254830166667
@@ -55340,6 +56142,7 @@ TRAWL:
     id: '205'
     max_depth: 54.4
     name: TRAWL
+    note: "Extra hal f\xF6r j\xE4mf\xF6resle djup/grunt"
     parent_event_id: f0908c0b-0ec0-444b-93f7-db3fa0db2d1b
     start_lat: 55.2149992
     start_lon: 15.3024249833333
@@ -55358,6 +56161,9 @@ TRAWL:
     id: 039
     max_depth: 106.1
     name: TRAWL
+    note: "Home: \nShoot: \nTouchdown: \nLiftoff: \nSurface: \nSatte i nordost\xE4\
+      nden f\xF6rst. Kabel i den \xE4nden. Sk\xE4rplanet h\xE4ktade, tog hem utan\
+      \ att trycka av draget och gick till sydv\xE4st\xE4nden och fiskade."
     parent_event_id: 9ee0e80b-ad92-45d2-b231-12e506891125
     start_lat: 57.9628996666667
     start_lon: 9.81985168333333
@@ -55376,6 +56182,7 @@ TRAWL:
     id: '002'
     max_depth: 67.6
     name: TRAWL
+    note: "Liftoff: \nShoot: \nHome: \ningen str\xF6m\nSurface: \nTouchdown:"
     parent_event_id: 1545e0a3-186c-454f-b77d-ae213359c4e3
     start_lat: 57.66763715
     start_lon: 11.3634018833333
@@ -55394,6 +56201,7 @@ TRAWL:
     id: '175'
     max_depth: 24.4
     name: TRAWL
+    note: "Liftoff: 2022-08-30 10:09:25\nSurface: \nHome: \nTouchdown: \n\nShoot:"
     parent_event_id: a033aa56-775e-4102-80eb-942b7b1edd8a
     start_lat: 56.54542755
     start_lon: 12.5450903333333
@@ -55412,6 +56220,8 @@ TRAWL:
     id: '152'
     max_depth: 27.8
     name: TRAWL
+    note: "Touchdown: \nLiftoff: \nSurface: \nShoot: \nHome: \nl\xE4ttade ngt och\
+      \ saktade under ca 2 min pga av bula d\xE4rav l\xE5g medelfart. _x000D_"
     parent_event_id: 08c2d590-594b-4aa9-a17c-a9cc9de9d90c
     start_lat: 57.58920065
     start_lon: 9.23351388333333
@@ -55430,6 +56240,7 @@ TRAWL:
     id: '040'
     max_depth: 62.6
     name: TRAWL
+    note: "Liftoff: \nHome: \nShoot: \nTouchdown: \nSurface:"
     parent_event_id: a50211fa-79fd-4f3d-89b1-d233b7ea5fce
     start_lat: 57.89468405
     start_lon: 9.88975165
@@ -55502,6 +56313,8 @@ TRAWL:
     id: '148'
     max_depth: 85.6
     name: TRAWL
+    note: "Liftoff: \nSurface: \nTouchdown: \nInga vingsensorer._x000D_\n16 kulor\
+      \ ist\xE4llet f\xF6r sk\xE4rplan.\nHome: \nShoot:"
     parent_event_id: 1749fb1f-30a4-4208-89f7-b0c44a4b89de
     start_lat: 58.6595153833333
     start_lon: 10.8266375166667
@@ -55520,6 +56333,8 @@ TRAWL:
     id: '184'
     max_depth: 40.9
     name: TRAWL
+    note: "Home: \n\nSurface: \nLiftoff: 2022-09-01 08:01:49\nShoot: \nTouchdown:\
+      \ 2022-09-01 07:25:12"
     parent_event_id: 1baf6a18-e26c-43df-94c0-f56dfd80d37e
     start_lat: 57.66736785
     start_lon: 11.1995569
@@ -55556,6 +56371,8 @@ TRAWL:
     id: '178'
     max_depth: 33.5
     name: TRAWL
+    note: "kortar pga av fisk p\xE5 lodet\nSurface: \nTouchdown: \nLiftoff: \nShoot:\
+      \ \nHome:"
     parent_event_id: c42a8a68-3308-41ab-9537-a2d4295fb218
     start_lat: 57.01799735
     start_lon: 12.2068673666667
@@ -55610,6 +56427,7 @@ TRAWL:
     id: '168'
     max_depth: 42.4
     name: TRAWL
+    note: "Surface: \nLiftoff: 2023-08-31 07:47:48\nHome: \nShoot: \nTouchdown:"
     parent_event_id: c73104c1-681c-4679-9203-bb7ab18b47e8
     start_lat: 57.4433682
     start_lon: 10.8338129166667
@@ -55628,6 +56446,8 @@ TRAWL:
     id: '004'
     max_depth: 74.9
     name: TRAWL
+    note: "Touchdown: \nLiftoff: \nShoot: \nSurface: \nHome: \nendast ving-v\xE4rden\
+      \ under knappa 5 min"
     parent_event_id: e06ad4ba-f3ad-43f9-94bd-09ce80caab51
     start_lat: 57.87390305
     start_lon: 10.9917216666667
@@ -55646,6 +56466,7 @@ TRAWL:
     id: 018
     max_depth: 65.0
     name: TRAWL
+    note: "Home: \nTouchdown: \n\nLiftoff: \nSurface: \nShoot:"
     parent_event_id: 8c3523e6-2d89-446a-94cc-9c9f24dc34f5
     start_lat: 57.34894065
     start_lon: 11.58742075
@@ -55664,6 +56485,7 @@ TRAWL:
     id: '170'
     max_depth: 37.7
     name: TRAWL
+    note: "Home: \nTouchdown: \nShoot: \nSurface: \nLiftoff: 2023-08-31 12:59:38"
     parent_event_id: 2714ab3d-1b8d-4afd-9fdb-04eacc7d7c0b
     start_lat: 57.58828935
     start_lon: 11.0130311166667
@@ -55682,6 +56504,7 @@ TRAWL:
     id: '014'
     max_depth: 56.0
     name: TRAWL
+    note: "Kortat pga vall.\nLiftoff: \nShoot: \nSurface: \nTouchdown: \nHome:"
     parent_event_id: 165bb1ca-72d8-41b3-923e-ed5ab7533e2d
     start_lat: 56.9613555666667
     start_lon: 6.48077148333333
@@ -55718,6 +56541,8 @@ TRAWL:
     id: '143'
     max_depth: 173.4
     name: TRAWL
+    note: "Surface: \nShoot: \nHome: \nKortade halet pga mkt p\xE5 lodet.\nTouchdown:\
+      \ \nLiftoff:"
     parent_event_id: 4b258de4-4743-4252-9274-49d0606310e4
     start_lat: 58.4667656333333
     start_lon: 10.6578882833333
@@ -55736,6 +56561,8 @@ TRAWL:
     id: '001'
     max_depth: 54.7
     name: TRAWL
+    note: "OBS endast testhal - tordes inte s\xE4tta, minf\xE4lt i anslutning till\
+      \ halet (26 minor funna) \nTouchdown: \nSurface: \nLiftoff: \nHome: \nShoot:"
     parent_event_id: 860347fc-2e6e-4273-a0f6-3528dae985fd
     start_lat: 57.5394527833333
     start_lon: 11.59219575
@@ -55754,6 +56581,7 @@ TRAWL:
     id: '167'
     max_depth: 41.8
     name: TRAWL
+    note: "Home: \nLiftoff: 2023-08-30 17:51:51\nSurface: \nShoot: \nTouchdown:"
     parent_event_id: e92f1020-a2b6-4c74-a1d7-425135bbb09a
     start_lat: 57.65103025
     start_lon: 11.1594751333333
@@ -55772,6 +56600,8 @@ TRAWL:
     id: '181'
     max_depth: 84.0
     name: TRAWL
+    note: "Liftoff: \nSurface: \nShoot: \nKortat. Mycket fisk p\xE5 lodet\nTouchdown:\
+      \ \nHome:"
     parent_event_id: fb5a74af-8577-4fdd-b3a2-bbd0f3749a22
     start_lat: 57.18456775
     start_lon: 11.65845135
@@ -55790,6 +56620,7 @@ TRAWL:
     id: '159'
     max_depth: 41.8
     name: TRAWL
+    note: "Home: \nShoot: \n\nTouchdown: \nLiftoff: 2023-08-29 11:12:16\nSurface:"
     parent_event_id: ba95a5f5-3201-4d81-9f4f-c1a37a845ec6
     start_lat: 56.8152067
     start_lon: 12.2124527
@@ -55808,6 +56639,7 @@ TRAWL:
     id: '037'
     max_depth: 261.2
     name: TRAWL
+    note: "Surface: \nTouchdown: \n\nHome: \nLiftoff: \nShoot:"
     parent_event_id: 00fd75a7-12b1-4708-9f68-8e9c6e72df6f
     start_lat: 58.0726923
     start_lon: 9.81421295
@@ -55826,6 +56658,8 @@ TRAWL:
     id: '206'
     max_depth: 96.2
     name: TRAWL
+    note: "J\xE4mf\xF6relse med grunt/djupt, Djupt_x000D_\nFiskar p\xE5 tv\xE5 djup,\
+      \ 30 min p\xE5 20 och 30 min p\xE5 45m"
     parent_event_id: f8fa1d61-df45-4658-b042-9db3a8b9beb8
     start_lat: 55.4103019
     start_lon: 15.3533615666667
@@ -55844,6 +56678,8 @@ TRAWL:
     id: '160'
     max_depth: 70.4
     name: TRAWL
+    note: "Kortat pga mkt fisk p\xE5 lodet.\nSurface: \nHome: \nShoot: \nLiftoff:\
+      \ \nTouchdown:"
     parent_event_id: 4dd1a543-0856-4a5a-9065-9c2a005f9120
     start_lat: 57.5288543333333
     start_lon: 8.60046341666667
@@ -55862,6 +56698,8 @@ TRAWL:
     id: 048
     max_depth: 230.7
     name: TRAWL
+    note: "Touchdown: \nShoot: \nLiftoff: \nlera i halet . Tr\xE5len gick skevt av\
+      \ och till.\nSurface: \nHome:"
     parent_event_id: 8b07ae3d-a7fa-4a43-990a-0cf45c47903e
     start_lat: 58.1037155333333
     start_lon: 10.7346881166667
@@ -55880,6 +56718,8 @@ TRAWL:
     id: '016'
     max_depth: 42.0
     name: TRAWL
+    note: "Kortat pga av fisk p\xE5 lodet,.\nTouchdown: \nHome: \nShoot: \nSurface:\
+      \ \nLiftoff:"
     parent_event_id: 70d65cfa-7ab0-4664-80f4-b5a1aade7d90
     start_lat: 57.4651029166667
     start_lon: 10.87122155
@@ -55898,6 +56738,7 @@ TRAWL:
     id: '017'
     max_depth: 41.3
     name: TRAWL
+    note: "Home: \nSurface: \nShoot: \n\nTouchdown: \nLiftoff:"
     parent_event_id: 2513d89a-e4ad-4f0d-a344-49666c7b8f7a
     start_lat: 57.4008158333333
     start_lon: 11.3219854666667
@@ -55916,6 +56757,7 @@ TRAWL:
     id: '164'
     max_depth: 162.8
     name: TRAWL
+    note: "Surface: \nHome: \nLiftoff: \n\nTouchdown: \nShoot:"
     parent_event_id: c974a848-1539-4e80-8486-69abe614d569
     start_lat: 58.12785735
     start_lon: 10.3127454333333
@@ -55934,6 +56776,7 @@ TRAWL:
     id: '145'
     max_depth: 179.9
     name: TRAWL
+    note: "Surface: \n\nHome: \nShoot: \nLiftoff: \nTouchdown:"
     parent_event_id: e4d9c640-db48-47a7-b96c-561bc8d3e966
     start_lat: 58.3973702666667
     start_lon: 10.6945446666667
@@ -55952,6 +56795,7 @@ TRAWL:
     id: 009
     max_depth: 54.7
     name: TRAWL
+    note: "Shoot: \nTouchdown: \nLiftoff: \n\nSurface: \nHome:"
     parent_event_id: d11cd548-f974-4392-b5d1-657caa771225
     start_lat: 57.1540883166667
     start_lon: 5.85400878333333
@@ -55970,6 +56814,9 @@ TRAWL:
     id: '130'
     max_depth: 69.0
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \nHalet kortat pga v\xE4ldigt mycket fisk p\xE5 lodet.\
+      \ Tr\xE5l\xF6ppning approximerad baserat p\xE5 lucka i sluet av draget.\nHome:\
+      \ \nSurface: \nShoot:"
     parent_event_id: 85871e4e-4990-4ca7-bdb3-27ee7f40e03b
     start_lat: 58.3918719
     start_lon: 11.0363215166667
@@ -56023,6 +56870,7 @@ TRAWL:
     id: '135'
     max_depth: 31.8
     name: TRAWL
+    note: "test\nTouchdown: \nLiftoff: \nHome: \nSurface: \nShoot:"
     parent_event_id: 19f99573-31e1-4e93-a081-f8ce11903a1a
     start_lat: 57.6803114833333
     start_lon: 10.9672296833333
@@ -56041,6 +56889,8 @@ TRAWL:
     id: '147'
     max_depth: 105.3
     name: TRAWL
+    note: "Surface: \n16 kulor ist\xE4llet f\xF6r sk\xE4rplan._x000D_\nInga vingsensorer._x000D_\n\
+      Tr\xE5l\xF6ppning manuellt.\nTouchdown: \nHome: \nLiftoff: \nShoot:"
     parent_event_id: afaaba95-8a9d-47bd-8018-b8b645f23a33
     start_lat: 58.7447216
     start_lon: 10.6450581
@@ -56077,6 +56927,8 @@ TRAWL:
     id: '180'
     max_depth: 57.2
     name: TRAWL
+    note: "Home: \n\nLiftoff: 2022-08-31 10:24:23\nSurface: \nTouchdown: 2022-08-31\
+      \ 09:49:49\nShoot:"
     parent_event_id: 6043bb47-2541-46c1-9b2d-b6046fac9511
     start_lat: 57.10251995
     start_lon: 11.8335829166667
@@ -56095,6 +56947,7 @@ TRAWL:
     id: '128'
     max_depth: 58.6
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nHome: \nSurface: \nTouchdown:"
     parent_event_id: 2323c2f1-2ed8-487f-aaa5-dce57329fd13
     start_lat: 58.4957214666667
     start_lon: 11.1230682166667
@@ -56113,6 +56966,7 @@ TRAWL:
     id: '157'
     max_depth: 24.9
     name: TRAWL
+    note: "Liftoff: 2023-08-28 18:21:18\nShoot: \nTouchdown: \nSurface: \nHome:"
     parent_event_id: ee7d929d-c5de-4f50-b582-1e6eacb21631
     start_lat: 56.3551850833333
     start_lon: 12.5541006666667
@@ -56131,6 +56985,7 @@ TRAWL:
     id: '177'
     max_depth: 99.3
     name: TRAWL
+    note: Stroppar till floats 370
     parent_event_id: 81890fc1-96ee-4c22-9f92-2fa4465d406a
     start_lat: 58.1726667833333
     start_lon: 18.6343819333333
@@ -56149,6 +57004,7 @@ TRAWL:
     id: 019
     max_depth: 19.7
     name: TRAWL
+    note: "Touchdown: \nSurface: \nHome: \n\nShoot: \nLiftoff:"
     parent_event_id: 49f40403-34ed-42d7-a967-71a320eae5d2
     start_lat: 56.45013665
     start_lon: 11.0879478
@@ -56167,6 +57023,8 @@ TRAWL:
     id: '140'
     max_depth: 233.6
     name: TRAWL
+    note: "Touchdown: \nHome: \nSurface: \nK\xF6rde fast. F\xF6rlorade tr\xE5len.\
+      \ Tr\xE5lbord r\xE4ddades.\nShoot: \nLiftoff:"
     parent_event_id: 7c00de17-cbfe-4ba5-99ba-c19e538b8563
     start_lat: 57.7871520833333
     start_lon: 8.79082753333333
@@ -56185,6 +57043,7 @@ TRAWL:
     id: '134'
     max_depth: 27.3
     name: TRAWL
+    note: "Shoot: \n\nHome: \nSurface: \nLiftoff: \nTouchdown:"
     parent_event_id: 50cbffe0-86c8-40a0-8f60-e08885ae4076
     start_lat: 57.4870095833333
     start_lon: 9.11845851666667
@@ -56203,6 +57062,7 @@ TRAWL:
     id: '168'
     max_depth: 47.0
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \nSurface: \nHome: \nShoot:"
     parent_event_id: 149eaa74-fb18-4e57-8ed0-bda8f1675ef5
     start_lat: 56.79917545
     start_lon: 11.83593225
@@ -56221,6 +57081,7 @@ TRAWL:
     id: '169'
     max_depth: 35.0
     name: TRAWL
+    note: "Liftoff: \n\nHome: \nShoot: \nTouchdown: \nSurface:"
     parent_event_id: 6723d2f4-eadb-4a89-b1a9-e049c6081eda
     start_lat: 56.6210768166667
     start_lon: 11.8310857166667
@@ -56257,6 +57118,7 @@ TRAWL:
     id: 008
     max_depth: 57.9
     name: TRAWL
+    note: "Liftoff: \nTouchdown: \nShoot: \nSurface: \nHome: \nRillor p\xE5 botten"
     parent_event_id: e2a5c97e-7fe2-4fcc-8fcd-4314f9bbe250
     start_lat: 57.4554507833333
     start_lon: 8.58086341666667
@@ -56275,6 +57137,7 @@ TRAWL:
     id: '026'
     max_depth: 47.7
     name: TRAWL
+    note: "Shoot: \nTouchdown: \nLiftoff: \nSurface: \n\nHome:"
     parent_event_id: 2a3e99ea-444f-48fb-9026-5884ccbb68ff
     start_lat: 56.78422955
     start_lon: 11.8851044833333
@@ -56293,6 +57156,8 @@ TRAWL:
     id: '145'
     max_depth: 81.1
     name: TRAWL
+    note: "Liftoff: \nShoot: \nSurface: \nFick s\xE4tta om, \xF6ppnade bara 2 m\n\
+      Touchdown: \nHome:"
     parent_event_id: 9fb1384e-fe9b-4675-8878-2196d7b6d3b2
     start_lat: 58.67277295
     start_lon: 10.86569625
@@ -56311,6 +57176,7 @@ TRAWL:
     id: '127'
     max_depth: 139.1
     name: TRAWL
+    note: "Liftoff: \nShoot: \nHome: \nTouchdown: \nSurface:"
     parent_event_id: 20ba8736-9a72-405e-9d1e-3bd42c9ac178
     start_lat: 58.36243725
     start_lon: 10.8470991
@@ -56329,6 +57195,7 @@ TRAWL:
     id: '138'
     max_depth: 42.8
     name: TRAWL
+    note: "Home: \nLiftoff: \n\nSurface: \nTouchdown: \nShoot:"
     parent_event_id: ed4d4da4-49aa-46d1-b818-82f7a8d51cfe
     start_lat: 57.4631268333333
     start_lon: 10.8690569833333
@@ -56347,6 +57214,7 @@ TRAWL:
     id: '161'
     max_depth: 26.4
     name: TRAWL
+    note: "Touchdown: \nShoot: \nSurface: \n\nLiftoff: \nHome:"
     parent_event_id: 1db0576c-d5df-40c7-8e0a-a7a709e42088
     start_lat: 57.4869568333333
     start_lon: 9.08848408333333
@@ -56365,6 +57233,7 @@ TRAWL:
     id: '169'
     max_depth: 27.2
     name: TRAWL
+    note: "Liftoff: 2023-08-31 10:19:05\nSurface: \n\nShoot: \nTouchdown: \nHome:"
     parent_event_id: e1d1f086-6a3d-4e55-b47d-76f5fbc9fe86
     start_lat: 57.6761692
     start_lon: 10.7734194333333
@@ -56383,6 +57252,7 @@ TRAWL:
     id: '030'
     max_depth: 28.2
     name: TRAWL
+    note: "Touchdown: \nSurface: \nLiftoff: \nHome: \nShoot:"
     parent_event_id: 470e2551-77db-46f0-943a-613d571ec218
     start_lat: 56.8717976
     start_lon: 12.2946214333333
@@ -56401,6 +57271,8 @@ TRAWL:
     id: '136'
     max_depth: 67.5
     name: TRAWL
+    note: "Touchdown: \nHome: \nHalet kortades pga att mycket fisk gick in.\nShoot:\
+      \ \nSurface: \nLiftoff:"
     parent_event_id: f56f81ea-7611-4a25-9172-0fcf2712a7e4
     start_lat: 57.1444954833333
     start_lon: 6.2569201
@@ -56437,6 +57309,7 @@ TRAWL:
     id: '139'
     max_depth: 136.5
     name: TRAWL
+    note: "Liftoff: \n\nSurface: \nTouchdown: \nHome: \nShoot:"
     parent_event_id: 3fcf31f1-d25d-42c0-bc0d-06526322accb
     start_lat: 57.4407374166667
     start_lon: 7.90700836666667
@@ -56455,6 +57328,7 @@ TRAWL:
     id: '162'
     max_depth: 238.8
     name: TRAWL
+    note: "Touchdown: \nHome: \nShoot: \nSurface: \nLiftoff:"
     parent_event_id: 21269c86-ec3a-4e49-8467-001031501733
     start_lat: 58.02603025
     start_lon: 9.68538505
@@ -56473,6 +57347,8 @@ TRAWL:
     id: '167'
     max_depth: 58.4
     name: TRAWL
+    note: "kortat 5 min pga mkt fisk p\xE5 lodet\nShoot: \nSurface: \nTouchdown: \n\
+      Home: \nLiftoff:"
     parent_event_id: 116b5ea7-ca9b-454e-ab78-f6671f2fb383
     start_lat: 56.9543763166667
     start_lon: 11.6601556666667
@@ -56491,6 +57367,8 @@ TRAWL:
     id: '176'
     max_depth: 41.7
     name: TRAWL
+    note: "Home: \nTouchdown: 2022-08-30 13:29:33\nLiftoff: 2022-08-30 14:05:28\n\n\
+      Surface: \nShoot:"
     parent_event_id: 287de7e8-da04-40ea-b4d0-6b02fe829692
     start_lat: 56.8181307833333
     start_lon: 12.2156526833333
@@ -56527,6 +57405,8 @@ TRAWL:
     id: '144'
     max_depth: 86.7
     name: TRAWL
+    note: "Surface: \nShoot: \nLiftoff: \nTouchdown: \nHome: \nInga vingsensorer.\
+      \ Kulor ist\xE4llet f\xF6r sk\xE4rplan. Tr\xE5l\xF6ppning manuellt fr\xE5n TV80."
     parent_event_id: fcab8de8-dd69-4722-84cb-19502976c5a8
     start_lat: 57.8392452166667
     start_lon: 10.2508824333333
@@ -56545,6 +57425,7 @@ TRAWL:
     id: '165'
     max_depth: 67.6
     name: TRAWL
+    note: "Shoot: \nTouchdown: \n\nSurface: \nHome:"
     parent_event_id: ab2f2d43-0857-4c52-b77f-ae598b7d003a
     start_lat: 57.30489745
     start_lon: 11.57621325
@@ -56563,6 +57444,7 @@ TRAWL:
     id: '160'
     max_depth: 28.0
     name: TRAWL
+    note: "Surface: \nLiftoff: 2023-08-29 12:43:12\nHome: \nShoot: \nTouchdown:"
     parent_event_id: 37444a4e-0076-4156-a2bd-dafe8da7f44f
     start_lat: 56.87308745
     start_lon: 12.2935715333333
@@ -56581,6 +57463,7 @@ TRAWL:
     id: '184'
     max_depth: 75.9
     name: TRAWL
+    note: Stroppar till kulor 318m
     parent_event_id: d2e27d3d-7297-476a-963a-c8dfc40871aa
     start_lat: 59.0998346333333
     start_lon: 19.2496468166667
@@ -56599,6 +57482,7 @@ TRAWL:
     id: '046'
     max_depth: 63.9
     name: TRAWL
+    note: "Surface: \nHome: \nTouchdown: \nLiftoff: \n\nShoot:"
     parent_event_id: 2dda366f-289a-4308-9d03-7a880f567260
     start_lat: 58.25700605
     start_lon: 11.1644821666667
@@ -56617,6 +57501,7 @@ TRAWL:
     id: '162'
     max_depth: 60.0
     name: TRAWL
+    note: "Surface: \nShoot: \nLiftoff: 2023-08-29 17:12:43\nTouchdown: \n\nHome:"
     parent_event_id: 1154b45c-9a47-4322-9bda-3e4710179299
     start_lat: 57.09616105
     start_lon: 11.82953865
@@ -56635,6 +57520,7 @@ TRAWL:
     id: '024'
     max_depth: 24.2
     name: TRAWL
+    note: "Home: \n\nTouchdown: \nSurface: \nShoot: \nLiftoff:"
     parent_event_id: a5d885e2-6ba7-4d81-b749-281a524220aa
     start_lat: 56.5466348166667
     start_lon: 12.5610007333333
@@ -56653,6 +57539,7 @@ TRAWL:
     id: '137'
     max_depth: 25.1
     name: TRAWL
+    note: "Touchdown: \nHome: \n\nLiftoff: \nShoot: \nSurface:"
     parent_event_id: 862d3a5a-d115-4f65-b5d3-5c8adb7f6523
     start_lat: 57.6439202666667
     start_lon: 10.7653270333333
@@ -56689,6 +57576,7 @@ TRAWL:
     id: 028
     max_depth: 70.6
     name: TRAWL
+    note: "Touchdown: \nHome: \n\nShoot: \nSurface: \nLiftoff:"
     parent_event_id: 3e2b3ee3-8668-40a3-a9f1-06d64cc4209a
     start_lat: 57.15496345
     start_lon: 11.4565276833333
@@ -56707,6 +57595,7 @@ TRAWL:
     id: '031'
     max_depth: 34.9
     name: TRAWL
+    note: "Shoot: \nLiftoff: \nSurface: \nTouchdown: \n\nHome:"
     parent_event_id: 921039a6-7e33-4643-a672-b3a389e1f94f
     start_lat: 57.0153723833333
     start_lon: 12.20487495
@@ -56725,6 +57614,8 @@ TRAWL:
     id: '150'
     max_depth: 62.9
     name: TRAWL
+    note: "Vingarna p\xE5satta men levererar ingen distans\nHome: \nLiftoff: \nTouchdown:\
+      \ \nSurface: \nShoot:"
     parent_event_id: da95670d-92d1-4644-8af0-2fd9413a3986
     start_lat: 56.95024465
     start_lon: 11.6670837333333
@@ -56743,6 +57634,8 @@ TRAWL:
     id: '142'
     max_depth: 58.2
     name: TRAWL
+    note: "Shoot: \nHome: \nTr\xE5l\xF6ppning tagen manuellt fr\xE5n TV80. Inga vingsensorer.\
+      \ \nSurface: \nLiftoff: \nTouchdown:"
     parent_event_id: 5b023dd5-1061-4c09-a343-6a47c6fab5f0
     start_lat: 57.4544442166667
     start_lon: 8.52236363333333
@@ -56761,6 +57654,7 @@ TRAWL:
     id: '179'
     max_depth: 77.5
     name: TRAWL
+    note: Stroppar till foats 311
     parent_event_id: 19ba014f-955f-4fe8-83fd-4f1056ba50b1
     start_lat: 58.4143838
     start_lon: 17.5166254166667
@@ -56779,6 +57673,7 @@ TRAWL:
     id: '133'
     max_depth: 36.2
     name: TRAWL
+    note: "Surface: \nHome: \nTouchdown: \nLiftoff: \nShoot:"
     parent_event_id: d72af3d1-8975-485e-8d92-70414c316ecc
     start_lat: 57.6051029833333
     start_lon: 9.15158305
@@ -56797,6 +57692,7 @@ TRAWL:
     id: '181'
     max_depth: 198.8
     name: TRAWL
+    note: Stroppar till floats 308
     parent_event_id: eaae7a18-304b-4061-8d24-43fea7c14e97
     start_lat: 58.81693165
     start_lon: 18.4504132166667
@@ -56815,6 +57711,7 @@ TRAWL:
     id: '153'
     max_depth: 32.7
     name: TRAWL
+    note: "Home: \nLiftoff: \nTouchdown: \n\nShoot: \nSurface:"
     parent_event_id: 367c833e-714a-41f7-b20e-5b77a287bb03
     start_lat: 56.9291722333333
     start_lon: 7.07950265
@@ -56833,6 +57730,9 @@ TRAWL:
     id: 049
     max_depth: 245.8
     name: TRAWL
+    note: "R\xE4kfiskare p\xE5 sp\xE5ret, v\xE4ntade ut. _x000D_\nTog upp efter 15\
+      \ min eftersom tr\xE5len b\xF6rjade skeva igen. Troligen lera. \nShoot: \nHome:\
+      \ \nSurface: \nLiftoff: \nTouchdown:"
     parent_event_id: 5e18f3f3-14c6-4227-9aa5-b1734fb2394a
     start_lat: 58.0747560166667
     start_lon: 10.7360378666667
@@ -56869,6 +57769,7 @@ TRAWL:
     id: '010'
     max_depth: 67.3
     name: TRAWL
+    note: "Shoot: \nSurface: \n\nLiftoff: \nHome: \nTouchdown:"
     parent_event_id: fc71d890-55d1-48db-9a5c-aaf03f88394a
     start_lat: 57.1453023166667
     start_lon: 6.25549776666667
@@ -56887,6 +57788,8 @@ TRAWL:
     id: '179'
     max_depth: 32.5
     name: TRAWL
+    note: "Home: \n\nSurface: \nShoot: \nTouchdown: 2022-08-31 07:15:55\nLiftoff:\
+      \ 2022-08-31 07:51:37"
     parent_event_id: 186fef3c-fdb7-4ee2-b341-b0c335c65b1e
     start_lat: 57.18086085
     start_lon: 12.06667065
@@ -56905,6 +57808,8 @@ TRAWL:
     id: '183'
     max_depth: 40.8
     name: TRAWL
+    note: "Shoot: \nLiftoff: 2022-08-31 19:08:53\nSurface: \nHome: \n\nTouchdown:\
+      \ 2022-08-31 18:36:18"
     parent_event_id: e6585499-b6bc-456d-998d-fe35cdbe9450
     start_lat: 57.5296306166667
     start_lon: 11.0080179833333
@@ -56923,6 +57828,7 @@ TRAWL:
     id: '155'
     max_depth: 32.6
     name: TRAWL
+    note: "Surface: \nKortat pga sill\nShoot: \nHome: \nTouchdown:"
     parent_event_id: a5e1f33b-2c14-44cd-b304-4a710386397c
     start_lat: 56.3506354333333
     start_lon: 11.9196368166667
@@ -56941,6 +57847,8 @@ TRAWL:
     id: '171'
     max_depth: 19.8
     name: TRAWL
+    note: "Shoot: \nTouchdown: \nHome: \nLiftoff: \n\xF6ppningen gick ihop lite i\
+      \ slutet pga t\xE5ng\nSurface:"
     parent_event_id: b7629101-1272-4887-8da5-14146aecb38d
     start_lat: 56.4473845
     start_lon: 11.0858542333333
@@ -56959,6 +57867,7 @@ TRAWL:
     id: '151'
     max_depth: 30.5
     name: TRAWL
+    note: "Surface: \n\nTouchdown: \nShoot: \nHome: \nLiftoff:"
     parent_event_id: 3ead08e1-6800-4f8a-9b5c-459d58f1201c
     start_lat: 57.70503525
     start_lon: 9.57957135
@@ -56977,6 +57886,7 @@ TRAWL:
     id: '041'
     max_depth: 87.2
     name: TRAWL
+    note: "Touchdown: \nen del dyning\nSurface: \nLiftoff: \nShoot: \nHome:"
     parent_event_id: dd81dce1-6956-4c43-a52e-60470cf24678
     start_lat: 58.6656634333333
     start_lon: 10.8235266666667
@@ -56995,6 +57905,7 @@ TRAWL:
     id: '148'
     max_depth: 125.7
     name: TRAWL
+    note: "Shoot: \nHome: \nTouchdown: \n\nLiftoff: \nSurface:"
     parent_event_id: 616db522-3ebb-41a4-9d49-7375e2a5fd42
     start_lat: 57.9311155833333
     start_lon: 9.63516538333334
@@ -57031,6 +57942,7 @@ TRAWL:
     id: '013'
     max_depth: 50.5
     name: TRAWL
+    note: "Surface: \nTouchdown: \nk\xF6rde fast\nLiftoff: \nShoot: \nHome:"
     parent_event_id: d15dff32-6031-41ab-b866-5a678721b25d
     start_lat: 56.8796093666667
     start_lon: 6.30246481666667
@@ -57049,6 +57961,7 @@ TRAWL:
     id: '005'
     max_depth: 224.0
     name: TRAWL
+    note: "Surface: \nspri vingar ur funktion\nHome: \nLiftoff: \nTouchdown: \nShoot:"
     parent_event_id: b3b62825-2a9c-4bc6-aa88-018ab31cdf0c
     start_lat: 57.7845485333333
     start_lon: 8.78609291666666
@@ -57067,6 +57980,8 @@ TRAWL:
     id: '186'
     max_depth: 191.3
     name: TRAWL
+    note: "Drar p\xE5 tv\xE5 djup. f\xF6rsta 30 min p\xE5 24m och sista 30 p\xE5 60m.\
+      \ Stroppar p\xE5 djupet var 540m"
     parent_event_id: d1913649-b999-439d-a9c7-df4573c31353
     start_lat: 58.90051
     start_lon: 20.1262781166667
@@ -62305,6 +63220,7 @@ WEATHER:
     full_name: Weather
     id: Weather
     name: WEATHER
+    note: Data for Zoe. Air measuring. /Mats
     parent_event_id: d5434c5f-ba5d-4ce8-8bc9-538f7e7294ba
     start_lat: 59.342262
     start_lon: 18.22226645
@@ -63734,6 +64650,7 @@ WEATHER - SVEA VS BOY ON DECK:
     full_name: Weather - Svea vs Boy on Deck
     id: Weather - Svea vs Boy on Deck
     name: WEATHER - SVEA VS BOY ON DECK
+    note: Boy comparison.
     parent_event_id: 9e52f9f9-d75d-4af9-8e98-d0eb4c38ccce
     start_lat: 56.6331054
     start_lon: 16.36229565
@@ -72329,6 +73246,7 @@ ZOOPLANKTON:
     full_name: Zooplankton.0084
     id: 0084
     name: ZOOPLANKTON
+    note: 60-30m and 30-0m
     parent_event_id: 0901787a-ef6b-4e0d-ae0e-a622634df5d0
     start_lat: 55.2500386666667
     start_lon: 15.9844822333333
@@ -76343,6 +77261,7 @@ ZOOPLANKTON:
     max_depth: 23.0
     min_depth: 21.9
     name: "\xD6STERGARNSHOLM"
+    note: "Byte av CO2-system \xE5t Uppsala universitet."
     parent_event_id: 3f4546a2-16bf-444c-86ca-b11dda758e85
     start_lat: 57.423524
     start_lon: 18.9941659
