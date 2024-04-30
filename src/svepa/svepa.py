@@ -4,12 +4,16 @@ import logging
 from abc import ABC, abstractmethod
 
 import numpy as np
-import pypyodbc
 import yaml
 
 try:
+    import pypyodbc
+except ImportError:
+    pypyodbc = None
+
+try:
     from svepa import exceptions
-except:
+except ImportError:
     import exceptions
 
 logger = logging.getLogger(__name__)
@@ -55,6 +59,9 @@ class DBCommunication:
                  user=None,
                  password=None,
                  driver=None):
+
+        if not pypyodbc:
+            raise ImportError(f'pypyodbc not imported')
 
         self.dbadress = dbadress
         self.dbname = dbname
