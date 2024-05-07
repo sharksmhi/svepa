@@ -1,9 +1,9 @@
 [project]
 name = "svepa"
 version = "2.0.0"
-description = "Default template for PDM package"
+description = "Python package to extract information from the event system SVEPA on R/V Svea"
 authors = [
-    {name = "Magnus Wenzer", email = "nodc@smhi.se"},
+    {name = "nodc-sweden", email = "nodc@smhi.se"},
 ]
 dependencies = [
     "pypyodbc>=1.3.6",
