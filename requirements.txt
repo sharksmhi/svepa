@@ -1,3 +1,0 @@
-pypyodbc
-pandas
-pyyaml

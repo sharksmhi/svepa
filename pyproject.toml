@@ -1,16 +1,12 @@
 [project]
 name = "svepa"
-version = "1.0.0"
+version = "2.0.0"
 description = "Default template for PDM package"
 authors = [
     {name = "Magnus Wenzer", email = "nodc@smhi.se"},
 ]
 dependencies = [
-    "pandas>=2.2.1",
-    "pyyaml>=6.0.1",
     "pypyodbc>=1.3.6",
-    "openpyxl>=3.1.2",
-    "requests>=2.31.0",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
